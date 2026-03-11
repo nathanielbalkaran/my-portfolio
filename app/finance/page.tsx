@@ -27,7 +27,7 @@ export default function FinancePage() {
         </h1>
         <p className="mt-2 font-serif text-base leading-relaxed text-[#0a192f]/70">
           My stock pitches and investment theses. Click a row to open the PDF in a new tab.
-          All thoughs expressed are my own and not financial advice.
+          All thoughts expressed are my own and not financial advice.
         </p>
 
         {pitches.length === 0 ? (

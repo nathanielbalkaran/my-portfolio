@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import {
@@ -17,8 +18,17 @@ const CROSSHAIR_DEFAULT = "#E5E7EB";
 const CROSSHAIR_MARKETING = "#F97316";
 const CROSSHAIR_FINANCE = "#10B981";
 
+const DOT_DEFAULT = "rgba(0, 0, 0, 0.12)";
+const DOT_MARKETING = "rgba(249, 115, 22, 0.25)";
+const DOT_FINANCE = "rgba(16, 185, 129, 0.25)";
+
 export default function Page() {
   const [hovered, setHovered] = useState<HoverState>(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -41,23 +51,54 @@ export default function Page() {
         ? CROSSHAIR_FINANCE
         : CROSSHAIR_DEFAULT;
 
-  const backgroundColor =
-    hovered === "marketing"
-      ? "#f5f5f5"
-      : hovered === "finance"
-        ? "#f4f7fb"
-        : "#ffffff";
-
   const marketingScale = hovered === "marketing" ? 1.08 : 1;
   const financeScale = hovered === "finance" ? 1.08 : 1;
 
+  const dotGrid = (
+    <div
+      className="pointer-events-none fixed inset-0 z-[1]"
+      aria-hidden
+    >
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(circle at center, ${DOT_DEFAULT} 1px, transparent 1px)`,
+          backgroundSize: "1in 1in",
+        }}
+        animate={{ opacity: hovered === null ? 1 : 0 }}
+        transition={transition}
+      />
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(circle at center, ${DOT_MARKETING} 1px, transparent 1px)`,
+          backgroundSize: "1in 1in",
+        }}
+        animate={{ opacity: hovered === "marketing" ? 1 : 0 }}
+        transition={transition}
+      />
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(circle at center, ${DOT_FINANCE} 1px, transparent 1px)`,
+          backgroundSize: "1in 1in",
+        }}
+        animate={{ opacity: hovered === "finance" ? 1 : 0 }}
+        transition={transition}
+      />
+    </div>
+  );
+
   return (
     <motion.main
-      className="relative flex min-h-screen flex-col bg-white"
-      animate={{ backgroundColor }}
+      className="relative flex min-h-screen flex-col"
       transition={transition}
     >
-      {/* Crosshairs: vertical and horizontal lines intersecting at cursor */}
+      {/* Dot grid portaled to body so it sits behind layout's z-10 wrapper (not covered by it) */}
+      {mounted &&
+        typeof document !== "undefined" &&
+        createPortal(dotGrid, document.body)}
+      {/* Crosshairs: vertical and horizontal lines (z-50 so above dot grid and content) */}
       <motion.div
         className="pointer-events-none fixed left-0 top-0 z-50 h-screen w-px -translate-x-px"
         style={{ left: springX }}
