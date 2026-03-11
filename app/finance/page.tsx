@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { FlyIn } from "@/components/FlyIn";
 
 const pitches = [
   {
@@ -19,20 +22,25 @@ export default function FinancePage() {
   return (
     <main>
       <div className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
-        <h1
-          className="font-serif text-3xl font-semibold tracking-tight text-[#0a192f] sm:text-4xl"
-          style={{ fontFamily: "var(--font-heading-serif)" }}
-        >
-          Pitches
-        </h1>
-        <p className="mt-2 font-serif text-base leading-relaxed text-[#0a192f]/70">
-          My stock pitches and investment theses. Click a row to open the PDF in a new tab.
-          All thoughts expressed are my own and not financial advice.
-        </p>
+        <FlyIn delay={0}>
+          <h1
+            className="font-serif text-3xl font-semibold tracking-tight text-[#0a192f] sm:text-4xl"
+            style={{ fontFamily: "var(--font-heading-serif)" }}
+          >
+            Pitches
+          </h1>
+          <p className="mt-2 font-serif text-base leading-relaxed text-[#0a192f]/70">
+            My stock pitches and investment theses. Click a row to open the PDF in a new tab.
+            All thoughts expressed are my own and not financial advice.
+          </p>
+        </FlyIn>
 
         {pitches.length === 0 ? (
-          <p className="mt-12 font-serif text-sm text-[#0a192f]/60">No pitches yet.</p>
+          <FlyIn delay={0.08}>
+            <p className="mt-12 font-serif text-sm text-[#0a192f]/60">No pitches yet.</p>
+          </FlyIn>
         ) : (
+          <FlyIn delay={0.1}>
           <div className="mt-10 overflow-hidden rounded-lg border border-[#0a192f]/10 bg-white">
             <table className="w-full border-collapse text-left">
               <thead>
@@ -77,6 +85,7 @@ export default function FinancePage() {
               </tbody>
             </table>
           </div>
+          </FlyIn>
         )}
       </div>
     </main>

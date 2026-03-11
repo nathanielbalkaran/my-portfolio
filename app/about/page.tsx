@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
+import { FlyIn } from "@/components/FlyIn";
 
 function CanvasLayer() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -133,15 +134,17 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[#fafafa] font-sans font-semibold antialiased">
       <CanvasLayer />
-      <div className="relative z-20">
-        <SiteHeader activeLink="about" />
-      </div>
+      <FlyIn delay={0}>
+        <div className="relative z-20">
+          <SiteHeader activeLink="about" />
+        </div>
+      </FlyIn>
 
       {/* Two-column layout */}
       <div className="relative z-10 mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-12 p-8 md:grid-cols-2 md:p-16">
           {/* Left column: text & experience */}
-          <div className="flex flex-col">
+          <FlyIn delay={0.08} className="flex flex-col">
             <h1 className="mb-8 text-4xl font-bold tracking-tight text-[#0a192f] md:text-5xl lg:text-6xl">
               About me
             </h1>
@@ -257,10 +260,10 @@ export default function AboutPage() {
                 </li>
               ))}
             </ul>
-          </div>
+          </FlyIn>
 
           {/* Right column: hero image */}
-          <div className="relative h-[600px] w-full overflow-hidden rounded-2xl">
+          <FlyIn delay={0.14} className="relative h-[600px] w-full overflow-hidden rounded-2xl">
             <Image
               src="/profile.jpg"
               alt="Nathaniel Balkaran"
@@ -269,7 +272,7 @@ export default function AboutPage() {
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
-          </div>
+          </FlyIn>
         </div>
       </div>
     </div>

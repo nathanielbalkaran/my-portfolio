@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
+import { FlyIn } from "@/components/FlyIn";
 import {
   motion,
   AnimatePresence,
@@ -115,13 +116,16 @@ export default function Page() {
         transition={transition}
       />
 
-      <header className="relative z-10">
-        <SiteHeader activeLink="home" />
-      </header>
+      <FlyIn delay={0}>
+        <header className="relative z-10">
+          <SiteHeader activeLink="home" />
+        </header>
+      </FlyIn>
 
       <section className="relative z-10 flex flex-1 items-center justify-center px-4">
         <div className="flex w-full max-w-4xl flex-col items-center">
-          <h1 className="mb-6 text-4xl font-medium tracking-tight text-finance-navy sm:text-5xl md:text-6xl">
+          <FlyIn delay={0.08}>
+            <h1 className="mb-6 text-4xl font-medium tracking-tight text-finance-navy sm:text-5xl md:text-6xl">
             <span className="font-sans">hi, i&apos;m </span>
             <Link
               href="/about"
@@ -173,9 +177,13 @@ export default function Page() {
               </AnimatePresence>
             </Link>
           </h1>
-          <h2 className="font-sans text-xs font-medium tracking-tighter text-finance-navy/60 sm:text-sm">
-            how can i help?
-          </h2>
+          </FlyIn>
+          <FlyIn delay={0.14}>
+            <h2 className="font-sans text-sm font-medium tracking-tighter text-finance-navy/60 sm:text-sm">
+              how can i help?
+            </h2>
+          </FlyIn>
+          <FlyIn delay={0.2}>
           <div className="mt-8 flex w-full max-w-3xl items-stretch justify-between gap-8">
             <Link href="/marketing" className="flex flex-1 items-center justify-center px-4">
             <motion.span
@@ -248,6 +256,7 @@ export default function Page() {
               </motion.span>
             </Link>
           </div>
+          </FlyIn>
         </div>
       </section>
 

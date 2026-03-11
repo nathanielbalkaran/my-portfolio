@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { SiteHeader } from "@/components/SiteHeader";
+import { FlyIn } from "@/components/FlyIn";
 
 type Project = {
   title: string;
@@ -88,18 +89,28 @@ export default function MarketingPage() {
 
   return (
     <div className="min-h-screen bg-[#fafafa] font-sans font-semibold antialiased">
-      <SiteHeader activeLink="marketing" />
+      <FlyIn delay={0}>
+        <SiteHeader activeLink="marketing" />
+      </FlyIn>
 
       <div className="p-6 md:p-8 lg:p-10">
         <div className="mx-auto max-w-6xl">
-          <div className="grid auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
-            {sortedProjects.map((project) => (
+          <FlyIn delay={0.06}>
+            <h1 className="font-sans text-3xl font-semibold tracking-tight text-[#0a192f] sm:text-4xl">
+              Projects
+            </h1>
+            <p className="mt-2 font-sans text-base leading-relaxed text-[#0a192f]/70">
+              My miscellaneous marketing projects and campaigns. Click a card to open the project in a new tab.
+            </p>
+          </FlyIn>
+          <div className="mt-10 grid auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+            {sortedProjects.map((project, index) => (
+              <FlyIn key={project.url} delay={0.1 + index * 0.05} className={project.span}>
               <motion.a
-                key={project.url}
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group relative flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ${project.span}`}
+                className="group relative flex flex-col overflow-hidden rounded-xl bg-white shadow-sm"
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
               >
@@ -149,6 +160,7 @@ export default function MarketingPage() {
                   </p>
                 </div>
               </motion.a>
+              </FlyIn>
             ))}
           </div>
         </div>
