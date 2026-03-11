@@ -160,9 +160,14 @@ export default function Page() {
           </h1>
           </FlyIn>
           <FlyIn delay={0.14}>
-            <h2 className="font-sans text-sm font-medium tracking-tighter text-finance-navy/60 sm:text-sm">
+            <motion.h2
+              className="font-sans text-sm font-medium tracking-tighter text-finance-navy/60 sm:text-sm"
+              whileHover={{ scale: 3 }}
+              whileFocus={{ scale: 3 }}
+              transition={{ type: "spring", stiffness: 260, damping: 18 }}
+            >
               how can i help?
-            </h2>
+            </motion.h2>
           </FlyIn>
           <FlyIn delay={0.2}>
           <div className="mt-8 flex w-full max-w-3xl items-stretch justify-between gap-8">

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { MarketTicker } from "@/components/MarketTicker";
 
 export type ActiveLink = "home" | "pitches" | "marketing" | "about" | null;
 
@@ -20,35 +21,38 @@ type SiteHeaderProps = {
 export function SiteHeader({ activeLink, useSerifFont = false }: SiteHeaderProps) {
   return (
     <header
-      className={`flex items-center justify-between border-b border-foreground/10 bg-background/80 py-4 px-8 backdrop-blur ${useSerifFont ? "font-serif" : "font-sans"}`}
+      className={`border-b border-foreground/10 bg-background/80 backdrop-blur ${useSerifFont ? "font-serif" : "font-sans"}`}
     >
-      <Link
-        href="/"
-        className="text-lg font-semibold text-foreground transition-opacity hover:opacity-90"
-      >
-        Nathaniel Balkaran
-      </Link>
-      <div className="flex items-center gap-4">
-        <nav className="flex gap-6 text-sm">
-          {NAV_LINKS.map(({ href, label }) => {
-            const isActive = activeLink === (label.toLowerCase() as ActiveLink);
-            return (
-              <Link
-                key={href}
-                href={href}
-                className={
-                  isActive
-                    ? "font-semibold text-foreground"
-                    : "text-foreground/70 transition-colors hover:text-foreground"
-                }
-              >
-                {label}
-              </Link>
-            );
-          })}
-        </nav>
-        <ThemeToggle />
+      <div className="flex items-center justify-between py-2 px-6">
+        <Link
+          href="/"
+          className="text-lg font-semibold text-foreground transition-opacity hover:opacity-90"
+        >
+          Nathaniel Balkaran
+        </Link>
+        <div className="flex items-center gap-3">
+          <nav className="flex gap-4 text-sm">
+            {NAV_LINKS.map(({ href, label }) => {
+              const isActive = activeLink === (label.toLowerCase() as ActiveLink);
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={
+                    isActive
+                      ? "font-semibold text-foreground"
+                      : "text-foreground/70 transition-colors hover:text-foreground"
+                  }
+                >
+                  {label}
+                </Link>
+              );
+            })}
+          </nav>
+          <ThemeToggle />
+        </div>
       </div>
+      <MarketTicker />
     </header>
   );
 }

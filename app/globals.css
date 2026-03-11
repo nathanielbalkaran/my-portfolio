@@ -36,5 +36,4 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif);
-  color: var(--finance-navy);
 }

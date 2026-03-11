@@ -1,104 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FlyIn } from "@/components/FlyIn";
-
-function CanvasLayer() {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const lastPointRef = useRef<{ x: number; y: number } | null>(null);
-  const rafRef = useRef<number | null>(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    const getIsDark = () => document.documentElement.classList.contains("dark");
-    const getBaseFill = () =>
-      getIsDark() ? "rgba(7, 11, 20, 1)" : "rgba(255, 255, 255, 1)";
-    const getFadeFill = () =>
-      getIsDark() ? "rgba(7, 11, 20, 0.12)" : "rgba(255, 255, 255, 0.1)";
-
-    const dpr = Math.max(2, window.devicePixelRatio || 2);
-
-    const resize = () => {
-      const { innerWidth: w, innerHeight: h } = window;
-      canvas.width = Math.floor(w * dpr);
-      canvas.height = Math.floor(h * dpr);
-      canvas.style.width = `${w}px`;
-      canvas.style.height = `${h}px`;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-      // Keep the canvas background aligned with the page.
-      ctx.fillStyle = getBaseFill();
-      ctx.fillRect(0, 0, w, h);
-    };
-
-    ctx.strokeStyle = "#10B981";
-    ctx.lineJoin = "round";
-    ctx.lineCap = "round";
-    ctx.lineWidth = 4;
-    ctx.shadowBlur = 4;
-    ctx.shadowColor = "#10B981";
-
-    resize();
-
-    const onMouseMove = (e: MouseEvent) => {
-      const x = e.clientX;
-      const y = e.clientY;
-
-      const last = lastPointRef.current;
-      if (!last) {
-        lastPointRef.current = { x, y };
-        return;
-      }
-
-      ctx.beginPath();
-      ctx.moveTo(last.x, last.y);
-      ctx.lineTo(x, y);
-      ctx.stroke();
-      lastPointRef.current = { x, y };
-    };
-
-    const onMouseLeave = () => {
-      lastPointRef.current = null;
-    };
-
-    const tick = () => {
-      const { innerWidth: w, innerHeight: h } = window;
-      ctx.fillStyle = getFadeFill();
-      ctx.fillRect(0, 0, w, h);
-      rafRef.current = window.requestAnimationFrame(tick);
-    };
-
-    window.addEventListener("resize", resize);
-    window.addEventListener("mousemove", onMouseMove, { passive: true });
-    window.addEventListener("mouseleave", onMouseLeave);
-    window.addEventListener("storage", resize);
-    rafRef.current = window.requestAnimationFrame(tick);
-
-    return () => {
-      window.removeEventListener("resize", resize);
-      window.removeEventListener("mousemove", onMouseMove);
-      window.removeEventListener("mouseleave", onMouseLeave);
-      window.removeEventListener("storage", resize);
-      if (rafRef.current) window.cancelAnimationFrame(rafRef.current);
-    };
-  }, []);
-
-  return (
-    <canvas
-      ref={canvasRef}
-      className="pointer-events-none fixed inset-0 z-0"
-      aria-hidden
-    />
-  );
-}
 
 const experience = [
   {
@@ -137,6 +43,8 @@ const experience = [
     logoSrc: "/logos/city-of-markham.png",
   },
 ];
+
+const linkedInHref = "https://www.linkedin.com/in/nathanielbalkaran";
 
 type HoverPreview = {
   href: string;
@@ -195,6 +103,9 @@ function LinkWithHoverPreview({
 
 export default function AboutPage() {
   const [hoverPreview, setHoverPreview] = useState<HoverPreview | null>(null);
+  const [experienceHover, setExperienceHover] = useState<{ x: number; y: number } | null>(
+    null,
+  );
 
   const hoverPreviewPrettyUrl = useMemo(() => {
     if (!hoverPreview) return "";
@@ -203,14 +114,13 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-background font-sans font-semibold text-finance-navy antialiased">
-      <CanvasLayer />
       <FlyIn delay={0}>
         <div className="relative z-20">
           <SiteHeader activeLink="about" />
         </div>
       </FlyIn>
 
-      {/* Two-column layout */}
+      {/* Bento-style layout */}
       <div className="relative z-10 mx-auto max-w-6xl">
         {hoverPreview ? (
           <div
@@ -232,162 +142,205 @@ export default function AboutPage() {
             </div>
           </div>
         ) : null}
-        <div className="grid grid-cols-1 gap-12 p-8 md:grid-cols-2 md:p-16">
-          {/* Left column: text & experience */}
-          <FlyIn delay={0.08} className="flex flex-col">
-            <h1 className="mb-8 !font-serif text-4xl font-bold tracking-tight text-finance-navy md:text-5xl lg:text-6xl">
-              About me
-            </h1>
-
-            <div className="space-y-5 font-sans text-lg text-finance-navy/80">
-              <p>
-                I am a first-year business student at{" "}
-                <LinkWithHoverPreview
-                  href="https://www.uwo.ca/"
-                  label="Western University"
-                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
-                  onPreviewStart={(next) => setHoverPreview(next)}
-                  onPreviewMove={({ x, y }) =>
-                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
-                  }
-                  onPreviewEnd={() => setHoverPreview(null)}
-                >
-                  Western University
-                </LinkWithHoverPreview>{" "}
-                with{" "}
-                <LinkWithHoverPreview
-                  href="https://www.ivey.uwo.ca/hba/admissions/secondary-school-students/"
-                  label="Ivey AEO Status"
-                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
-                  onPreviewStart={(next) => setHoverPreview(next)}
-                  onPreviewMove={({ x, y }) =>
-                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
-                  }
-                  onPreviewEnd={() => setHoverPreview(null)}
-                >
-                  Ivey AEO Status
-                </LinkWithHoverPreview>
-                . I am passionate about {" "}
-                <LinkWithHoverPreview
-                  href="https://link.blossomsocial.com/7uYa/u3jedbg1"
-                  label="Investing"
-                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
-                  onPreviewStart={(next) => setHoverPreview(next)}
-                  onPreviewMove={({ x, y }) =>
-                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
-                  }
-                  onPreviewEnd={() => setHoverPreview(null)}
-                >
-                  investing
-                </LinkWithHoverPreview>{" "}
-                 and understanding how markets
-                operate.
-              </p>
-              <p>
-                When I&apos;m not studying, I&apos;m working on social media
-                content{" "}
-                <LinkWithHoverPreview
-                  href="https://www.instagram.com/nathanielpredicts/"
-                  label="@nathanielpredicts"
-                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
-                  onPreviewStart={(next) => setHoverPreview(next)}
-                  onPreviewMove={({ x, y }) =>
-                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
-                  }
-                  onPreviewEnd={() => setHoverPreview(null)}
-                >
-                  @nathanielpredicts
-                </LinkWithHoverPreview>{" "}
-                or spending time outdoors{" "}
-                <LinkWithHoverPreview
-                  href="https://www.strava.com/athletes/85417714"
-                  label="Strava"
-                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
-                  onPreviewStart={(next) => setHoverPreview(next)}
-                  onPreviewMove={({ x, y }) =>
-                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
-                  }
-                  onPreviewEnd={() => setHoverPreview(null)}
-                >
-                  running, biking, or hiking. 
-                </LinkWithHoverPreview>
-                  {" "}I also love to snowboard and slalom waterski.
-              </p>
-              <p>
-                I take pride in my work and am always looking for new problems
-                to solve. {" "}
-                <LinkWithHoverPreview
-                  href="mailto:nbalkar2@uwo.ca"
-                  label="Email"
-                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
-                  onPreviewStart={(next) => setHoverPreview(next)}
-                  onPreviewMove={({ x, y }) =>
-                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
-                  }
-                  onPreviewEnd={() => setHoverPreview(null)}
-                >
-                  Lets connect!
-                </LinkWithHoverPreview>
-              </p>
+        {experienceHover ? (
+          <div
+            className="pointer-events-none fixed left-0 top-0 z-40 -translate-x-1/2 rounded-xl border border-foreground/15 bg-background/95 px-3 py-2 shadow-lg backdrop-blur"
+            style={{
+              transform: `translate(${experienceHover.x}px, ${experienceHover.y - 20}px) translate(-50%, -100%)`,
+            }}
+            aria-hidden
+          >
+            <div className="text-[11px] font-medium text-finance-navy/80">
+              View my full experience on LinkedIn
             </div>
+          </div>
+        ) : null}
+        <div className="grid grid-cols-1 gap-8 p-6 md:grid-cols-2 md:p-12">
+          {/* Left column: about + experience stacked (more vertical) */}
+          <div className="flex flex-col gap-8">
+            {/* About card */}
+            <FlyIn
+              delay={0.08}
+              className="flex flex-col rounded-3xl bg-white/5 p-8 shadow-sm"
+            >
+              <h1 className="mb-6 !font-serif text-4xl font-bold tracking-tight text-finance-navy md:text-5xl lg:text-6xl">
+                About me
+              </h1>
 
-            <h2 className="mt-10 mb-4 text-sm font-bold uppercase tracking-wider text-finance-navy/60">
-              Experience
-            </h2>
-            <ul className="space-y-5">
-              {experience.map((item) => (
-                <li
-                  key={item.company}
-                  className="flex items-center justify-between gap-4"
-                >
-                  <div className="flex min-w-0 flex-1 items-center gap-4">
-                    <div
-                      className={`relative h-10 w-10 shrink-0 overflow-hidden rounded-full ${item.logoBg}`}
+              <div className="space-y-5 font-sans text-lg text-finance-navy/80 text-justify">
+                <p>
+                  I am a first-year business student at{" "}
+                  <LinkWithHoverPreview
+                    href="https://www.uwo.ca/"
+                    label="Western University"
+                    className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                    onPreviewStart={(next) => setHoverPreview(next)}
+                    onPreviewMove={({ x, y }) =>
+                      setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                    }
+                    onPreviewEnd={() => setHoverPreview(null)}
+                  >
+                    Western University
+                  </LinkWithHoverPreview>{" "}
+                  with{" "}
+                  <LinkWithHoverPreview
+                    href="https://www.ivey.uwo.ca/hba/admissions/secondary-school-students/"
+                    label="Ivey AEO Status"
+                    className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                    onPreviewStart={(next) => setHoverPreview(next)}
+                    onPreviewMove={({ x, y }) =>
+                      setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                    }
+                    onPreviewEnd={() => setHoverPreview(null)}
+                  >
+                    Ivey AEO Status
+                  </LinkWithHoverPreview>
+                  . I am passionate about{" "}
+                  <LinkWithHoverPreview
+                    href="https://link.blossomsocial.com/7uYa/u3jedbg1"
+                    label="Investing"
+                    className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                    onPreviewStart={(next) => setHoverPreview(next)}
+                    onPreviewMove={({ x, y }) =>
+                      setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                    }
+                    onPreviewEnd={() => setHoverPreview(null)}
+                  >
+                    investing
+                  </LinkWithHoverPreview>{" "}
+                  and understanding how markets operate.
+                </p>
+                <p>
+                  When I&apos;m not studying, I&apos;m working on social media content{" "}
+                  <LinkWithHoverPreview
+                    href="https://www.instagram.com/nathanielpredicts/"
+                    label="@nathanielpredicts"
+                    className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                    onPreviewStart={(next) => setHoverPreview(next)}
+                    onPreviewMove={({ x, y }) =>
+                      setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                    }
+                    onPreviewEnd={() => setHoverPreview(null)}
+                  >
+                    @nathanielpredicts
+                  </LinkWithHoverPreview>{" "}
+                  or spending time outdoors{" "}
+                  <LinkWithHoverPreview
+                    href="https://www.strava.com/athletes/85417714"
+                    label="Strava"
+                    className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                    onPreviewStart={(next) => setHoverPreview(next)}
+                    onPreviewMove={({ x, y }) =>
+                      setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                    }
+                    onPreviewEnd={() => setHoverPreview(null)}
+                  >
+                    running, biking, or hiking.
+                  </LinkWithHoverPreview>{" "}
+                  I also love to snowboard and slalom waterski.
+                </p>
+                <p>
+                  I take pride in my work and am always looking for new problems to solve.{" "}
+                  <LinkWithHoverPreview
+                    href="mailto:nbalkar2@uwo.ca"
+                    label="Email"
+                    className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                    onPreviewStart={(next) => setHoverPreview(next)}
+                    onPreviewMove={({ x, y }) =>
+                      setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                    }
+                    onPreviewEnd={() => setHoverPreview(null)}
+                  >
+                    Lets connect!
+                  </LinkWithHoverPreview>
+                </p>
+              </div>
+            </FlyIn>
+
+            {/* Experience card */}
+            <FlyIn
+              delay={0.16}
+              className="flex flex-col rounded-3xl bg-white/5 p-6 shadow-sm"
+            >
+              <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-finance-navy/60">
+                Experience
+              </h2>
+              <ul className="space-y-4">
+                {experience.map((item) => (
+                  <li
+                    key={item.company}
+                    className="group"
+                  >
+                    <Link
+                      href={linkedInHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-between gap-4 rounded-xl px-3 py-2 transition hover:bg-background/40"
+                      onMouseEnter={(e) =>
+                        setExperienceHover({ x: e.clientX, y: e.clientY })
+                      }
+                      onMouseMove={(e) =>
+                        setExperienceHover({ x: e.clientX, y: e.clientY })
+                      }
+                      onMouseLeave={() => setExperienceHover(null)}
                     >
-                      {item.logoSrc ? (
-                        <Image
-                          src={item.logoSrc}
-                          alt={`${item.company} logo`}
-                          fill
-                          className="object-cover"
-                          sizes="40px"
-                        />
-                      ) : (
-                        <span className="flex h-full w-full items-center justify-center text-xs font-bold text-white">
-                          {item.company
-                            .split(" ")
-                            .filter(Boolean)
-                            .slice(0, 2)
-                            .map((w) => w[0]?.toUpperCase())
-                            .join("")}
-                        </span>
-                      )}
-                    </div>
-                    <div className="min-w-0">
-                      <p className="font-bold text-finance-navy">
-                        {item.company}
-                      </p>
-                      <p className="text-sm text-finance-navy/60">{item.role}</p>
-                    </div>
-                  </div>
-                  <span className="shrink-0 text-sm text-finance-navy/60">
-                    {item.date}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </FlyIn>
+                      <div className="flex min-w-0 flex-1 items-center gap-4">
+                        <div
+                          className={`relative h-10 w-10 shrink-0 overflow-hidden rounded-full ${item.logoBg}`}
+                        >
+                          {item.logoSrc ? (
+                            <Image
+                              src={item.logoSrc}
+                              alt={`${item.company} logo`}
+                              fill
+                              className="object-cover"
+                              sizes="40px"
+                            />
+                          ) : (
+                            <span className="flex h-full w-full items-center justify-center text-xs font-bold text-white">
+                              {item.company
+                                .split(" ")
+                                .filter(Boolean)
+                                .slice(0, 2)
+                                .map((w) => w[0]?.toUpperCase())
+                                .join("")}
+                            </span>
+                          )}
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-bold text-finance-navy">
+                            {item.company}
+                          </p>
+                          <p className="text-sm text-finance-navy/60">
+                            {item.role}
+                          </p>
+                        </div>
+                      </div>
+                      <span className="shrink-0 text-xs text-finance-navy/60">
+                        {item.date}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </FlyIn>
+          </div>
 
-          {/* Right column: hero image */}
-          <FlyIn delay={0.14} className="relative h-[600px] w-full overflow-hidden rounded-2xl">
-            <Image
-              src="/profile.jpg"
-              alt="Nathaniel Balkaran"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
-            />
+          {/* Right column: larger portrait card, similar to original height */}
+          <FlyIn
+            delay={0.12}
+            className="relative h-[600px] w-full overflow-hidden rounded-3xl bg-white/5 p-3 shadow-sm"
+          >
+            <div className="relative h-full w-full overflow-hidden rounded-2xl">
+              <Image
+                src="/profile.jpg"
+                alt="Nathaniel Balkaran"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+            </div>
           </FlyIn>
         </div>
       </div>

@@ -38,7 +38,7 @@ const projects: Project[] = [
     tags: ["Instagram", "TikTok", "Video"],
     url: "https://www.instagram.com/nathanielpredicts/",
     color: "bg-gradient-to-br from-purple-500 to-pink-500",
-    span: "col-span-1 row-span-2",
+    span: "col-span-1 row-span-3",
     image: "/Instagram.jpeg",
     year: 2026,
   },
@@ -105,7 +105,11 @@ export default function MarketingPage() {
           </FlyIn>
           <div className="mt-10 grid auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
             {sortedProjects.map((project, index) => (
-              <FlyIn key={project.url} delay={0.1 + index * 0.05} className={project.span}>
+              <FlyIn
+                key={`${project.url}-${project.title}-${index}`}
+                delay={0.1 + index * 0.05}
+                className={project.span}
+              >
               <motion.a
                 href={project.url}
                 target="_blank"
@@ -135,23 +139,21 @@ export default function MarketingPage() {
                     <line x1="10" y1="14" x2="21" y2="3" />
                   </svg>
                 </div>
-                {/* Image / color block — scales down on card hover */}
+                {/* Image / color block — scales down on hover, keeps rounded corners */}
                 <div
-                  className={`relative min-h-0 flex-1 overflow-hidden ${!project.image ? project.color : ""}`}
+                  className={`relative min-h-0 flex-1 overflow-hidden rounded-t-xl ${!project.image ? project.color : ""}`}
                 >
                   {project.image ? (
-                    <div className="h-full w-full transition-transform duration-300 ease-out group-hover:scale-95">
-                      <img
-                        src={project.image}
-                        alt=""
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
+                    <img
+                      src={project.image}
+                      alt=""
+                      className="h-full w-full rounded-t-xl object-cover transition-transform duration-300 ease-out hover:scale-95"
+                    />
                   ) : null}
                 </div>
                 {/* Text block — scales up on card hover */}
-                <div className="origin-bottom border-t border-foreground/10 bg-background px-5 py-4 transition-transform duration-300 ease-out group-hover:scale-[1.03] dark:bg-transparent">
-                  <h2 className="font-sans text-lg font-bold leading-tight text-foreground md:text-xl">
+                <div className="origin-bottom border-t border-foreground/10 bg-background px-5 py-4 text-foreground transition-transform duration-300 ease-out group-hover:scale-[1.03] dark:bg-transparent">
+                  <h2 className="font-sans text-lg font-bold leading-tight md:text-xl">
                     {project.title}
                   </h2>
                   <p className="mt-1 font-sans text-sm font-medium text-foreground/60">

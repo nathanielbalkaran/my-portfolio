@@ -10,7 +10,7 @@ const NEO_SHADOW_ACTIVE = "0px 0px 0px rgba(0,0,0,1)";
 export default function MarketingBento() {
   return (
     <div
-      className="grid auto-rows-[250px] grid-cols-1 gap-6 font-sans font-bold md:grid-cols-3 lg:grid-cols-4"
+      className="grid grid-flow-dense auto-rows-[minmax(0,1fr)] grid-cols-1 gap-6 font-sans font-bold md:grid-cols-3 lg:grid-cols-4"
       style={{ fontFamily: "var(--font-body-sans)" }}
     >
       {/* Card 1: TikTok / Vertical Video — col-span-1 row-span-2, 9:16 */}
@@ -39,7 +39,7 @@ export default function MarketingBento() {
 
       {/* Card 2: YouTube Short Film — col-span-2 row-span-2, 16:9, title overlay */}
       <motion.div
-        className="col-span-2 row-span-2 overflow-hidden rounded-xl bg-[#0066FF]"
+        className="group col-span-2 row-span-2 overflow-hidden rounded-xl bg-[#0066FF]"
         style={{ boxShadow: NEO_SHADOW }}
         whileHover={{ scale: 0.97, rotate: CARD_HOVER_ROTATIONS[1] }}
         whileTap={{
@@ -111,7 +111,7 @@ export default function MarketingBento() {
 
       {/* Card 5: Campaign Strategy — col-span-1 row-span-1, text block */}
       <motion.div
-        className="col-span-1 row-span-1 flex flex-col justify-center rounded-xl bg-[#000000] px-5 py-4 text-white"
+        className="group col-span-1 row-span-1 flex flex-col justify-start rounded-xl bg-[#000000] px-5 py-4 text-white"
         style={{ boxShadow: NEO_SHADOW }}
         whileHover={{ scale: 0.97, rotate: CARD_HOVER_ROTATIONS[4] }}
         whileTap={{
@@ -123,7 +123,9 @@ export default function MarketingBento() {
         <p className="font-black uppercase leading-tight tracking-tight">
           E-commerce Campaign
         </p>
-        <p className="mt-1 text-2xl font-black text-[#CCFF00]">300% Growth</p>
+        <p className="mt-1 text-2xl font-black text-[#CCFF00]">
+          300% Growth
+        </p>
       </motion.div>
     </div>
   );
