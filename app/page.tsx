@@ -260,36 +260,6 @@ export default function Page() {
         </div>
       </section>
 
-      <footer className="fixed inset-x-0 bottom-0 z-10 border-t border-gray-200 bg-white/95 px-4 py-2 text-[10px] text-gray-400 sm:text-xs">
-        <div className="flex items-center justify-between gap-4">
-          <p className="max-w-xl">
-            Disclaimer: Content is for educational purposes only and does not
-            constitute professional investment advice.
-          </p>
-          <div className="flex shrink-0 gap-3 text-[10px] sm:text-xs">
-            <a
-              href="/resume"
-              className="transition-colors hover:text-emerald"
-            >
-              Resume
-            </a>
-            <a
-              href="mailto:hello@example.com"
-              className="transition-colors hover:text-emerald"
-            >
-              Email
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-              className="transition-colors hover:text-emerald"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </footer>
     </motion.main>
   );
 }
