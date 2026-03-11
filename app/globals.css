@@ -7,6 +7,12 @@
   --emerald: #10b981;
 }
 
+.dark {
+  --background: #070b14;
+  --foreground: #f8fafc;
+  --finance-navy: #f8fafc;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

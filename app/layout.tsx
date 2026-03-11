@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const bodySans = Inter({
   variable: "--font-body-sans",
@@ -27,16 +28,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${bodySans.variable} ${headingSerif.variable} min-h-screen bg-background text-finance-navy antialiased`}
       >
-        <div className="relative z-10 flex min-h-screen flex-col">
-          {children}
-          <div className="relative z-30 shrink-0">
-            <Footer />
+        <ThemeProvider>
+          <div className="relative z-10 flex min-h-screen flex-col">
+            {children}
+            <div className="relative z-30 shrink-0">
+              <Footer />
+            </div>
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );

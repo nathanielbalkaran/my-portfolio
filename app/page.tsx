@@ -146,10 +146,10 @@ export default function Page() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -8, scale: 0.96 }}
                     transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
-                    className="absolute left-1/2 top-full z-50 mt-3 w-[320px] -translate-x-1/2 overflow-hidden rounded-xl border border-gray-200 bg-[#fafafa] shadow-xl"
+                    className="absolute left-1/2 top-full z-50 mt-3 w-[320px] -translate-x-1/2 overflow-hidden rounded-xl border border-foreground/10 bg-background shadow-xl ring-1 ring-foreground/10 dark:bg-foreground/5"
                   >
                     <div className="p-4">
-                      <h2 className="mb-2 text-lg font-bold tracking-tight text-[#0a192f]">
+                      <h2 className="mb-2 text-lg font-bold tracking-tight text-foreground">
                         About me
                       </h2>
                       <div className="flex gap-3">
@@ -162,7 +162,7 @@ export default function Page() {
                             sizes="64px"
                           />
                         </div>
-                        <p className="line-clamp-3 text-sm text-gray-700">
+                        <p className="line-clamp-3 text-sm text-foreground/70">
                           First-year business student at Western University with
                           Ivey AEO Status. Passionate about investing and
                           understanding how markets operate.

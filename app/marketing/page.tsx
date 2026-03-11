@@ -88,7 +88,7 @@ export default function MarketingPage() {
   const sortedProjects = sortProjectsByYearNewestFirst(projects);
 
   return (
-    <div className="min-h-screen bg-[#fafafa] font-sans font-semibold antialiased">
+    <div className="min-h-screen bg-background font-sans font-semibold text-finance-navy antialiased">
       <FlyIn delay={0}>
         <SiteHeader activeLink="marketing" />
       </FlyIn>
@@ -96,10 +96,10 @@ export default function MarketingPage() {
       <div className="p-6 pb-24 md:p-8 md:pb-28 lg:p-10 lg:pb-32">
         <div className="mx-auto max-w-6xl">
           <FlyIn delay={0.06}>
-            <h1 className="font-sans text-3xl font-semibold tracking-tight text-[#0a192f] sm:text-4xl">
+            <h1 className="font-sans text-3xl font-semibold tracking-tight text-finance-navy sm:text-4xl">
               Projects
             </h1>
-            <p className="mt-2 font-sans text-base leading-relaxed text-[#0a192f]/70">
+            <p className="mt-2 font-sans text-base leading-relaxed text-finance-navy/70">
               My miscellaneous marketing projects and campaigns.
             </p>
           </FlyIn>
@@ -110,13 +110,13 @@ export default function MarketingPage() {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex flex-col overflow-hidden rounded-xl bg-white shadow-sm"
+                className="group relative flex flex-col overflow-hidden rounded-xl bg-background shadow-sm ring-1 ring-foreground/10 dark:bg-foreground/5"
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
               >
                 {/* Open in new tab indicator — visible on hover */}
                 <div
-                  className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-background shadow-md opacity-0 ring-1 ring-foreground/10 transition-opacity duration-200 group-hover:opacity-100 dark:bg-foreground/10"
                   aria-hidden
                 >
                   <svg
@@ -128,7 +128,7 @@ export default function MarketingPage() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="text-gray-900"
+                    className="text-foreground"
                   >
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                     <polyline points="15 3 21 3 21 9" />
@@ -150,11 +150,11 @@ export default function MarketingPage() {
                   ) : null}
                 </div>
                 {/* Text block — scales up on card hover */}
-                <div className="origin-bottom border-t border-gray-100 bg-white px-5 py-4 transition-transform duration-300 ease-out group-hover:scale-[1.03]">
-                  <h2 className="text-lg font-bold leading-tight text-gray-900 md:text-xl">
+                <div className="origin-bottom border-t border-foreground/10 bg-background px-5 py-4 transition-transform duration-300 ease-out group-hover:scale-[1.03] dark:bg-transparent">
+                  <h2 className="font-sans text-lg font-bold leading-tight text-foreground md:text-xl">
                     {project.title}
                   </h2>
-                  <p className="mt-1 text-sm font-medium text-gray-500">
+                  <p className="mt-1 font-sans text-sm font-medium text-foreground/60">
                     {project.tags.join(" • ")}
                     {project.year != null ? ` • ${project.year}` : ""}
                   </p>

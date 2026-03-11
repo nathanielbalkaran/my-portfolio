@@ -18,6 +18,12 @@ function CanvasLayer() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    const getIsDark = () => document.documentElement.classList.contains("dark");
+    const getBaseFill = () =>
+      getIsDark() ? "rgba(7, 11, 20, 1)" : "rgba(255, 255, 255, 1)";
+    const getFadeFill = () =>
+      getIsDark() ? "rgba(7, 11, 20, 0.12)" : "rgba(255, 255, 255, 0.1)";
+
     const dpr = Math.max(2, window.devicePixelRatio || 2);
 
     const resize = () => {
@@ -29,7 +35,7 @@ function CanvasLayer() {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
       // Keep the canvas background aligned with the page.
-      ctx.fillStyle = "rgba(255, 255, 255, 1)";
+      ctx.fillStyle = getBaseFill();
       ctx.fillRect(0, 0, w, h);
     };
 
@@ -65,7 +71,7 @@ function CanvasLayer() {
 
     const tick = () => {
       const { innerWidth: w, innerHeight: h } = window;
-      ctx.fillStyle = "rgba(255, 255, 255, 0.1)";
+      ctx.fillStyle = getFadeFill();
       ctx.fillRect(0, 0, w, h);
       rafRef.current = window.requestAnimationFrame(tick);
     };
@@ -73,12 +79,14 @@ function CanvasLayer() {
     window.addEventListener("resize", resize);
     window.addEventListener("mousemove", onMouseMove, { passive: true });
     window.addEventListener("mouseleave", onMouseLeave);
+    window.addEventListener("storage", resize);
     rafRef.current = window.requestAnimationFrame(tick);
 
     return () => {
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("mouseleave", onMouseLeave);
+      window.removeEventListener("storage", resize);
       if (rafRef.current) window.cancelAnimationFrame(rafRef.current);
     };
   }, []);
@@ -132,7 +140,7 @@ const experience = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-[#fafafa] font-sans font-semibold antialiased">
+    <div className="min-h-screen bg-background font-sans font-semibold text-finance-navy antialiased">
       <CanvasLayer />
       <FlyIn delay={0}>
         <div className="relative z-20">
@@ -145,18 +153,18 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-12 p-8 md:grid-cols-2 md:p-16">
           {/* Left column: text & experience */}
           <FlyIn delay={0.08} className="flex flex-col">
-            <h1 className="mb-8 !font-serif text-4xl font-bold tracking-tight text-[#0a192f] md:text-5xl lg:text-6xl">
+            <h1 className="mb-8 !font-serif text-4xl font-bold tracking-tight text-finance-navy md:text-5xl lg:text-6xl">
               About me
             </h1>
 
-            <div className="space-y-5 font-sans text-lg text-gray-800">
+            <div className="space-y-5 font-sans text-lg text-finance-navy/80">
               <p>
                 I am a first-year business student at{" "}
                 <Link
                   href="https://www.uwo.ca/"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold text-[#FF7A00] underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
+                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
                 >
                   Western University
                 </Link>{" "}
@@ -165,7 +173,7 @@ export default function AboutPage() {
                   href="https://www.ivey.uwo.ca/hba/admissions/secondary-school-students/"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold text-[#FF7A00] underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
+                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
                 >
                   Ivey AEO Status
                 </Link>
@@ -174,7 +182,7 @@ export default function AboutPage() {
                   href="https://link.blossomsocial.com/7uYa/u3jedbg1"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold text-[#FF7A00] underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
+                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
                 >
                   investing
                 </Link>{" "}
@@ -188,7 +196,7 @@ export default function AboutPage() {
                   href="https://www.instagram.com/nathanielpredicts/"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold text-[#FF7A00] underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
+                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
                 >
                   @nathanielpredicts
                 </Link>{" "}
@@ -197,7 +205,7 @@ export default function AboutPage() {
                   href="https://www.strava.com/athletes/85417714"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold text-[#FF7A00] underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
+                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
                 >
                   running, biking, or hiking. 
                 </Link>
@@ -210,14 +218,14 @@ export default function AboutPage() {
                   href="mailto:nbalkar2@uwo.ca"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold text-[#FF7A00] underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
+                  className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
                 >
                   Lets connect!
                 </Link>
               </p>
             </div>
 
-            <h2 className="mt-10 mb-4 text-sm font-bold uppercase tracking-wider text-gray-500">
+            <h2 className="mt-10 mb-4 text-sm font-bold uppercase tracking-wider text-finance-navy/60">
               Experience
             </h2>
             <ul className="space-y-5">
@@ -250,11 +258,13 @@ export default function AboutPage() {
                       )}
                     </div>
                     <div className="min-w-0">
-                      <p className="font-bold text-[#0a192f]">{item.company}</p>
-                      <p className="text-sm text-gray-500">{item.role}</p>
+                      <p className="font-bold text-finance-navy">
+                        {item.company}
+                      </p>
+                      <p className="text-sm text-finance-navy/60">{item.role}</p>
                     </div>
                   </div>
-                  <span className="shrink-0 text-sm text-gray-500">
+                  <span className="shrink-0 text-sm text-finance-navy/60">
                     {item.date}
                   </span>
                 </li>

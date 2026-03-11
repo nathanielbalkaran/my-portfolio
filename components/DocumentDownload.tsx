@@ -15,7 +15,7 @@ export function DocumentDownload({
     <a
       href={href}
       download
-      className="inline-flex items-center gap-2 rounded-md border border-[#0a192f]/12 bg-[#0a192f] px-4 py-2.5 text-sm font-medium text-white no-underline transition-colors hover:bg-emerald hover:border-emerald focus:outline-none focus:ring-2 focus:ring-emerald/50 focus:ring-offset-2 focus:ring-offset-[#faf9f7]"
+      className="inline-flex items-center gap-2 rounded-md border border-foreground/15 bg-foreground px-4 py-2.5 text-sm font-medium text-background no-underline transition-colors hover:border-emerald hover:bg-emerald focus:outline-none focus:ring-2 focus:ring-emerald/50 focus:ring-offset-2 focus:ring-offset-background"
     >
       {type === "pdf" && (
         <svg

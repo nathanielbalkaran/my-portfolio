@@ -24,12 +24,12 @@ export default function FinancePage() {
       <div className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
         <FlyIn delay={0}>
           <h1
-            className="font-serif text-3xl font-semibold tracking-tight text-[#0a192f] sm:text-4xl"
+            className="font-serif text-3xl font-semibold tracking-tight text-finance-navy sm:text-4xl"
             style={{ fontFamily: "var(--font-heading-serif)" }}
           >
             Pitches
           </h1>
-          <p className="mt-2 font-serif text-base leading-relaxed text-[#0a192f]/70">
+          <p className="mt-2 font-serif text-base leading-relaxed text-finance-navy/70">
             My stock pitches and investment theses.
             All thoughts expressed are my own and not financial advice.
           </p>
@@ -37,21 +37,23 @@ export default function FinancePage() {
 
         {pitches.length === 0 ? (
           <FlyIn delay={0.08}>
-            <p className="mt-12 font-serif text-sm text-[#0a192f]/60">No pitches yet.</p>
+            <p className="mt-12 font-serif text-sm text-finance-navy/60">
+              No pitches yet.
+            </p>
           </FlyIn>
         ) : (
           <FlyIn delay={0.1}>
-          <div className="mt-10 overflow-hidden rounded-lg border border-[#0a192f]/10 bg-white">
+          <div className="mt-10 overflow-hidden rounded-lg border border-foreground/10 bg-background shadow-sm ring-1 ring-foreground/10 dark:bg-foreground/5">
             <table className="w-full border-collapse text-left">
               <thead>
-                <tr className="border-b border-[#0a192f]/10 bg-[#0a192f]/[0.02]">
-                  <th className="px-5 py-3 font-serif text-xs font-semibold uppercase tracking-wider text-[#0a192f]/70">
+                <tr className="border-b border-foreground/10 bg-foreground/[0.03]">
+                  <th className="px-5 py-3 font-serif text-xs font-semibold uppercase tracking-wider text-foreground/70">
                     Ticker
                   </th>
-                  <th className="px-5 py-3 font-serif text-xs font-semibold uppercase tracking-wider text-[#0a192f]/70">
+                  <th className="px-5 py-3 font-serif text-xs font-semibold uppercase tracking-wider text-foreground/70">
                     Title
                   </th>
-                  <th className="px-5 py-3 font-serif text-xs font-semibold uppercase tracking-wider text-[#0a192f]/70">
+                  <th className="px-5 py-3 font-serif text-xs font-semibold uppercase tracking-wider text-foreground/70">
                     Date
                   </th>
                 </tr>
@@ -60,7 +62,7 @@ export default function FinancePage() {
                 {pitches.map((p) => (
                   <tr
                     key={p.pdfUrl}
-                    className="border-b border-[#0a192f]/05 transition-colors last:border-b-0 hover:bg-[#0a192f]/[0.02]"
+                    className="border-b border-foreground/10 transition-colors last:border-b-0 hover:bg-foreground/5"
                   >
                     <td colSpan={3} className="p-0">
                       <Link
@@ -69,13 +71,13 @@ export default function FinancePage() {
                         rel="noopener noreferrer"
                         className="grid grid-cols-[minmax(0,1fr)_minmax(0,3fr)_minmax(0,1fr)] text-left no-underline"
                       >
-                        <span className="px-5 py-3.5 font-serif text-sm font-medium text-[#0a192f]">
+                        <span className="px-5 py-3.5 font-serif text-sm font-medium text-foreground">
                           {p.ticker}
                         </span>
-                        <span className="px-5 py-3.5 font-serif text-sm font-medium text-[#0a192f]">
+                        <span className="px-5 py-3.5 font-serif text-sm font-medium text-foreground">
                           {p.title}
                         </span>
-                        <span className="px-5 py-3.5 font-serif text-sm text-[#0a192f]/60">
+                        <span className="px-5 py-3.5 font-serif text-sm text-foreground/60">
                           {p.date}
                         </span>
                       </Link>

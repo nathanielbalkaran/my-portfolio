@@ -33,22 +33,22 @@ export default async function FinancePitchPage({ params }: Props) {
       <article className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
           <Link
             href="/finance"
-            className="mb-8 inline-block font-sans text-sm text-[#0a192f]/60 underline-offset-2 hover:text-emerald hover:underline"
+            className="mb-8 inline-block font-sans text-sm text-foreground/60 underline-offset-2 hover:text-emerald hover:underline"
           >
             ← Back to Pitches
           </Link>
 
-          <header className="mb-12 border-b border-[#0a192f]/10 pb-8">
-            <p className="font-mono text-sm font-medium text-[#0a192f]/70">
+          <header className="mb-12 border-b border-foreground/10 pb-8">
+            <p className="font-mono text-sm font-medium text-foreground/70">
               {pitch.ticker}
             </p>
             <h1
-              className="mt-2 font-serif text-3xl font-semibold tracking-tight text-[#0a192f] sm:text-4xl"
+              className="mt-2 font-serif text-3xl font-semibold tracking-tight text-finance-navy sm:text-4xl"
               style={{ fontFamily: "var(--font-heading-serif)" }}
             >
               {pitch.title}
             </h1>
-            <p className="mt-2 font-sans text-sm text-[#0a192f]/60">
+            <p className="mt-2 font-sans text-sm text-foreground/60">
               {pitch.date
                 ? new Date(pitch.date).toLocaleDateString("en-US", {
                     year: "numeric",
@@ -60,7 +60,7 @@ export default async function FinancePitchPage({ params }: Props) {
           </header>
 
           <div
-            className="prose prose-lg max-w-none font-sans text-[#0a192f] prose-headings:font-serif prose-h1:font-serif prose-h2:font-serif prose-h3:font-serif prose-h1:text-[#0a192f] prose-h2:text-[#0a192f] prose-h3:text-[#0a192f] prose-p:text-[#0a192f] prose-a:text-emerald prose-a:no-underline hover:prose-a:underline prose-strong:text-[#0a192f] prose-li:text-[#0a192f]"
+            className="prose prose-lg max-w-none font-sans text-foreground prose-headings:font-serif prose-a:text-emerald prose-a:no-underline hover:prose-a:underline dark:prose-invert"
           >
             <MDXRemote source={pitch.content} components={mdxComponents} />
           </div>

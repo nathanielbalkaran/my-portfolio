@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export type ActiveLink = "home" | "pitches" | "marketing" | "about" | null;
 
@@ -19,25 +20,35 @@ type SiteHeaderProps = {
 export function SiteHeader({ activeLink, useSerifFont = false }: SiteHeaderProps) {
   return (
     <header
-      className={`flex justify-between items-center py-4 px-8 border-b border-gray-200 ${useSerifFont ? "font-serif" : "font-sans"}`}
+      className={`flex items-center justify-between border-b border-foreground/10 bg-background/80 py-4 px-8 backdrop-blur ${useSerifFont ? "font-serif" : "font-sans"}`}
     >
-      <Link href="/" className="text-lg font-semibold text-black hover:opacity-90">
+      <Link
+        href="/"
+        className="text-lg font-semibold text-foreground transition-opacity hover:opacity-90"
+      >
         Nathaniel Balkaran
       </Link>
-      <nav className="flex gap-6 text-sm">
-        {NAV_LINKS.map(({ href, label }) => {
-          const isActive = activeLink === (label.toLowerCase() as ActiveLink);
-          return (
-            <Link
-              key={href}
-              href={href}
-              className={isActive ? "font-semibold text-black" : "text-gray-500 hover:text-black"}
-            >
-              {label}
-            </Link>
-          );
-        })}
-      </nav>
+      <div className="flex items-center gap-4">
+        <nav className="flex gap-6 text-sm">
+          {NAV_LINKS.map(({ href, label }) => {
+            const isActive = activeLink === (label.toLowerCase() as ActiveLink);
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={
+                  isActive
+                    ? "font-semibold text-foreground"
+                    : "text-foreground/70 transition-colors hover:text-foreground"
+                }
+              >
+                {label}
+              </Link>
+            );
+          })}
+        </nav>
+        <ThemeToggle />
+      </div>
     </header>
   );
 }
