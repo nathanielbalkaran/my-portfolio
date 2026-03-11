@@ -100,8 +100,7 @@ export default function MarketingPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`group relative flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ${project.span}`}
-                whileHover={{ scale: 0.98, rotate: 1 }}
-                whileTap={{ scale: 0.95 }}
+                whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
               >
                 {/* Open in new tab indicator — visible on hover */}
@@ -125,20 +124,22 @@ export default function MarketingPage() {
                     <line x1="10" y1="14" x2="21" y2="3" />
                   </svg>
                 </div>
-                {/* Image / color block — no text overlay */}
+                {/* Image / color block — scales down on card hover */}
                 <div
-                  className={`relative min-h-0 flex-1 ${!project.image ? project.color : ""}`}
+                  className={`relative min-h-0 flex-1 overflow-hidden ${!project.image ? project.color : ""}`}
                 >
                   {project.image ? (
-                    <img
-                      src={project.image}
-                      alt=""
-                      className="h-full w-full object-cover"
-                    />
+                    <div className="h-full w-full transition-transform duration-300 ease-out group-hover:scale-95">
+                      <img
+                        src={project.image}
+                        alt=""
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
                   ) : null}
                 </div>
-                {/* Text block below — solid light background */}
-                <div className="border-t border-gray-100 bg-white px-5 py-4">
+                {/* Text block — scales up on card hover */}
+                <div className="origin-bottom border-t border-gray-100 bg-white px-5 py-4 transition-transform duration-300 ease-out group-hover:scale-[1.03]">
                   <h2 className="text-lg font-bold leading-tight text-gray-900 md:text-xl">
                     {project.title}
                   </h2>
