@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa;
+  --foreground: #0a192f;
+  --finance-navy: #0a192f;
+  --emerald: #10b981;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-finance-navy: var(--finance-navy);
+  --color-emerald: var(--emerald);
+  --font-sans: var(--font-body-sans);
+  --font-serif: var(--font-heading-serif);
+}
+
+body {
+  background: var(--background);
+  color: var(--finance-navy);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  color: var(--finance-navy);
+}

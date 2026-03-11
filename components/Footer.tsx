@@ -1,0 +1,84 @@
+import Link from "next/link";
+
+const pages = [
+  { href: "/", label: "Home" },
+  { href: "/finance", label: "Pitches" },
+  { href: "/marketing", label: "Marketing" },
+  { href: "/about", label: "About" },
+];
+
+export function Footer() {
+  return (
+    <footer className="bg-[#0A0A0A] text-white py-16 px-8">
+      {/* Top Section: 4 columns */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 text-sm">
+        {/* Col 1: Brand */}
+        <div>
+          <span className="font-semibold">Nathaniel Balkaran</span>
+        </div>
+
+        {/* Col 2: Pages */}
+        <nav aria-label="Footer pages">
+          <ul className="space-y-2">
+            {pages.map(({ href, label }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Col 3: Connect */}
+        <div>
+          <ul className="space-y-2">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nathanielbalkaran"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:nbalkar2@uwo.ca"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Col 4: Colophon */}
+        <p className="text-gray-500">
+          Built with Next.js and Tailwind. Deployed on Vercel. Help from Cursor
+          and Gemini.
+        </p>
+      </div>
+
+      {/* Middle Section: Prominent email */}
+      <div className="mb-16">
+        <a
+          href="mailto:nbalkar2@uwo.ca"
+          className="text-4xl md:text-6xl font-semibold tracking-tight hover:text-gray-300 transition-colors block"
+        >
+          nbalkar2@uwo.ca
+        </a>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="border-t border-white/10 mt-16 pt-8 flex justify-between text-xs text-gray-600">
+        <span>© 2026 Nathaniel Balkaran</span>
+        <span>v1.0</span>
+      </div>
+    </footer>
+  );
+}
