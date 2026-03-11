@@ -77,7 +77,18 @@ export function Footer() {
       {/* Bottom Section */}
       <div className="border-t border-white/10 mt-10 pt-6 flex justify-between text-xs text-gray-600">
         <span>© 2026 Nathaniel Balkaran</span>
-        <span>v1.0</span>
+        <div className="flex items-center gap-3">
+          <a
+            href="https://youtube.com/shorts/QuKVuuIfcE0?si=86gJe6n7YC_i67kS"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Easter egg"
+            className="text-gray-700 hover:text-gray-400 transition-colors"
+          >
+            🍳
+          </a>
+          <span>v1.0</span>
+        </div>
       </div>
     </footer>
   );
