@@ -9,9 +9,19 @@ const pages = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] text-white py-16 px-8">
+    <footer className="bg-[#020B1A] text-white py-12 px-8">
+      {/* Prominent email */}
+      <div className="mb-10">
+        <a
+          href="mailto:nbalkar2@uwo.ca"
+          className="text-4xl md:text-6xl font-serif font-semibold tracking-tight hover:text-gray-300 transition-colors block"
+        >
+          nbalkar2@uwo.ca
+        </a>
+      </div>
+
       {/* Top Section: 4 columns */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 text-sm">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10 text-sm">
         {/* Col 1: Brand */}
         <div>
           <span className="font-semibold">Nathaniel Balkaran</span>
@@ -64,18 +74,8 @@ export function Footer() {
         </p>
       </div>
 
-      {/* Middle Section: Prominent email */}
-      <div className="mb-16">
-        <a
-          href="mailto:nbalkar2@uwo.ca"
-          className="text-4xl md:text-6xl font-semibold tracking-tight hover:text-gray-300 transition-colors block"
-        >
-          nbalkar2@uwo.ca
-        </a>
-      </div>
-
       {/* Bottom Section */}
-      <div className="border-t border-white/10 mt-16 pt-8 flex justify-between text-xs text-gray-600">
+      <div className="border-t border-white/10 mt-10 pt-6 flex justify-between text-xs text-gray-600">
         <span>© 2026 Nathaniel Balkaran</span>
         <span>v1.0</span>
       </div>
