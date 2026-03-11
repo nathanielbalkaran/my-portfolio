@@ -11,6 +11,7 @@ import {
   AnimatePresence,
   useMotionValue,
   useSpring,
+  useTransform,
 } from "framer-motion";
 
 type HoverState = "marketing" | "finance" | null;
@@ -20,10 +21,6 @@ const transition = { type: "tween", duration: 0.35, ease: "easeOut" } as const;
 const CROSSHAIR_DEFAULT = "#E5E7EB";
 const CROSSHAIR_MARKETING = "#F97316";
 const CROSSHAIR_FINANCE = "#10B981";
-
-const DOT_DEFAULT = "rgba(0, 0, 0, 0.12)";
-const DOT_MARKETING = "rgba(249, 115, 22, 0.25)";
-const DOT_FINANCE = "rgba(16, 185, 129, 0.25)";
 
 export default function Page() {
   const [hovered, setHovered] = useState<HoverState>(null);
@@ -38,6 +35,8 @@ export default function Page() {
   const mouseY = useMotionValue(0);
   const springX = useSpring(mouseX, { stiffness: 120, damping: 22 });
   const springY = useSpring(mouseY, { stiffness: 120, damping: 22 });
+  const tooltipX = useTransform(springX, (v) => v + 18);
+  const tooltipY = useTransform(springY, (v) => v + 18);
 
   useEffect(() => {
     const handleMove = (e: MouseEvent) => {
@@ -58,50 +57,31 @@ export default function Page() {
   const marketingScale = hovered === "marketing" ? 1.08 : 1;
   const financeScale = hovered === "finance" ? 1.08 : 1;
 
-  const dotGrid = (
-    <div
-      className="pointer-events-none fixed inset-0 z-[1]"
-      aria-hidden
-    >
-      <motion.div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, ${DOT_DEFAULT} 1px, transparent 1px)`,
-          backgroundSize: "1in 1in",
-        }}
-        animate={{ opacity: hovered === null ? 1 : 0 }}
-        transition={transition}
-      />
-      <motion.div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, ${DOT_MARKETING} 1px, transparent 1px)`,
-          backgroundSize: "1in 1in",
-        }}
-        animate={{ opacity: hovered === "marketing" ? 1 : 0 }}
-        transition={transition}
-      />
-      <motion.div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, ${DOT_FINANCE} 1px, transparent 1px)`,
-          backgroundSize: "1in 1in",
-        }}
-        animate={{ opacity: hovered === "finance" ? 1 : 0 }}
-        transition={transition}
-      />
-    </div>
-  );
-
   return (
     <motion.main
       className="relative flex min-h-screen flex-col"
       transition={transition}
     >
-      {/* Dot grid portaled to body so it sits behind layout's z-10 wrapper (not covered by it) */}
-      {mounted &&
-        typeof document !== "undefined" &&
-        createPortal(dotGrid, document.body)}
+      {/* Background wash on hover (portaled to body so it's not constrained by transforms) */}
+      {mounted && typeof document !== "undefined"
+        ? createPortal(
+            <motion.div
+              className="pointer-events-none fixed inset-0 z-[2]"
+              animate={{
+                opacity: hovered === null ? 0 : 1,
+                backgroundColor:
+                  hovered === "marketing"
+                    ? "rgba(249, 115, 22, 0.14)"
+                    : hovered === "finance"
+                      ? "rgba(16, 185, 129, 0.14)"
+                      : "rgba(0, 0, 0, 0)",
+              }}
+              transition={transition}
+              aria-hidden
+            />,
+            document.body
+          )
+        : null}
       {/* Crosshairs: vertical and horizontal lines (z-50 so above dot grid and content) */}
       <motion.div
         className="pointer-events-none fixed left-0 top-0 z-50 h-screen w-px -translate-x-px"
@@ -146,7 +126,8 @@ export default function Page() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -8, scale: 0.96 }}
                     transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
-                    className="absolute left-1/2 top-full z-50 mt-3 w-[320px] -translate-x-1/2 overflow-hidden rounded-xl border border-foreground/10 bg-background shadow-xl ring-1 ring-foreground/10 dark:bg-foreground/5"
+                    className="fixed z-50 w-[320px] overflow-hidden rounded-xl border border-foreground/10 bg-background shadow-xl ring-1 ring-foreground/10 dark:bg-foreground/5"
+                    style={{ left: tooltipX, top: tooltipY }}
                   >
                     <div className="p-4">
                       <h2 className="mb-2 text-lg font-bold tracking-tight text-foreground">

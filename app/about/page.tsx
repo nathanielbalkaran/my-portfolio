@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -138,7 +138,69 @@ const experience = [
   },
 ];
 
+type HoverPreview = {
+  href: string;
+  label: string;
+  x: number;
+  y: number;
+};
+
+function getPrettyUrl(href: string) {
+  try {
+    const url = new URL(href);
+    const nicePath =
+      url.pathname && url.pathname !== "/" ? url.pathname.replace(/\/$/, "") : "";
+    return `${url.hostname}${nicePath}`;
+  } catch {
+    return href;
+  }
+}
+
+function LinkWithHoverPreview({
+  href,
+  label,
+  children,
+  className,
+  onPreviewStart,
+  onPreviewMove,
+  onPreviewEnd,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+  className?: string;
+  onPreviewStart: (next: HoverPreview) => void;
+  onPreviewMove: (pos: { x: number; y: number }) => void;
+  onPreviewEnd: () => void;
+}) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className={className}
+      onMouseEnter={(e) => onPreviewStart({ href, label, x: e.clientX, y: e.clientY })}
+      onMouseMove={(e) => onPreviewMove({ x: e.clientX, y: e.clientY })}
+      onMouseLeave={onPreviewEnd}
+      onFocus={(e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        onPreviewStart({ href, label, x: rect.left + rect.width / 2, y: rect.top });
+      }}
+      onBlur={onPreviewEnd}
+    >
+      {children}
+    </Link>
+  );
+}
+
 export default function AboutPage() {
+  const [hoverPreview, setHoverPreview] = useState<HoverPreview | null>(null);
+
+  const hoverPreviewPrettyUrl = useMemo(() => {
+    if (!hoverPreview) return "";
+    return getPrettyUrl(hoverPreview.href);
+  }, [hoverPreview]);
+
   return (
     <div className="min-h-screen bg-background font-sans font-semibold text-finance-navy antialiased">
       <CanvasLayer />
@@ -150,6 +212,26 @@ export default function AboutPage() {
 
       {/* Two-column layout */}
       <div className="relative z-10 mx-auto max-w-6xl">
+        {hoverPreview ? (
+          <div
+            className="pointer-events-none fixed left-0 top-0 z-50 w-[320px] -translate-x-1/2 rounded-xl border border-foreground/15 bg-background/95 p-3 shadow-lg backdrop-blur"
+            style={{
+              transform: `translate(${hoverPreview.x}px, ${hoverPreview.y - 16}px) translate(-50%, -100%)`,
+            }}
+            aria-hidden
+          >
+            <div className="font-serif text-sm font-bold text-finance-navy">
+              {hoverPreview.label}
+            </div>
+            <div className="mt-1 truncate text-xs font-medium text-finance-navy/60">
+              {hoverPreviewPrettyUrl}
+            </div>
+            <div className="mt-2 h-px w-full bg-foreground/10" />
+            <div className="mt-2 text-[11px] font-medium text-finance-navy/50">
+              Click to open in a new tab
+            </div>
+          </div>
+        ) : null}
         <div className="grid grid-cols-1 gap-12 p-8 md:grid-cols-2 md:p-16">
           {/* Left column: text & experience */}
           <FlyIn delay={0.08} className="flex flex-col">
@@ -160,68 +242,92 @@ export default function AboutPage() {
             <div className="space-y-5 font-sans text-lg text-finance-navy/80">
               <p>
                 I am a first-year business student at{" "}
-                <Link
+                <LinkWithHoverPreview
                   href="https://www.uwo.ca/"
-                  target="_blank"
-                  rel="noreferrer"
+                  label="Western University"
                   className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                  onPreviewStart={(next) => setHoverPreview(next)}
+                  onPreviewMove={({ x, y }) =>
+                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                  }
+                  onPreviewEnd={() => setHoverPreview(null)}
                 >
                   Western University
-                </Link>{" "}
+                </LinkWithHoverPreview>{" "}
                 with{" "}
-                <Link
+                <LinkWithHoverPreview
                   href="https://www.ivey.uwo.ca/hba/admissions/secondary-school-students/"
-                  target="_blank"
-                  rel="noreferrer"
+                  label="Ivey AEO Status"
                   className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                  onPreviewStart={(next) => setHoverPreview(next)}
+                  onPreviewMove={({ x, y }) =>
+                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                  }
+                  onPreviewEnd={() => setHoverPreview(null)}
                 >
                   Ivey AEO Status
-                </Link>
+                </LinkWithHoverPreview>
                 . I am passionate about {" "}
-                <Link
+                <LinkWithHoverPreview
                   href="https://link.blossomsocial.com/7uYa/u3jedbg1"
-                  target="_blank"
-                  rel="noreferrer"
+                  label="Investing"
                   className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                  onPreviewStart={(next) => setHoverPreview(next)}
+                  onPreviewMove={({ x, y }) =>
+                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                  }
+                  onPreviewEnd={() => setHoverPreview(null)}
                 >
                   investing
-                </Link>{" "}
+                </LinkWithHoverPreview>{" "}
                  and understanding how markets
                 operate.
               </p>
               <p>
                 When I&apos;m not studying, I&apos;m working on social media
                 content{" "}
-                <Link
+                <LinkWithHoverPreview
                   href="https://www.instagram.com/nathanielpredicts/"
-                  target="_blank"
-                  rel="noreferrer"
+                  label="@nathanielpredicts"
                   className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                  onPreviewStart={(next) => setHoverPreview(next)}
+                  onPreviewMove={({ x, y }) =>
+                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                  }
+                  onPreviewEnd={() => setHoverPreview(null)}
                 >
                   @nathanielpredicts
-                </Link>{" "}
+                </LinkWithHoverPreview>{" "}
                 or spending time outdoors{" "}
-                <Link
+                <LinkWithHoverPreview
                   href="https://www.strava.com/athletes/85417714"
-                  target="_blank"
-                  rel="noreferrer"
+                  label="Strava"
                   className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                  onPreviewStart={(next) => setHoverPreview(next)}
+                  onPreviewMove={({ x, y }) =>
+                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                  }
+                  onPreviewEnd={() => setHoverPreview(null)}
                 >
                   running, biking, or hiking. 
-                </Link>
+                </LinkWithHoverPreview>
                   {" "}I also love to snowboard and slalom waterski.
               </p>
               <p>
                 I take pride in my work and am always looking for new problems
                 to solve. {" "}
-                <Link
+                <LinkWithHoverPreview
                   href="mailto:nbalkar2@uwo.ca"
-                  target="_blank"
-                  rel="noreferrer"
+                  label="Email"
                   className="font-semibold text-[#FF7A00] underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+                  onPreviewStart={(next) => setHoverPreview(next)}
+                  onPreviewMove={({ x, y }) =>
+                    setHoverPreview((prev) => (prev ? { ...prev, x, y } : prev))
+                  }
+                  onPreviewEnd={() => setHoverPreview(null)}
                 >
                   Lets connect!
-                </Link>
+                </LinkWithHoverPreview>
               </p>
             </div>
 
