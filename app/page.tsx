@@ -193,7 +193,7 @@ export default function Page() {
                   transition={transition}
                 />
                 <motion.span
-                  className="relative z-10 font-sans select-none text-3xl font-semibold tracking-normal sm:text-4xl md:text-5xl"
+                  className="relative z-10 font-sans select-none text-4xl font-semibold tracking-normal sm:text-5xl md:text-6xl lg:text-7xl"
                   animate={{
                     scale: marketingScale,
                     color:
@@ -227,7 +227,7 @@ export default function Page() {
                 />
                 <motion.span
                   style={{ fontFamily: "var(--font-heading-serif)" }}
-                  className="relative z-10 select-none text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl"
+                  className="relative z-10 select-none text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
                   animate={{
                     scale: financeScale,
                     color:
