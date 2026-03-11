@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
+import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import {
   motion,
+  AnimatePresence,
   useMotionValue,
   useSpring,
 } from "framer-motion";
@@ -25,6 +27,7 @@ const DOT_FINANCE = "rgba(16, 185, 129, 0.25)";
 export default function Page() {
   const [hovered, setHovered] = useState<HoverState>(null);
   const [mounted, setMounted] = useState(false);
+  const [showAboutPreview, setShowAboutPreview] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -118,9 +121,61 @@ export default function Page() {
 
       <section className="relative z-10 flex flex-1 items-center justify-center px-4">
         <div className="flex w-full max-w-4xl flex-col items-center">
-          <h1 className="font-sans text-xs font-medium tracking-tighter text-finance-navy/60 sm:text-sm">
-            how can i help?
+          <h1 className="mb-6 text-4xl font-medium tracking-tight text-finance-navy sm:text-5xl md:text-6xl">
+            <span className="font-sans">hi, i&apos;m </span>
+            <Link
+              href="/about"
+              className="relative inline-block"
+              onMouseEnter={() => setShowAboutPreview(true)}
+              onMouseLeave={() => setShowAboutPreview(false)}
+            >
+              <span
+                className="font-serif transition-colors hover:text-finance-navy/80"
+                style={{ fontFamily: "var(--font-heading-serif)" }}
+              >
+                Nathaniel
+              </span>
+              <AnimatePresence>
+                {showAboutPreview && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -8, scale: 0.96 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -8, scale: 0.96 }}
+                    transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
+                    className="absolute left-1/2 top-full z-50 mt-3 w-[320px] -translate-x-1/2 overflow-hidden rounded-xl border border-gray-200 bg-[#fafafa] shadow-xl"
+                  >
+                    <div className="p-4">
+                      <h2 className="mb-2 text-lg font-bold tracking-tight text-[#0a192f]">
+                        About me
+                      </h2>
+                      <div className="flex gap-3">
+                        <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg">
+                          <Image
+                            src="/profile.jpg"
+                            alt="Nathaniel"
+                            fill
+                            className="object-cover"
+                            sizes="64px"
+                          />
+                        </div>
+                        <p className="line-clamp-3 text-sm text-gray-700">
+                          First-year business student at Western University with
+                          Ivey AEO Status. Passionate about investing and
+                          understanding how markets operate.
+                        </p>
+                      </div>
+                      <p className="mt-2 text-xs font-medium text-emerald">
+                        Click to view full page →
+                      </p>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </Link>
           </h1>
+          <h2 className="font-sans text-xs font-medium tracking-tighter text-finance-navy/60 sm:text-sm">
+            how can i help?
+          </h2>
           <div className="mt-8 flex w-full max-w-3xl items-stretch justify-between gap-8">
             <Link href="/marketing" className="flex flex-1 items-center justify-center px-4">
             <motion.span
