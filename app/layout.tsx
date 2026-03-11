@@ -38,7 +38,7 @@ export default function RootLayout({
           <div className="relative z-10 flex min-h-screen flex-col">
             {children}
             {/* Spacer for footer candlestick chart so content doesn't get overlapped */}
-            <div className="hidden h-24 md:block" aria-hidden />
+            <div className="hidden md:block" style={{ height: "250px" }} aria-hidden />
             <div className="relative z-30 shrink-0">
               <Footer />
             </div>

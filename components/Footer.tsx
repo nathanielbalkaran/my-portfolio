@@ -40,8 +40,8 @@ export function Footer() {
     const maxPrice = Math.max(...prices);
     const range = maxPrice - minPrice || 1;
 
-    const minHeight = 16;
-    const maxHeight = 96;
+    const minHeight = 40;
+    const maxHeight = 220;
 
     const generated: Candle[] = prices.map((p) => {
       const normalized = (p - minPrice) / range;
@@ -58,16 +58,16 @@ export function Footer() {
 
   return (
     <footer className="relative w-full">
-      {/* Scroll-animated candlestick chart */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-full hidden md:flex">
-        <div className="flex h-24 w-full items-end justify-between">
+      {/* Scroll-animated candlestick chart — tall strip so it’s visible as you scroll to footer */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-full hidden md:flex" style={{ height: "250px" }}>
+        <div className="flex h-full w-full items-end justify-between">
           {candles.map((candle, index) => (
             <motion.div
               key={index}
               className="flex flex-1 flex-col items-center"
               initial={{ height: 0, opacity: 0 }}
               whileInView={{ height: "auto", opacity: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "0px 0px -80px 0px" }}
               transition={{ delay: index * 0.02 }}
             >
               <div
