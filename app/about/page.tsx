@@ -145,11 +145,11 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-12 p-8 md:grid-cols-2 md:p-16">
           {/* Left column: text & experience */}
           <FlyIn delay={0.08} className="flex flex-col">
-            <h1 className="mb-8 text-4xl font-bold tracking-tight text-[#0a192f] md:text-5xl lg:text-6xl">
+            <h1 className="mb-8 !font-serif text-4xl font-bold tracking-tight text-[#0a192f] md:text-5xl lg:text-6xl">
               About me
             </h1>
 
-            <div className="space-y-5 text-lg text-gray-800">
+            <div className="space-y-5 font-sans text-lg text-gray-800">
               <p>
                 I am a first-year business student at{" "}
                 <Link
