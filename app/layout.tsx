@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <div className="relative z-10 flex min-h-screen flex-col">
           {children}
-          <div className="relative z-30">
+          <div className="relative z-30 shrink-0">
             <Footer />
           </div>
         </div>

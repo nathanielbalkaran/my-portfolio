@@ -93,14 +93,14 @@ export default function MarketingPage() {
         <SiteHeader activeLink="marketing" />
       </FlyIn>
 
-      <div className="p-6 md:p-8 lg:p-10">
+      <div className="p-6 pb-24 md:p-8 md:pb-28 lg:p-10 lg:pb-32">
         <div className="mx-auto max-w-6xl">
           <FlyIn delay={0.06}>
             <h1 className="font-sans text-3xl font-semibold tracking-tight text-[#0a192f] sm:text-4xl">
               Projects
             </h1>
             <p className="mt-2 font-sans text-base leading-relaxed text-[#0a192f]/70">
-              My miscellaneous marketing projects and campaigns. Click a card to open the project in a new tab.
+              My miscellaneous marketing projects and campaigns.
             </p>
           </FlyIn>
           <div className="mt-10 grid auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
