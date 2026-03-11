@@ -103,7 +103,7 @@ export default function MarketingPage() {
               My miscellaneous marketing projects and campaigns.
             </p>
           </FlyIn>
-          <div className="mt-10 grid auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-10 grid auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4 [&>*]:min-h-0 [&>*]:overflow-hidden">
             {sortedProjects.map((project, index) => (
               <FlyIn
                 key={`${project.url}-${project.title}-${index}`}
