@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const financeNavItems = [
   { href: "/", label: "Home" },
   { href: "/finance", label: "Pitches" },
-  { href: "/about", label: "About" },
+  { href: "/info", label: "Info" },
   { href: "mailto:hello@example.com", label: "Contact", external: false },
 ];
 

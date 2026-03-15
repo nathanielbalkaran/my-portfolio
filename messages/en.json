@@ -1,0 +1,103 @@
+{
+  "common": {
+    "siteName": "nathaniel balkaran",
+    "home": "HOME",
+    "marketResearch": "MARKET RESEARCH",
+    "initiatives": "INITIATIVES",
+    "info": "INFO"
+  },
+  "home": {
+    "name": "NATHANIEL BALKARAN",
+    "nameObfuscated": "#%!#*#&@ (#)!%)^#*!",
+    "tagline": "First-year business student at Western University",
+    "learnMore": "Learn more",
+    "experience": "EXPERIENCE",
+    "education": "EDUCATION",
+    "educationSchool": "Western University",
+    "educationProgram": "BMOS + Ivey AEO",
+    "educationYear": "2025-2029",
+    "educationAward1": "Embark Student Award ($5000)",
+    "educationAward2": "Western Scholarship of Distinction ($3500)",
+    "navMarketResearch": "Market Research",
+    "navMarketResearchObfuscated": "#@*!%^&* #!%^&*",
+    "navInitiatives": "Initiatives",
+    "navInitiativesObfuscated": "#@*!%^&*!%^",
+    "navInfo": "Info",
+    "navInfoObfuscated": "#*!@"
+  },
+  "homeExperience": {
+    "polymarketRole": "UGC Creator",
+    "polymarketYear": "2025 – Present",
+    "180dcRole": "Consulting Analyst",
+    "180dcYear": "2023 – Present",
+    "blueCanoeRole": "Founder",
+    "blueCanoeYear": "2023 – Present",
+    "whyfiRole": "President",
+    "whyfiYear": "2023 – Present",
+    "markhamRole": "Aquatics Supervisor",
+    "markhamYear": "2023 – 2025"
+  },
+  "finance": {
+    "title": "MARKET RESEARCH",
+    "titleObfuscated": "#@*!%^&* #!%^&*",
+    "subtitle": "An index of equity research and valuation models.",
+    "equityResearch": "EQUITY RESEARCH",
+    "viewReport": "VIEW REPORT",
+    "noDocument": "No document available",
+    "tabResearch": "Research Report",
+    "tabModel": "Financial Model",
+    "tabDeck": "Slide Deck"
+  },
+  "financeItems": {
+    "aritziaTitle": "Aritzia — WCM Equity Report Challenge",
+    "aritziaContext": "Full equity research report on Aritzia Inc., covering business model, competitive positioning, financial analysis, and valuation. Prepared for the WCM Equity Report Challenge.",
+    "lvmhTitle": "LVMH - WCM Bear Bull Company Overview",
+    "lvmhContext": "Bear vs. bull company overview of LVMH Moët Hennessy Louis Vuitton, examining luxury segment dynamics, brand portfolio, and key investment considerations."
+  },
+  "initiatives": {
+    "title": "INITIATIVES",
+    "titleObfuscated": "#@*!%^&*!%^",
+    "subtitle": "Strategic operations and entrepreneurial ventures.",
+    "categoryNonProfit": "NON-PROFIT",
+    "categoryVideo": "VIDEO",
+    "categorySocialMedia": "SOCIAL MEDIA",
+    "categoryPublication": "PUBLICATION",
+    "categoryMusicVideo": "MUSIC VIDEO",
+    "categoryCampaign": "CAMPAIGN"
+  },
+  "info": {
+    "title": "INFO",
+    "titleObfuscated": "#*!@",
+    "subtitle": "Personal dossier and professional experience.",
+    "experience": "EXPERIENCE",
+    "viewLinkedIn": "View my full experience on LinkedIn",
+    "clickToOpen": "Click to open in a new tab",
+    "bio1": "I am a first-year business student at <western>Western University</western> with <ivey>Ivey AEO</ivey> Status. I am passionate about <investing>investing</investing> and understanding how markets operate.",
+    "bio2": "When I'm not studying, I'm working on social media content <nathanielpredicts>@nathanielpredicts</nathanielpredicts> or spending time outdoors <running>running</running>, <biking>biking</biking>, or <hiking>hiking</hiking>.",
+    "bio3": "I take pride in my work and am always looking for new problems to solve. <connect>Let's connect.</connect>",
+    "portraitAlt": "Nathaniel Balkaran"
+  },
+  "footer": {
+    "home": "HOME",
+    "marketResearch": "MARKET RESEARCH",
+    "initiatives": "INITIATIVES",
+    "info": "INFO",
+    "email": "nbalkar2@uwo.ca",
+    "name": "nathaniel balkaran",
+    "copyright": "© 2026 nathaniel balkaran",
+    "linkedin": "LINKEDIN",
+    "emailLabel": "EMAIL",
+    "strava": "STRAVA",
+    "builtWith": "Built with Next.js and Tailwind.",
+    "deployed": "Deployed on Vercel.",
+    "marketData": "Market data by",
+    "finnhub": "Finnhub",
+    "help": "Help from Cursor and Gemini.",
+    "version": "v2.0"
+  },
+  "localeToggle": {
+    "en": "EN",
+    "fr": "FR",
+    "switchTo": "Switch language"
+  }
+}

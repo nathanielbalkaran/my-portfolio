@@ -6,9 +6,9 @@ export default function FinanceLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-background text-finance-navy">
-      <SiteHeader activeLink="pitches" useSerifFont />
-      {children}
+    <div className="min-h-screen text-foreground">
+      <SiteHeader activeLink="market research" />
+      <div className="page-wrapper">{children}</div>
     </div>
   );
 }

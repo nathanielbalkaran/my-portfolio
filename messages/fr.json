@@ -1,0 +1,103 @@
+{
+  "common": {
+    "siteName": "nathaniel balkaran",
+    "home": "ACCUEIL",
+    "marketResearch": "ÉTUDES DE MARCHÉ",
+    "initiatives": "INITIATIVES",
+    "info": "INFO"
+  },
+  "home": {
+    "name": "NATHANIEL BALKARAN",
+    "nameObfuscated": "#%!#*#&@ (#)!%)^#*!",
+    "tagline": "Étudiant en commerce de première année à l'Université Western",
+    "learnMore": "En savoir plus",
+    "experience": "EXPÉRIENCE",
+    "education": "FORMATION",
+    "educationSchool": "Université Western",
+    "educationProgram": "BMOS + Ivey AEO",
+    "educationYear": "2025-2029",
+    "educationAward1": "Bourse Embark Student (5000 $)",
+    "educationAward2": "Bourse d'excellence Western (3500 $)",
+    "navMarketResearch": "Études de marché",
+    "navMarketResearchObfuscated": "#@*!%^&* #!%^&*!%^&",
+    "navInitiatives": "Initiatives",
+    "navInitiativesObfuscated": "#@*!%^&*!%^",
+    "navInfo": "Info",
+    "navInfoObfuscated": "#*!@"
+  },
+  "homeExperience": {
+    "polymarketRole": "Créateur UGC",
+    "polymarketYear": "2025 – Présent",
+    "180dcRole": "Analyste en conseil",
+    "180dcYear": "2023 – Présent",
+    "blueCanoeRole": "Fondateur",
+    "blueCanoeYear": "2023 – Présent",
+    "whyfiRole": "Président",
+    "whyfiYear": "2023 – Présent",
+    "markhamRole": "Superviseur aquatique",
+    "markhamYear": "2023 – 2025"
+  },
+  "finance": {
+    "title": "ÉTUDES DE MARCHÉ",
+    "titleObfuscated": "#@*!%^&* #!%^&*!%^&",
+    "subtitle": "Index de rapports d'analyse actions et modèles de valorisation.",
+    "equityResearch": "RECHERCHE ACTIONS",
+    "viewReport": "VOIR LE RAPPORT",
+    "noDocument": "Aucun document disponible",
+    "tabResearch": "Rapport de recherche",
+    "tabModel": "Modèle financier",
+    "tabDeck": "Diaporama"
+  },
+  "financeItems": {
+    "aritziaTitle": "Aritzia — Défi rapport actions WCM",
+    "aritziaContext": "Rapport complet sur Aritzia Inc. : modèle économique, positionnement concurrentiel, analyse financière et valorisation. Préparé pour le Défi rapport actions WCM.",
+    "lvmhTitle": "LVMH - Aperçu société Bear Bull WCM",
+    "lvmhContext": "Aperçu haussier vs baissier de LVMH Moët Hennessy Louis Vuitton : dynamique du luxe, portefeuille de marques et principaux enjeux d'investissement."
+  },
+  "initiatives": {
+    "title": "INITIATIVES",
+    "titleObfuscated": "#@*!%^&*!%^",
+    "subtitle": "Opérations stratégiques et projets entrepreneuriaux.",
+    "categoryNonProfit": "OSBL",
+    "categoryVideo": "VIDÉO",
+    "categorySocialMedia": "RÉSEAUX SOCIAUX",
+    "categoryPublication": "PUBLICATION",
+    "categoryMusicVideo": "CLIP",
+    "categoryCampaign": "CAMPAGNE"
+  },
+  "info": {
+    "title": "INFO",
+    "titleObfuscated": "#*!@",
+    "subtitle": "Dossier personnel et expérience professionnelle.",
+    "experience": "EXPÉRIENCE",
+    "viewLinkedIn": "Voir mon parcours complet sur LinkedIn",
+    "clickToOpen": "Cliquer pour ouvrir dans un nouvel onglet",
+    "bio1": "Je suis étudiant en commerce de première année à <western>l'Université Western</western> avec le statut <ivey>Ivey AEO</ivey>. Je suis passionné par <investing>l'investissement</investing> et le fonctionnement des marchés.",
+    "bio2": "En dehors des études, je crée du contenu sur les réseaux <nathanielpredicts>@nathanielpredicts</nathanielpredicts> ou je profite du plein air en <running>courant</running>, à <biking>vélo</biking> ou en <hiking>randonnée</hiking>.",
+    "bio3": "Je suis fier de mon travail et cherche toujours de nouveaux défis. <connect>Restons en contact.</connect>",
+    "portraitAlt": "Nathaniel Balkaran"
+  },
+  "footer": {
+    "home": "ACCUEIL",
+    "marketResearch": "ÉTUDES DE MARCHÉ",
+    "initiatives": "INITIATIVES",
+    "info": "INFO",
+    "email": "nbalkar2@uwo.ca",
+    "name": "nathaniel balkaran",
+    "copyright": "© 2026 nathaniel balkaran",
+    "linkedin": "LINKEDIN",
+    "emailLabel": "COURRIEL",
+    "strava": "STRAVA",
+    "builtWith": "Construit avec Next.js et Tailwind.",
+    "deployed": "Déployé sur Vercel.",
+    "marketData": "Données de marché par",
+    "finnhub": "Finnhub",
+    "help": "Avec l'aide de Cursor et Gemini.",
+    "version": "v2.0"
+  },
+  "localeToggle": {
+    "en": "EN",
+    "fr": "FR",
+    "switchTo": "Changer de langue"
+  }
+}

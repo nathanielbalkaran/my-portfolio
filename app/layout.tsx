@@ -1,26 +1,26 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { SelvedgeScrollBar } from "@/components/SelvedgeScrollBar";
+import { StarsBackground } from "@/components/StarsBackground";
 
-const bodySans = Inter({
-  variable: "--font-body-sans",
+const fontSans = Space_Grotesk({
+  variable: "--font-sans-family",
   subsets: ["latin"],
   display: "swap",
 });
 
-const headingSerif = Playfair_Display({
-  variable: "--font-heading-serif",
+const fontMono = IBM_Plex_Mono({
+  variable: "--font-mono-family",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
   title: "Nathaniel Balkaran | Portfolio",
   description:
-    "Portfolio showcasing marketing projects and capital markets stock pitches.",
+    "Portfolio showcasing projects and capital markets stock pitches.",
 };
 
 export default function RootLayout({
@@ -31,18 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${bodySans.variable} ${headingSerif.variable} min-h-screen bg-background text-finance-navy antialiased`}
+        className={`${fontSans.variable} ${fontMono.variable} min-h-screen text-foreground antialiased`}
       >
-        <SelvedgeScrollBar />
         <ThemeProvider>
-          <div className="relative z-10 flex min-h-screen flex-col">
-            {children}
-            {/* Spacer for footer candlestick chart so content doesn't get overlapped */}
-            <div className="hidden md:block" style={{ height: "250px" }} aria-hidden />
-            <div className="relative z-30 shrink-0">
-              <Footer />
-            </div>
+          <div className="fixed inset-0 z-[-1] h-full w-full hidden dark:block" aria-hidden>
+            <StarsBackground />
           </div>
+          {children}
         </ThemeProvider>
       </body>
     </html>

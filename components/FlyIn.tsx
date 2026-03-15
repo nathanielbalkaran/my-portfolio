@@ -2,11 +2,10 @@
 
 import { motion } from "framer-motion";
 
-const jigglySpring = {
-  type: "spring" as const,
-  stiffness: 320,
-  damping: 22,
-  mass: 0.9,
+const snappyTween = {
+  type: "tween" as const,
+  duration: 0.2,
+  ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
 };
 
 type FlyInProps = {
@@ -20,17 +19,15 @@ export function FlyIn({ children, delay = 0, className }: FlyInProps) {
   return (
     <motion.div
       initial={{
-        y: 48,
+        x: -16,
         opacity: 0,
-        scale: 0.98,
       }}
       animate={{
-        y: 0,
+        x: 0,
         opacity: 1,
-        scale: 1,
       }}
       transition={{
-        ...jigglySpring,
+        ...snappyTween,
         delay,
       }}
       className={className}

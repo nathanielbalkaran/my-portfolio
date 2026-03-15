@@ -1,39 +1,215 @@
 @import "tailwindcss";
 
+/* Tailwind v4: class-based dark mode (.dark on ancestor) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ——— 1. Global geometry & overrides (Brutalist) ——— */
+@layer base {
+  * {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Snappy, mechanical transitions — global cubic-bezier */
+  * {
+    transition-duration: 200ms;
+    transition-timing-function: var(--ease-snappy);
+  }
+}
+
+/* ——— 2 & 3. Color palette & theming (class-based light/dark) ——— */
 :root {
-  --background: #fafaf9;
-  --foreground: #0a192f;
-  --finance-navy: #0a192f;
-  --emerald: #10b981;
+  /* Snappy easing: cubic-bezier(0.16, 1, 0.3, 1) — use class ease-snappy or var(--ease-snappy) */
+  --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Font stacks (next/font overrides on body) */
+  --font-sans-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-mono-family: "IBM Plex Mono", Menlo, monospace;
+  /* Legacy aliases (Bauhaus: headers = sans) */
+  --font-body-sans: var(--font-sans-family);
+  --font-heading-serif: var(--font-sans-family);
+
+  /* Light mode — The Prospectus */
+  --background: #f5f5f3;
+  --foreground: #050a14;
+  --border: #d1d5db;
+  /* Accents */
+  --terminal-green: #10b981;
+  --terminal-orange: #f97316;
+  /* Legacy/compat */
+  --finance-navy: #050a14;
+  --card-bg: #ffffff;
 }
 
 .dark {
-  --background: #070b14;
-  --foreground: #f8fafc;
-  --finance-navy: #f8fafc;
+  /* Dark mode — Terminal default (darker navy) */
+  --background: #061220;
+  --foreground: #f5f5f3;
+  --border: #1a2840;
+  --card-bg: #0d1929;
+  --finance-navy: #f5f5f3;
 }
 
+html.dark,
+html.dark body {
+  background-color: #061220;
+}
+
+/* Theme variables for Tailwind utilities */
 @theme inline {
+  /* Snappy easing: ultra-fast start, magnetic deceleration — use via ease-snappy */
+  --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Typography: Space Grotesk (sans), IBM Plex Mono (mono) */
+  --font-sans: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-mono-family), Menlo, monospace;
+
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-terminal-green: var(--terminal-green);
+  --color-terminal-orange: var(--terminal-orange);
   --color-finance-navy: var(--finance-navy);
-  --color-emerald: var(--emerald);
-  --font-sans: var(--font-body-sans);
-  --font-serif: var(--font-heading-serif);
+  --color-card-bg: var(--card-bg);
 }
 
+/* ——— 2. Body: font-sans, sharp print-like ——— */
 body {
   background: var(--background);
-  color: var(--finance-navy);
-  font-family: var(--font-sans, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji",
-      "Segoe UI Emoji");
+  color: var(--foreground);
+  font-family: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Headings use same sans (Bauhaus consistency) */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-serif, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif);
+  font-family: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ——— Custom utility: ease-snappy (use with duration-200 etc.) ——— */
+@layer utilities {
+  .ease-snappy {
+    transition-timing-function: var(--ease-snappy);
+  }
+}
+
+/* ——— 5. Brutalist page wrapper ——— */
+.page-wrapper {
+  max-width: 80rem; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (width >= 768px) {
+  .page-wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* ——— Shared card styling (brutalist: no radius/shadow; borders only) ——— */
+.card {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  transition: transform 200ms var(--ease-snappy);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-base {
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  transition: transform 200ms var(--ease-snappy);
+}
+
+.card-base:hover {
+  transform: translateY(-2px);
+}
+
+.card-padding {
+  padding: 0.625rem 0.75rem;
+}
+
+.card-heading {
+  font-family: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.card-subtitle {
+  font-family: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(156 163 175);
+}
+
+.dark .card-subtitle {
+  color: rgb(148 163 184);
+}
+
+.card-item-title {
+  font-family: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.card-meta {
+  font-family: var(--font-mono-family), Menlo, monospace;
+  font-size: 0.875rem;
+  color: var(--foreground);
+  opacity: 0.6;
+}
+
+/* ——— 4. Dark mode starscape: subtle twinkling (1px, sparse, very slow) ——— */
+@keyframes star-twinkle {
+  0%,
+  100% {
+    opacity: 0.08;
+  }
+  50% {
+    opacity: 0.22;
+  }
+}
+
+.star-dot {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  animation: star-twinkle 8s ease-in-out infinite;
+}
+
+.dark .stars-background {
+  opacity: 1;
+}
+
+.dark .star-dot {
+  opacity: 0.15;
+  animation: star-twinkle 8s ease-in-out infinite;
+}
+
+/* Market ticker — Bloomberg strip (brutalist): bg-black/20, border-gray-700 */
+.market-ticker {
+  border-color: rgb(55 65 81);
+}
+
+.dark .market-ticker-fade {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent);
 }

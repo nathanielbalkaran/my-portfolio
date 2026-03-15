@@ -9,7 +9,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/marketing-projects", label: "Marketing Projects" },
   { href: "/finance", label: "Pitches" },
-  { href: "/about", label: "About" },
+  { href: "/info", label: "Info" },
 ];
 
 export function Navbar() {

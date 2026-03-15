@@ -1,58 +1,77 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { MarketTicker } from "@/components/MarketTicker";
+import { LocaleToggle } from "@/components/LocaleToggle";
 
-export type ActiveLink = "home" | "pitches" | "marketing" | "about" | null;
+export type ActiveLink = "home" | "market research" | "initiatives" | "info" | null;
 
 const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/finance", label: "Pitches" },
-  { href: "/marketing", label: "Marketing" },
-  { href: "/about", label: "About" },
+  { href: "/finance", activeSlug: "market research" as const },
+  { href: "/initiatives", activeSlug: "initiatives" as const },
+  { href: "/info", activeSlug: "info" as const },
 ] as const;
 
 type SiteHeaderProps = {
   activeLink: ActiveLink;
-  useSerifFont?: boolean;
 };
 
-export function SiteHeader({ activeLink, useSerifFont = false }: SiteHeaderProps) {
+export function SiteHeader({ activeLink }: SiteHeaderProps) {
+  const t = useTranslations("common");
+
   return (
-    <header
-      className={`border-b border-foreground/10 bg-background/80 backdrop-blur ${useSerifFont ? "font-serif" : "font-sans"}`}
-    >
-      <div className="flex items-center justify-between py-2 px-6">
-        <Link
-          href="/"
-          className="text-lg font-semibold text-foreground transition-opacity hover:opacity-90"
-        >
-          Nathaniel Balkaran
-        </Link>
-        <div className="flex items-center gap-3">
-          <nav className="flex gap-4 text-sm">
-            {NAV_LINKS.map(({ href, label }) => {
-              const isActive = activeLink === (label.toLowerCase() as ActiveLink);
-              return (
+    <header className="border-b border-gray-700 bg-background font-sans">
+      <div className="flex flex-wrap items-stretch">
+        <div className="flex w-[9.5rem] shrink-0 items-center border-r border-gray-700 px-4 py-0">
+          <Link
+            href="/"
+            className="font-sans text-sm font-bold tracking-tighter text-foreground transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1"
+          >
+            {t("siteName")}
+          </Link>
+        </div>
+        <div className="flex shrink-0">
+          {NAV_LINKS.map(({ href, activeSlug }) => {
+            const isActive = activeLink === activeSlug;
+            const labelKey =
+              activeSlug === "market research"
+                ? "marketResearch"
+                : activeSlug === "initiatives"
+                  ? "initiatives"
+                  : "info";
+            return (
+              <div
+                key={href}
+                className="flex shrink-0 border-r border-gray-700"
+              >
                 <Link
-                  key={href}
                   href={href}
-                  className={
-                    isActive
-                      ? "font-semibold text-foreground"
-                      : "text-foreground/70 transition-colors hover:text-foreground"
-                  }
+                  className={`flex items-center px-4 py-0 font-mono text-xs font-medium uppercase tracking-widest transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1 hover:bg-white hover:text-black ${
+                    isActive ? "bg-foreground/10 text-foreground" : "text-foreground/80"
+                  }`}
                 >
-                  {label}
+                  {t(labelKey)}
                 </Link>
-              );
-            })}
-          </nav>
-          <ThemeToggle />
+              </div>
+            );
+          })}
+        </div>
+        <div className="ml-auto flex shrink-0 items-stretch border-l border-gray-700">
+          <div className="flex w-[5rem] shrink-0 border-r border-gray-700">
+            <LocaleToggle />
+          </div>
+          <div className="flex w-[3.75rem] shrink-0 border-r-0 border-gray-700">
+            <div className="flex w-full items-center justify-center border-l border-gray-700 py-0">
+              <ThemeToggle />
+            </div>
+          </div>
         </div>
       </div>
-      <MarketTicker />
+      <div className="border-t border-gray-700">
+        <MarketTicker />
+      </div>
     </header>
   );
 }
