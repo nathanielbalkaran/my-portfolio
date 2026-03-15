@@ -49,7 +49,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-md text-foreground/80 ring-1 ring-foreground/15 transition hover:bg-foreground/5 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald"
+      className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-none text-foreground/80 ring-1 ring-foreground/15 transition hover:bg-foreground/5 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald"
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       title={isDark ? "Light mode" : "Dark mode"}
     >

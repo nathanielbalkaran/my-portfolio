@@ -50,7 +50,7 @@ export default function FinancePage() {
       <div className="w-full max-w-5xl pb-14">
         <header className="text-left">
           <motion.h1
-            className="font-sans text-7xl font-bold tracking-tighter uppercase leading-none text-foreground md:text-8xl transition-colors duration-200 hover:text-emerald-500"
+            className="font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground sm:text-7xl md:text-8xl sm:leading-none transition-colors duration-200 hover:text-emerald-500"
             initial={{ opacity: 0, x: -16 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ...snappy, delay: 0 }}

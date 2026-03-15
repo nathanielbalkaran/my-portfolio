@@ -40,7 +40,7 @@ export default function InitiativesPage() {
       <div className="page-wrapper mx-auto max-w-6xl">
         <header className="text-left">
           <motion.h1
-            className="font-sans text-7xl font-bold tracking-tighter uppercase leading-none text-foreground md:text-8xl transition-colors duration-200 hover:text-[#ff7518]"
+            className="font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground sm:text-7xl md:text-8xl sm:leading-none transition-colors duration-200 hover:text-[#ff7518]"
             initial={{ opacity: 0, x: -16 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ...snappy, delay: 0 }}

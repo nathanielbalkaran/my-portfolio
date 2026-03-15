@@ -123,7 +123,7 @@ export default function InfoPage() {
 
           <header className="text-left">
             <motion.h1
-              className="font-sans text-7xl font-bold tracking-tighter uppercase leading-none text-foreground md:text-8xl"
+              className="font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground sm:text-7xl md:text-8xl sm:leading-none"
               initial={{ opacity: 0, x: -16 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ...snappy, delay: 0 }}
@@ -152,7 +152,7 @@ export default function InfoPage() {
           </header>
 
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 items-start">
-            <div className="lg:col-span-7">
+            <div className="order-2 lg:order-none lg:col-span-7">
               <FlyIn delay={0.06}>
                 <div
                   className="max-w-3xl border-l-2 border-gray-700 pl-6 font-sans text-lg font-semibold leading-[1.4] text-foreground/90 text-justify hyphens-auto"
@@ -174,7 +174,7 @@ export default function InfoPage() {
                         href={linkedInHref}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex items-center gap-2"
+                        className="flex min-h-[44px] items-center gap-2"
                         onMouseEnter={(e) =>
                           setExperienceHover({ x: e.clientX, y: e.clientY })
                         }
@@ -212,7 +212,7 @@ export default function InfoPage() {
               </FlyIn>
             </div>
 
-            <FlyIn delay={0.08} className="lg:col-span-5 w-full lg:sticky lg:top-24 lg:self-start">
+            <FlyIn delay={0.08} className="order-1 lg:order-none lg:col-span-5 w-full lg:sticky lg:top-24 lg:self-start">
               <div className="relative aspect-[3/4] w-full overflow-hidden border border-gray-700 rounded-none">
                 <Image
                   src="/profile-portrait.png"

@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 const linkClass =
-  "font-mono text-xs tracking-widest text-foreground block py-1 px-1 -mx-1 rounded-none transition-colors duration-200 ease-snappy hover:bg-foreground hover:text-background";
+  "font-mono text-xs tracking-widest text-foreground flex min-h-[44px] items-center py-1 px-1 -mx-1 rounded-none transition-colors duration-200 ease-snappy hover:bg-foreground hover:text-background";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -27,7 +27,7 @@ export function Footer() {
       <div className="border-b border-border px-4 py-5 md:px-5">
         <a
           href="mailto:nbalkar2@uwo.ca"
-          className="font-sans text-5xl md:text-6xl font-bold tracking-tighter lowercase block hover:bg-foreground hover:text-background transition-colors duration-200 ease-snappy py-1 px-1 -mx-1 rounded-none w-fit"
+          className="font-sans text-5xl md:text-6xl font-bold tracking-tighter lowercase flex min-h-[44px] items-center hover:bg-foreground hover:text-background transition-colors duration-200 ease-snappy py-1 px-1 -mx-1 rounded-none w-fit"
         >
           {t("email")}
         </a>

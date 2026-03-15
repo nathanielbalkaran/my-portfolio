@@ -46,7 +46,7 @@ export function ExpandableDataRoomRow({
       <button
         type="button"
         onClick={() => setIsExpanded((e) => !e)}
-        className="group relative flex w-full justify-between items-center gap-6 py-5 px-8 border-b border-border cursor-pointer text-left transition-colors duration-200 hover:bg-foreground/5"
+        className="group relative flex min-h-[44px] w-full justify-between items-center gap-6 py-5 px-8 border-b border-border cursor-pointer text-left transition-colors duration-200 hover:bg-foreground/5"
         aria-expanded={isExpanded}
       >
         {/* Hover: 2px vertical bar on left edge (terminal-green, scale-y 0→100%) */}
@@ -55,9 +55,9 @@ export function ExpandableDataRoomRow({
           style={{ transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)" }}
           aria-hidden
         />
-        <span className="font-mono text-sm text-gray-400 shrink-0">{ticker}</span>
+        <span className="hidden font-mono text-sm text-gray-400 shrink-0 sm:inline">{ticker}</span>
         <span className="font-sans text-xl font-bold text-foreground min-w-0 flex-1">{title}</span>
-        <span className="font-mono text-sm text-gray-400 shrink-0">{date}</span>
+        <span className="hidden font-mono text-sm text-gray-400 shrink-0 sm:inline">{date}</span>
         {/* Micro-copy hint: visible on hover only */}
         <span
           className="font-mono text-[10px] uppercase tracking-widest text-gray-500 shrink-0 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
@@ -94,7 +94,7 @@ export function ExpandableDataRoomRow({
                         onClick={() => hasUrl && setActiveTabId(tab.id)}
                         disabled={!hasUrl}
                         className={`
-                          font-mono text-sm uppercase text-left py-2 px-2 -mx-2 transition-all duration-200 ease-snappy rounded-none
+                          font-mono text-sm uppercase text-left min-h-[44px] py-2 px-2 -mx-2 transition-all duration-200 ease-snappy rounded-none flex items-center
                           focus:outline-none focus-visible:ring-2 focus-visible:ring-terminal-green focus-visible:ring-inset
                           ${isActive ? "border-l-4 border-terminal-orange pl-3 text-foreground font-bold" : "pl-4 text-foreground/60"}
                           ${hasUrl ? "cursor-pointer hover:bg-foreground/10 hover:text-foreground" : "cursor-not-allowed opacity-50"}
@@ -112,10 +112,10 @@ export function ExpandableDataRoomRow({
                   <iframe
                     src={activeTabPdfUrl}
                     title={activeTab?.label ?? "Document"}
-                    className="w-full h-[600px] border border-border bg-gray-900 rounded-none shadow-none"
+                    className="w-full h-[400px] sm:h-[600px] border border-border bg-gray-900 rounded-none shadow-none"
                   />
                 ) : (
-                  <div className="w-full h-[600px] border border-border bg-gray-900 rounded-none shadow-none flex items-center justify-center font-mono text-sm text-gray-500">
+                  <div className="w-full h-[400px] sm:h-[600px] border border-border bg-gray-900 rounded-none shadow-none flex items-center justify-center font-mono text-sm text-gray-500">
                     {noDocumentLabel}
                   </div>
                 )}

@@ -77,7 +77,7 @@ export default function Page() {
           >
             <Link
               href="/info"
-              className="inline-block origin-left font-sans text-7xl font-bold tracking-tighter uppercase leading-none text-foreground transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] select-none hover:text-[#FF7518] md:text-8xl"
+              className="inline-block origin-left font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] select-none hover:text-[#FF7518] sm:text-7xl md:text-8xl sm:leading-none"
               onMouseEnter={() => setNameObfuscated(true)}
               onMouseLeave={() => setNameObfuscated(false)}
             >
@@ -124,7 +124,7 @@ export default function Page() {
                     href="https://www.linkedin.com/in/nathanielbalkaran"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group/exp flex flex-wrap items-center gap-x-2 gap-y-0 rounded-md py-2 pr-2 -mr-2 transition-colors duration-200 hover:bg-foreground/10"
+                    className="group/exp flex min-h-[44px] flex-wrap items-center gap-x-2 gap-y-0 rounded-none py-2 pr-2 -mr-2 transition-colors duration-200 hover:bg-foreground/10"
                   >
                     <span className="relative h-6 w-6 shrink-0 overflow-hidden">
                       <Image
@@ -145,7 +145,7 @@ export default function Page() {
               ))}
             </ul>
           </div>
-          <div className="border-t border-border py-8 pl-8 md:col-span-1 md:pl-12">
+          <div className="border-t border-border py-8 pl-0 pr-0 md:col-span-1 md:pl-12 md:pr-0">
             <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">
               {t("education")}
             </h2>
@@ -153,9 +153,9 @@ export default function Page() {
               href="https://www.linkedin.com/in/nathanielbalkaran"
               target="_blank"
               rel="noopener noreferrer"
-              className="group/edu block rounded-md py-2 pr-2 -mr-2 -mt-2 transition-colors duration-200 hover:bg-foreground/10 w-fit"
+              className="group/edu flex min-h-[44px] items-center gap-3 rounded-none py-2 pr-2 -mr-2 -mt-2 transition-colors duration-200 hover:bg-foreground/10 w-fit"
             >
-              <div className="relative mb-3 h-12 w-12">
+              <div className="relative h-12 w-12 shrink-0">
                 <Image
                   src="/logos/western-crest.png"
                   alt="Western University crest"
@@ -166,7 +166,7 @@ export default function Page() {
               </div>
               <p className="font-sans font-bold text-lg text-foreground group-hover/edu:text-foreground">{t("educationSchool")}</p>
             </a>
-            <p className="font-sans text-foreground/80">{t("educationProgram")}</p>
+            <p className="font-sans text-foreground/80 mt-1">{t("educationProgram")}</p>
             <p className="font-mono text-sm text-gray-500 mt-1">{t("educationYear")}</p>
             <p className="mt-3 font-sans text-sm text-foreground/70">
               <a
@@ -193,7 +193,7 @@ export default function Page() {
             <li>
               <Link
                 href="/finance"
-                className="group flex items-center gap-3 font-sans text-6xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-green hover:py-3 hover:pl-6 hover:text-white md:text-7xl"
+                className="group flex min-h-[44px] items-center gap-3 font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-green hover:py-3 hover:pl-6 hover:text-white sm:text-5xl md:text-7xl"
               >
                 {t("navMarketResearch")}
                 <ArrowRight className="h-8 w-8 shrink-0 opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0.5 md:h-9 md:w-9" aria-hidden />
@@ -202,7 +202,7 @@ export default function Page() {
             <li>
               <Link
                 href="/initiatives"
-                className="group flex items-center gap-3 font-sans text-6xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-orange hover:py-3 hover:pl-6 hover:text-white md:text-7xl"
+                className="group flex min-h-[44px] items-center gap-3 font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-orange hover:py-3 hover:pl-6 hover:text-white sm:text-5xl md:text-7xl"
               >
                 {t("navInitiatives")}
                 <ArrowRight className="h-8 w-8 shrink-0 opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0.5 md:h-9 md:w-9" aria-hidden />
@@ -211,7 +211,7 @@ export default function Page() {
             <li>
               <Link
                 href="/info"
-                className="group flex items-center gap-3 font-sans text-6xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-foreground hover:py-3 hover:pl-6 hover:text-background md:text-7xl"
+                className="group flex min-h-[44px] items-center gap-3 font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-foreground hover:py-3 hover:pl-6 hover:text-background sm:text-5xl md:text-7xl"
               >
                 {t("navInfo")}
                 <ArrowRight className="h-8 w-8 shrink-0 opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0.5 md:h-9 md:w-9" aria-hidden />
