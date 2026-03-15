@@ -50,11 +50,11 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
 
   return (
     <header className="border-b border-gray-700 bg-background font-sans">
-      <div className="flex flex-wrap items-stretch">
-        <div className="flex min-h-[44px] w-[9.5rem] shrink-0 items-center border-r border-gray-700 px-4 py-0">
+      <div className="flex flex-nowrap items-stretch">
+        <div className="flex min-h-[44px] min-w-0 shrink items-center border-r border-gray-700 px-4 py-0 md:w-[9.5rem] md:shrink-0">
           <Link
             href="/"
-            className="font-sans text-sm font-bold tracking-tighter text-foreground transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1 min-h-[44px] flex items-center"
+            className="font-sans text-sm font-bold tracking-tighter text-foreground transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1 min-h-[44px] flex min-w-0 items-center truncate"
           >
             {t("siteName")}
           </Link>
@@ -101,7 +101,8 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
               [ MENU ]
             </button>
           </div>
-          <div className="flex min-h-[44px] w-[5rem] shrink-0 border-r border-gray-700">
+          {/* EN/FR toggle: hidden on mobile (moved into drawer), visible from md up */}
+          <div className="hidden min-h-[44px] w-[5rem] shrink-0 border-r border-gray-700 md:flex">
             <LocaleToggle />
           </div>
           <div className="flex min-h-[44px] w-[3.75rem] shrink-0 border-r-0 border-gray-700">
