@@ -24,7 +24,8 @@
     "navInitiatives": "Initiatives",
     "navInitiativesObfuscated": "#@*!%^&*!%^",
     "navInfo": "Info",
-    "navInfoObfuscated": "#*!@"
+    "navInfoObfuscated": "#*!@",
+    "mainNavLabel": "Navigation principale du site"
   },
   "homeExperience": {
     "polymarketRole": "Créateur UGC",
@@ -58,13 +59,14 @@
   "initiatives": {
     "title": "INITIATIVES",
     "titleObfuscated": "#@*!%^&*!%^",
-    "subtitle": "Opérations stratégiques et projets entrepreneuriaux.",
-    "categoryNonProfit": "OSBL",
-    "categoryVideo": "VIDÉO",
+    "subtitle": "Campagnes et projets",
+    "categoryNonProfit": "OSBL D'ÉDUCATION FINANCIÈRE",
+    "categoryVideo": "ESSAI VIDÉO",
     "categorySocialMedia": "RÉSEAUX SOCIAUX",
     "categoryPublication": "PUBLICATION",
     "categoryMusicVideo": "CLIP",
-    "categoryCampaign": "CAMPAGNE"
+    "categoryFinancialMathMusicVideo": "CLIP MATHS FINANCIÈRES",
+    "categoryCampaign": "CAMPAGNE SCOLAIRE"
   },
   "info": {
     "title": "INFO",
@@ -73,6 +75,7 @@
     "experience": "EXPÉRIENCE",
     "viewLinkedIn": "Voir mon parcours complet sur LinkedIn",
     "clickToOpen": "Cliquer pour ouvrir dans un nouvel onglet",
+    "bio1Initial": "J",
     "bio1": "Je suis étudiant en commerce de première année à <western>l'Université Western</western> avec le statut <ivey>Ivey AEO</ivey>. Je suis passionné par <investing>l'investissement</investing> et le fonctionnement des marchés.",
     "bio2": "En dehors des études, je crée du contenu sur les réseaux <nathanielpredicts>@nathanielpredicts</nathanielpredicts> ou je profite du plein air en <running>courant</running>, à <biking>vélo</biking> ou en <hiking>randonnée</hiking>.",
     "bio3": "Je suis fier de mon travail et cherche toujours de nouveaux défis. <connect>Restons en contact.</connect>",

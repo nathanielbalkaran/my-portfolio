@@ -29,7 +29,6 @@ export function TypewriterTitle({
 
   useEffect(() => {
     if (!hovered) {
-      setTypewriterIndex(0);
       return;
     }
     const start = performance.now();
@@ -51,7 +50,7 @@ export function TypewriterTitle({
     !hovered || typewriterIndex === 0
       ? fullText
       : Array.from({ length: len }, (_, i) =>
-          i < typewriterIndex ? obfuscated[i] : fullText[i]
+          i < typewriterIndex ? obfuscated[i] : fullText[i],
         ).join("") + fullText.slice(len);
 
   return (
@@ -59,7 +58,10 @@ export function TypewriterTitle({
       role="text"
       className={className}
       onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseLeave={() => {
+        setHovered(false);
+        setTypewriterIndex(0);
+      }}
     >
       {displayText}
     </span>

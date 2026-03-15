@@ -12,7 +12,9 @@ const mdxComponents = {
     const alt = String(props.alt ?? "");
     const w = props.width != null ? Number(props.width) : 800;
     const h = props.height != null ? Number(props.height) : 500;
-    return <Image src={src} alt={alt} width={w} height={h} className="rounded-lg" />;
+    return (
+      <Image src={src} alt={alt} width={w} height={h} className="rounded-lg" />
+    );
   },
   Image,
   DocumentDownload,
@@ -23,7 +25,7 @@ type Props = { params: Promise<{ slug: string; locale: string }> };
 export async function generateStaticParams() {
   const slugs = getAllSlugs();
   return routing.locales.flatMap((locale) =>
-    slugs.map((slug) => ({ locale, slug }))
+    slugs.map((slug) => ({ locale, slug })),
   );
 }
 
@@ -63,9 +65,7 @@ export default async function FinancePitchPage({ params }: Props) {
           </p>
         </header>
 
-        <div
-          className="prose prose-lg max-w-none font-sans text-foreground prose-headings:font-serif prose-a:text-emerald prose-a:no-underline hover:prose-a:underline dark:prose-invert"
-        >
+        <div className="prose prose-lg max-w-none font-sans text-foreground prose-headings:font-serif prose-a:text-emerald prose-a:no-underline hover:prose-a:underline dark:prose-invert">
           <MDXRemote source={pitch.content} components={mdxComponents} />
         </div>
       </article>

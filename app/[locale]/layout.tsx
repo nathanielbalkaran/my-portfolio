@@ -10,7 +10,7 @@ type Props = {
 };
 
 function isValidLocale(
-  locale: string
+  locale: string,
 ): locale is (typeof routing.locales)[number] {
   return routing.locales.includes(locale as (typeof routing.locales)[number]);
 }
@@ -30,9 +30,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <SetDocumentLang />
-      <div
-        className="relative z-10 flex min-h-screen flex-col pt-[env(safe-area-inset-top,0px)] pl-[env(safe-area-inset-left,0px)] pr-[env(safe-area-inset-right,0px)] pb-[env(safe-area-inset-bottom,0px)]"
-      >
+      <div className="relative z-10 flex min-h-screen flex-col pt-[env(safe-area-inset-top,0px)] pl-[env(safe-area-inset-left,0px)] pr-[env(safe-area-inset-right,0px)] pb-[env(safe-area-inset-bottom,0px)]">
         <main className="flex-1 pb-24 md:pb-28 lg:pb-32">{children}</main>
         <div className="relative z-30 shrink-0">
           <Footer />

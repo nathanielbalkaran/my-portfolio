@@ -41,12 +41,16 @@ export function FinanceNav() {
         <div className="hidden items-center gap-8 font-serif text-sm text-[#0a192f]/80 sm:flex">
           {financeNavItems.map((item) => {
             const isActive = !item.external && pathname === item.href;
-            const current = isActive || (item.href === "/finance" && pathname.startsWith("/finance"));
+            const current =
+              isActive ||
+              (item.href === "/finance" && pathname.startsWith("/finance"));
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                {...(item.external ? { target: "_blank", rel: "noreferrer" } : {})}
+                {...(item.external
+                  ? { target: "_blank", rel: "noreferrer" }
+                  : {})}
                 className={
                   current
                     ? "font-semibold text-[#0a192f]"
@@ -67,7 +71,9 @@ export function FinanceNav() {
               <Link
                 key={item.href}
                 href={item.href}
-                {...(item.external ? { target: "_blank", rel: "noreferrer" } : {})}
+                {...(item.external
+                  ? { target: "_blank", rel: "noreferrer" }
+                  : {})}
                 className="rounded border border-transparent px-2 py-1.5 hover:bg-[#0a192f]/5 hover:text-[#0a192f]"
                 onClick={() => setOpen(false)}
               >

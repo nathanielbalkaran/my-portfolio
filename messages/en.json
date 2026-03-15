@@ -24,7 +24,8 @@
     "navInitiatives": "Initiatives",
     "navInitiativesObfuscated": "#@*!%^&*!%^",
     "navInfo": "Info",
-    "navInfoObfuscated": "#*!@"
+    "navInfoObfuscated": "#*!@",
+    "mainNavLabel": "Primary site navigation"
   },
   "homeExperience": {
     "polymarketRole": "UGC Creator",
@@ -58,13 +59,14 @@
   "initiatives": {
     "title": "INITIATIVES",
     "titleObfuscated": "#@*!%^&*!%^",
-    "subtitle": "Strategic operations and entrepreneurial ventures.",
-    "categoryNonProfit": "NON-PROFIT",
-    "categoryVideo": "VIDEO",
+    "subtitle": "Campaigns and ventures",
+    "categoryNonProfit": "FINANCIAL LITERACY NON-PROFIT",
+    "categoryVideo": "VIDEO ESSAY",
     "categorySocialMedia": "SOCIAL MEDIA",
     "categoryPublication": "PUBLICATION",
     "categoryMusicVideo": "MUSIC VIDEO",
-    "categoryCampaign": "CAMPAIGN"
+    "categoryFinancialMathMusicVideo": "FINANCIAL MATH MUSIC VIDEO",
+    "categoryCampaign": "STUDENT COUNCIL CAMPAIGN"
   },
   "info": {
     "title": "INFO",
@@ -73,6 +75,7 @@
     "experience": "EXPERIENCE",
     "viewLinkedIn": "View my full experience on LinkedIn",
     "clickToOpen": "Click to open in a new tab",
+    "bio1Initial": "I",
     "bio1": "I am a first-year business student at <western>Western University</western> with <ivey>Ivey AEO</ivey> Status. I am passionate about <investing>investing</investing> and understanding how markets operate.",
     "bio2": "When I'm not studying, I'm working on social media content <nathanielpredicts>@nathanielpredicts</nathanielpredicts> or spending time outdoors <running>running</running>, <biking>biking</biking>, or <hiking>hiking</hiking>.",
     "bio3": "I take pride in my work and am always looking for new problems to solve. <connect>Let's connect.</connect>",

@@ -7,7 +7,12 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { MarketTicker } from "@/components/MarketTicker";
 import { LocaleToggle } from "@/components/LocaleToggle";
 
-export type ActiveLink = "home" | "market research" | "initiatives" | "info" | null;
+export type ActiveLink =
+  | "home"
+  | "market research"
+  | "initiatives"
+  | "info"
+  | null;
 
 const NAV_LINKS = [
   { href: "/", activeSlug: "home" as const },
@@ -54,7 +59,7 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
         <div className="flex min-h-[44px] min-w-0 shrink items-center border-r border-gray-700 px-4 py-0 md:w-[9.5rem] md:shrink-0">
           <Link
             href="/"
-            className="font-sans text-sm font-bold tracking-tighter text-foreground transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1 min-h-[44px] flex min-w-0 items-center truncate"
+            className="font-sans text-sm font-bold tracking-tighter text-foreground truncate transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1"
           >
             {t("siteName")}
           </Link>
@@ -62,30 +67,34 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
 
         {/* Desktop nav: visible from md up */}
         <div className="hidden shrink-0 md:flex">
-          {NAV_LINKS.filter((l) => l.activeSlug !== "home").map(({ href, activeSlug }) => {
-            const isActive = activeLink === activeSlug;
-            const labelKey =
-              activeSlug === "market research"
-                ? "marketResearch"
-                : activeSlug === "initiatives"
-                  ? "initiatives"
-                  : "info";
-            return (
-              <div
-                key={href}
-                className="flex shrink-0 border-r border-gray-700"
-              >
-                <Link
-                  href={href}
-                  className={`flex min-h-[44px] items-center px-4 py-0 font-mono text-xs font-medium uppercase tracking-widest transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1 hover:bg-white hover:text-black ${
-                    isActive ? "bg-foreground/10 text-foreground" : "text-foreground/80"
-                  }`}
+          {NAV_LINKS.filter((l) => l.activeSlug !== "home").map(
+            ({ href, activeSlug }) => {
+              const isActive = activeLink === activeSlug;
+              const labelKey =
+                activeSlug === "market research"
+                  ? "marketResearch"
+                  : activeSlug === "initiatives"
+                    ? "initiatives"
+                    : "info";
+              return (
+                <div
+                  key={href}
+                  className="flex shrink-0 border-r border-gray-700"
                 >
-                  {t(labelKey)}
-                </Link>
-              </div>
-            );
-          })}
+                  <Link
+                    href={href}
+                    className={`flex min-h-[44px] items-center px-4 py-0 font-mono text-xs font-medium uppercase tracking-widest transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1 hover:bg-white hover:text-black ${
+                      isActive
+                        ? "bg-foreground/10 text-foreground"
+                        : "text-foreground/80"
+                    }`}
+                  >
+                    {t(labelKey)}
+                  </Link>
+                </div>
+              );
+            },
+          )}
         </div>
 
         <div className="ml-auto flex shrink-0 items-stretch border-l border-gray-700">
@@ -125,7 +134,9 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
       >
         <div
           className="absolute inset-0 bg-black/60 transition-opacity duration-200"
-          style={{ backgroundColor: menuOpen ? "rgba(0,0,0,0.6)" : "transparent" }}
+          style={{
+            backgroundColor: menuOpen ? "rgba(0,0,0,0.6)" : "transparent",
+          }}
           onClick={closeMenu}
           aria-hidden
         />

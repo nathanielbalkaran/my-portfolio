@@ -17,9 +17,15 @@ export function Footer() {
   ];
 
   const social = [
-    { href: "https://www.linkedin.com/in/nathanielbalkaran", labelKey: "linkedin" as const },
+    {
+      href: "https://www.linkedin.com/in/nathanielbalkaran",
+      labelKey: "linkedin" as const,
+    },
     { href: "mailto:nbalkar2@uwo.ca", labelKey: "emailLabel" as const },
-    { href: "https://www.strava.com/athletes/85417714", labelKey: "strava" as const },
+    {
+      href: "https://www.strava.com/athletes/85417714",
+      labelKey: "strava" as const,
+    },
   ];
 
   return (
@@ -74,7 +80,11 @@ export function Footer() {
                 <a
                   href={href}
                   target={href.startsWith("mailto:") ? undefined : "_blank"}
-                  rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                  rel={
+                    href.startsWith("mailto:")
+                      ? undefined
+                      : "noopener noreferrer"
+                  }
                   className={linkClass}
                 >
                   {t(labelKey)}

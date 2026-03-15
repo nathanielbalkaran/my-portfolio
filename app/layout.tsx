@@ -40,7 +40,10 @@ export default function RootLayout({
         className={`${fontSans.variable} ${fontMono.variable} min-h-screen text-foreground antialiased`}
       >
         <ThemeProvider>
-          <div className="fixed inset-0 z-[-1] h-full w-full hidden dark:block" aria-hidden>
+          <div
+            className="fixed inset-0 z-[-1] h-full w-full hidden dark:block"
+            aria-hidden
+          >
             <StarsBackground />
           </div>
           {children}

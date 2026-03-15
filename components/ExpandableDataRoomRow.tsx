@@ -55,9 +55,15 @@ export function ExpandableDataRoomRow({
           style={{ transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)" }}
           aria-hidden
         />
-        <span className="hidden font-mono text-sm text-gray-400 shrink-0 sm:inline">{ticker}</span>
-        <span className="font-sans text-xl font-bold text-foreground min-w-0 flex-1">{title}</span>
-        <span className="hidden font-mono text-sm text-gray-400 shrink-0 sm:inline">{date}</span>
+        <span className="hidden font-mono text-sm text-gray-400 shrink-0 sm:inline">
+          {ticker}
+        </span>
+        <span className="font-sans text-xl font-bold text-foreground min-w-0 flex-1">
+          {title}
+        </span>
+        <span className="hidden font-mono text-sm text-gray-400 shrink-0 sm:inline">
+          {date}
+        </span>
         {/* Micro-copy hint: visible on hover only */}
         <span
           className="font-mono text-[10px] uppercase tracking-widest text-gray-500 shrink-0 opacity-0 transition-opacity duration-200 group-hover:opacity-100"

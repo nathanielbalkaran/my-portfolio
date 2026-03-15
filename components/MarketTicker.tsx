@@ -22,9 +22,14 @@ function formatTickerTime() {
 }
 
 export function MarketTicker() {
+  const [hasMounted, setHasMounted] = useState(false);
   const [data, setData] = useState<TickerItem[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [liveTime, setLiveTime] = useState(formatTickerTime);
+  const [liveTime, setLiveTime] = useState("");
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   const fetchTickerData = useCallback(async () => {
     try {
@@ -49,9 +54,15 @@ export function MarketTicker() {
   }, [fetchTickerData]);
 
   useEffect(() => {
+    if (!hasMounted) return;
+    setLiveTime(formatTickerTime());
     const t = setInterval(() => setLiveTime(formatTickerTime()), 1000);
     return () => clearInterval(t);
-  }, []);
+  }, [hasMounted]);
+
+  if (!hasMounted) {
+    return null;
+  }
 
   const loopDuration = 40;
 
@@ -94,7 +105,10 @@ export function MarketTicker() {
 
       {/* LIVE + timestamp — same width as header name cell (9.5rem) so right borders align */}
       <div className="flex h-full w-[9.5rem] shrink-0 items-center border-r border-gray-700 bg-transparent px-3 font-mono text-[10px] uppercase tracking-widest text-foreground/70 dark:bg-black/10">
-        <span className="mr-2 inline-block h-1.5 w-1.5 bg-[#10B981]" aria-hidden />
+        <span
+          className="mr-2 inline-block h-1.5 w-1.5 bg-[#10B981]"
+          aria-hidden
+        />
         <span>LIVE</span>
         <span className="ml-2 tabular-nums">{liveTime}</span>
       </div>
@@ -125,9 +139,7 @@ export function MarketTicker() {
           className="market-ticker-btn flex h-full w-full cursor-pointer items-center justify-center bg-gray-100 text-gray-600 transition-none hover:bg-white hover:text-black disabled:cursor-not-allowed dark:bg-gray-900 dark:text-gray-400"
           aria-label="Refresh market data"
         >
-          <RefreshCw
-            className={`h-3 w-3 ${isLoading ? "animate-spin" : ""}`}
-          />
+          <RefreshCw className={`h-3 w-3 ${isLoading ? "animate-spin" : ""}`} />
         </button>
       </div>
     </div>

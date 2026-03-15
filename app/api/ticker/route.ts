@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 const FINNHUB_SYMBOLS = [
   { symbol: "NVDA", display: "NVDA" },
@@ -39,7 +39,7 @@ export async function GET() {
         const res = await fetch(
           `https://finnhub.io/api/v1/quote?symbol=${encodeURIComponent(symbol)}&token=${apiKey}`,
           {
-            cache: "no-store",
+            next: { revalidate: 300 },
           },
         );
 
@@ -49,10 +49,8 @@ export async function GET() {
 
         const data = await res.json();
 
-        const currentPrice =
-          typeof data?.c === "number" ? data.c : undefined;
-        const changePercent =
-          typeof data?.dp === "number" ? data.dp : 0;
+        const currentPrice = typeof data?.c === "number" ? data.c : undefined;
+        const changePercent = typeof data?.dp === "number" ? data.dp : 0;
 
         const isPositive = changePercent >= 0;
 
@@ -77,11 +75,9 @@ export async function GET() {
       }),
     );
 
-    console.log("Finnhub ticker prices:", results);
-
     return NextResponse.json(results, {
       headers: {
-        "Cache-Control": "no-store",
+        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600",
       },
     });
   } catch (error) {
@@ -91,7 +87,7 @@ export async function GET() {
       {
         status: 500,
         headers: {
-          "Cache-Control": "no-store",
+          "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300",
         },
       },
     );
