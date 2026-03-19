@@ -20,6 +20,16 @@
     transition-duration: 200ms;
     transition-timing-function: var(--ease-snappy);
   }
+
+  *::selection {
+    background-color: #f97316 !important;
+    color: #050a14 !important;
+  }
+
+  *::-moz-selection {
+    background-color: #f97316 !important;
+    color: #050a14 !important;
+  }
 }
 
 /* ——— 2 & 3. Color palette & theming (class-based light/dark) ——— */
