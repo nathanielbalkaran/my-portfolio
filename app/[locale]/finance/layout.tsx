@@ -6,7 +6,7 @@ export default function FinanceLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen text-foreground">
+    <div className="min-h-screen w-full min-w-0 max-w-full overflow-x-clip text-foreground">
       <SiteHeader activeLink="market research" />
       <div className="page-wrapper">{children}</div>
     </div>

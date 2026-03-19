@@ -29,11 +29,11 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative w-full border-t border-border bg-background text-foreground rounded-none">
+    <footer className="relative w-full min-w-0 max-w-full overflow-x-clip border-t border-border bg-background text-foreground rounded-none">
       <div className="border-b border-border px-4 py-5 md:px-5">
         <a
           href="mailto:nbalkar2@uwo.ca"
-          className="font-sans text-5xl md:text-6xl font-bold tracking-tighter lowercase flex min-h-[44px] items-center hover:bg-foreground hover:text-background transition-colors duration-200 ease-snappy py-1 px-1 -mx-1 rounded-none w-fit"
+          className="block min-h-[44px] min-w-0 max-w-full break-words rounded-none px-1 py-1 font-sans text-5xl font-bold tracking-tighter lowercase transition-colors duration-200 ease-snappy hover:bg-foreground hover:text-background md:text-6xl -mx-1"
         >
           {t("email")}
         </a>

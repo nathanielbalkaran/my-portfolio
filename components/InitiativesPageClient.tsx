@@ -85,15 +85,15 @@ export function InitiativesPageClient() {
   const sortedProjects = sortProjectsByYearNewestFirst(projects);
 
   return (
-    <div className="min-h-screen font-sans text-foreground antialiased">
+    <div className="min-h-screen w-full min-w-0 max-w-full overflow-x-clip font-sans text-foreground antialiased">
       <SiteHeader activeLink="initiatives" />
 
-      <div className="page-wrapper mx-auto max-w-6xl">
+      <div className="page-wrapper mx-auto min-w-0 max-w-6xl">
         <header className="text-left">
           <ScrollReveal>
             <h1
               id="initiatives-page-heading"
-              className="font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground sm:text-7xl md:text-8xl sm:leading-none transition-colors duration-200 hover:text-[#ff7518]"
+              className="max-w-full break-words font-sans text-4xl font-bold uppercase leading-tight tracking-tighter text-foreground transition-colors duration-200 hover:text-[#ff7518] sm:text-7xl sm:leading-none md:text-8xl"
             >
               <TypewriterTitle
                 namespace="initiatives"

@@ -46,7 +46,7 @@ export function ExpandableDataRoomRow({
       <button
         type="button"
         onClick={() => setIsExpanded((e) => !e)}
-        className="group relative flex min-h-[44px] w-full justify-between items-center gap-6 py-5 px-8 border-b border-border cursor-pointer text-left transition-colors duration-200 hover:bg-foreground/5"
+        className="group relative flex min-h-[44px] w-full min-w-0 max-w-full cursor-pointer items-center justify-between gap-4 border-b border-border px-4 py-5 text-left transition-colors duration-200 hover:bg-foreground/5 sm:gap-6 sm:px-8"
         aria-expanded={isExpanded}
       >
         {/* Hover: 2px vertical bar on left edge (terminal-green, scale-y 0→100%) */}
@@ -58,7 +58,7 @@ export function ExpandableDataRoomRow({
         <span className="hidden font-mono text-sm text-gray-400 shrink-0 sm:inline">
           {ticker}
         </span>
-        <span className="font-sans text-xl font-bold text-foreground min-w-0 flex-1">
+        <span className="min-w-0 flex-1 break-words font-sans text-xl font-bold text-foreground">
           {title}
         </span>
         <span className="hidden font-mono text-sm text-gray-400 shrink-0 sm:inline">

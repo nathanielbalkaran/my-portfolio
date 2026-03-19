@@ -100,7 +100,7 @@ export function MarketTicker() {
   );
 
   return (
-    <div className="market-ticker relative z-50 flex h-6 w-full items-stretch border-b border-gray-700 bg-transparent dark:bg-black/20">
+    <div className="market-ticker relative z-50 flex h-6 w-full min-w-0 max-w-full items-stretch overflow-x-clip border-b border-gray-700 bg-transparent dark:bg-black/20">
       <div className="market-ticker-fade pointer-events-none absolute inset-y-0 right-[3.75rem] z-10 w-16 bg-gradient-to-l from-background to-transparent dark:from-black/20" />
 
       {/* LIVE + timestamp — same width as header name cell (9.5rem) so right borders align */}

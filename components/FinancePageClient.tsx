@@ -21,6 +21,8 @@ type DataRoomItem = {
   titleKey: string;
   contextKey: string;
   date: string;
+  /** ISO YYYY-MM-DD; used to order newest → oldest */
+  sortDate: string;
   tabs: DataRoomTab[];
 };
 
@@ -34,6 +36,7 @@ export function FinancePageClient() {
       titleKey: "aritziaTitle",
       contextKey: "aritziaContext",
       date: "Feb 2026",
+      sortDate: "2026-02-01",
       tabs: [
         { id: "research", label: t("tabResearch"), url: "/pdfs/aritzia.pdf" },
         { id: "model", label: t("tabModel"), url: null },
@@ -45,22 +48,42 @@ export function FinancePageClient() {
       titleKey: "lvmhTitle",
       contextKey: "lvmhContext",
       date: "Mar 2026",
+      sortDate: "2026-03-01",
       tabs: [
         { id: "research", label: t("tabResearch"), url: "/pdfs/lvmh.pdf" },
         { id: "model", label: t("tabModel"), url: null },
         { id: "deck", label: t("tabDeck"), url: null },
       ],
     },
-  ];
+    {
+      ticker: "ICC",
+      titleKey: "iccChamberEssayTitle",
+      contextKey: "iccChamberEssayContext",
+      date: "Mar 2026",
+      sortDate: "2026-03-18",
+      tabs: [
+        {
+          id: "research",
+          label: t("tabResearch"),
+          url: "/pdfs/international-chamber-commerce-essay-his1809.pdf",
+        },
+        { id: "model", label: t("tabModel"), url: null },
+        { id: "deck", label: t("tabDeck"), url: null },
+      ],
+    },
+  ].sort((a, b) => b.sortDate.localeCompare(a.sortDate));
 
   return (
-    <main aria-labelledby="finance-page-heading">
-      <div className="w-full max-w-5xl pb-14">
+    <main
+      className="min-w-0 w-full max-w-full overflow-x-clip"
+      aria-labelledby="finance-page-heading"
+    >
+      <div className="w-full min-w-0 max-w-5xl pb-14">
         <header className="text-left">
           <ScrollReveal>
             <h1
               id="finance-page-heading"
-              className="font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground sm:text-7xl md:text-8xl sm:leading-none transition-colors duration-200 hover:text-emerald-500"
+              className="max-w-full break-words font-sans text-4xl font-bold uppercase leading-tight tracking-tighter text-foreground transition-colors duration-200 hover:text-emerald-500 sm:text-7xl sm:leading-none md:text-8xl"
             >
               <TypewriterTitle
                 namespace="finance"

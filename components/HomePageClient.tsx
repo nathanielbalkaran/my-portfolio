@@ -93,20 +93,20 @@ export function HomePageClient() {
 
   return (
     <main
-      className="relative flex min-h-screen flex-col"
+      className="relative flex min-h-screen min-w-0 max-w-full flex-col overflow-x-clip"
       aria-labelledby="home-page-heading"
     >
       <header className="relative z-10">
         <SiteHeader activeLink="home" />
       </header>
 
-      <div className="page-wrapper w-full max-w-5xl">
+      <div className="page-wrapper w-full min-w-0 max-w-5xl">
         <header className="pb-8 text-left">
           <ScrollReveal>
             <motion.h1 id="home-page-heading">
               <Link
                 href="/info"
-                className="inline-block origin-left font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] select-none hover:text-[#FF7518] sm:text-7xl md:text-8xl sm:leading-none"
+                className="inline-block max-w-full origin-left break-words font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] select-none hover:text-[#FF7518] sm:text-7xl md:text-8xl sm:leading-none"
                 onMouseEnter={() => setNameObfuscated(true)}
                 onMouseLeave={() => {
                   setNameObfuscated(false);
@@ -139,12 +139,12 @@ export function HomePageClient() {
         </header>
 
         <motion.section
-          className="grid grid-cols-1 gap-0 mb-20 md:grid-cols-3"
+          className="mb-20 grid min-w-0 max-w-full grid-cols-1 gap-0 md:grid-cols-3"
           initial={{ opacity: 0, x: -16 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ...snappy, delay: 0.1 }}
         >
-          <div className="border-t border-border border-r-0 py-8 pr-8 md:col-span-2 md:border-r md:border-r-border md:pr-12">
+          <div className="min-w-0 border-t border-border border-r-0 py-8 pr-8 md:col-span-2 md:border-r md:border-r-border md:pr-12">
             <ScrollReveal>
               <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">
                 {t("experience")}
@@ -195,7 +195,7 @@ export function HomePageClient() {
               ))}
             </motion.ul>
           </div>
-          <div className="border-t border-border py-8 pl-0 pr-0 md:col-span-1 md:pl-12 md:pr-0">
+          <div className="min-w-0 border-t border-border py-8 pl-0 pr-0 md:col-span-1 md:pl-12 md:pr-0">
             <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">
               {t("education")}
             </h2>
@@ -251,7 +251,7 @@ export function HomePageClient() {
             <li>
               <Link
                 href="/finance"
-                className="group flex min-h-[44px] items-center gap-3 font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-green hover:py-3 hover:pl-6 hover:text-white sm:text-5xl md:text-7xl"
+                className="group flex min-h-[44px] min-w-0 max-w-full flex-wrap items-center gap-3 break-words font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-green hover:py-3 hover:pl-6 hover:text-white sm:text-5xl md:text-7xl"
               >
                 {t("navMarketResearch")}
                 <ArrowRight
@@ -263,7 +263,7 @@ export function HomePageClient() {
             <li>
               <Link
                 href="/initiatives"
-                className="group flex min-h-[44px] items-center gap-3 font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-orange hover:py-3 hover:pl-6 hover:text-white sm:text-5xl md:text-7xl"
+                className="group flex min-h-[44px] min-w-0 max-w-full flex-wrap items-center gap-3 break-words font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-orange hover:py-3 hover:pl-6 hover:text-white sm:text-5xl md:text-7xl"
               >
                 {t("navInitiatives")}
                 <ArrowRight
@@ -275,7 +275,7 @@ export function HomePageClient() {
             <li>
               <Link
                 href="/info"
-                className="group flex min-h-[44px] items-center gap-3 font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-foreground hover:py-3 hover:pl-6 hover:text-background sm:text-5xl md:text-7xl"
+                className="group flex min-h-[44px] min-w-0 max-w-full flex-wrap items-center gap-3 break-words font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-foreground hover:py-3 hover:pl-6 hover:text-background sm:text-5xl md:text-7xl"
               >
                 {t("navInfo")}
                 <ArrowRight

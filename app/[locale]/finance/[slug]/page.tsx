@@ -35,8 +35,8 @@ export default async function FinancePitchPage({ params }: Props) {
   if (!pitch) notFound();
 
   return (
-    <main>
-      <article className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
+    <main className="min-w-0 w-full max-w-full overflow-x-clip">
+      <article className="mx-auto min-w-0 max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
         <Link
           href="/finance"
           className="mb-8 inline-block font-sans text-sm text-foreground/60 underline-offset-2 hover:text-emerald hover:underline"
@@ -65,7 +65,7 @@ export default async function FinancePitchPage({ params }: Props) {
           </p>
         </header>
 
-        <div className="prose prose-lg max-w-none font-sans text-foreground prose-headings:font-serif prose-a:text-emerald prose-a:no-underline hover:prose-a:underline dark:prose-invert">
+        <div className="prose prose-lg max-w-none min-w-0 break-words font-sans text-foreground prose-headings:font-serif prose-a:text-emerald prose-a:no-underline hover:prose-a:underline prose-pre:max-w-full prose-pre:overflow-x-auto dark:prose-invert">
           <MDXRemote source={pitch.content} components={mdxComponents} />
         </div>
       </article>

@@ -25,13 +25,17 @@ type SiteHeaderProps = {
   activeLink: ActiveLink;
 };
 
-const DRAWER_BG = "#0A192F";
-
 export function SiteHeader({ activeLink }: SiteHeaderProps) {
   const t = useTranslations("common");
   const [menuOpen, setMenuOpen] = useState(false);
+  /** Drawer links use next/link + prefetch/observer; render after mount to avoid SSR/client HTML drift. */
+  const [drawerLinksReady, setDrawerLinksReady] = useState(false);
 
   const closeMenu = useCallback(() => setMenuOpen(false), []);
+
+  useEffect(() => {
+    setDrawerLinksReady(true);
+  }, []);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -54,12 +58,12 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
   };
 
   return (
-    <header className="border-b border-gray-700 bg-background font-sans">
-      <div className="flex flex-nowrap items-stretch">
-        <div className="flex min-h-[44px] min-w-0 shrink items-center border-r border-gray-700 px-4 py-0 md:w-[9.5rem] md:shrink-0">
+    <header className="w-full min-w-0 max-w-full overflow-x-clip border-b border-gray-700 bg-background font-sans">
+      <div className="flex w-full min-w-0 max-w-full flex-nowrap items-stretch">
+        <div className="flex min-h-[44px] min-w-0 flex-1 items-center border-r border-gray-700 px-4 py-0 md:w-[9.5rem] md:flex-none md:shrink-0">
           <Link
             href="/"
-            className="font-sans text-sm font-bold tracking-tighter text-foreground truncate transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1"
+            className="block min-w-0 max-w-full truncate font-sans text-sm font-bold tracking-tighter text-foreground transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:translate-x-1"
           >
             {t("siteName")}
           </Link>
@@ -126,7 +130,7 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
         <MarketTicker />
       </div>
 
-      {/* Mobile drawer: Dark Navy, slides from right, full-width rows, 1px borders */}
+      {/* Mobile drawer: theme background so foreground text stays readable in light & dark */}
       <div
         className="fixed inset-0 z-50 md:hidden"
         aria-hidden={!menuOpen}
@@ -141,40 +145,44 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
           aria-hidden
         />
         <div
-          className="absolute right-0 top-0 h-full w-full max-w-sm border-l border-gray-700 shadow-lg transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)]"
+          className="absolute right-0 top-0 h-full w-full max-w-sm border-l border-gray-700 bg-background shadow-lg transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)]"
           style={{
-            backgroundColor: DRAWER_BG,
             transform: menuOpen ? "translateX(0)" : "translateX(100%)",
           }}
         >
-          <div className="flex flex-col">
-            {NAV_LINKS.map(({ href, activeSlug }) => {
-              const isActive = activeLink === activeSlug;
-              return (
-                <div key={href} className="border-b border-gray-700">
-                  <Link
-                    href={href}
-                    onClick={closeMenu}
-                    className={`flex min-h-[44px] w-full items-center px-6 font-mono text-xs font-medium uppercase tracking-widest text-foreground/90 transition-colors hover:bg-white hover:text-black ${
-                      isActive ? "bg-white/10 text-white" : ""
-                    }`}
-                  >
-                    {linkLabel(activeSlug)}
-                  </Link>
+          {drawerLinksReady ? (
+            <div className="flex flex-col">
+              {NAV_LINKS.map(({ href, activeSlug }) => {
+                const isActive = activeLink === activeSlug;
+                return (
+                  <div key={href} className="border-b border-gray-700">
+                    <Link
+                      href={href}
+                      prefetch={false}
+                      onClick={closeMenu}
+                      className={`flex min-h-[44px] w-full min-w-0 items-center break-words px-6 font-mono text-xs font-medium uppercase tracking-widest transition-colors hover:bg-white hover:text-black ${
+                        isActive
+                          ? "bg-foreground/10 text-foreground"
+                          : "text-foreground/90"
+                      }`}
+                    >
+                      {linkLabel(activeSlug)}
+                    </Link>
+                  </div>
+                );
+              })}
+              <div className="border-b border-gray-700">
+                <div className="flex min-h-[44px] items-center justify-center gap-2 px-6 py-2">
+                  <LocaleToggle />
                 </div>
-              );
-            })}
-            <div className="border-b border-gray-700">
-              <div className="flex min-h-[44px] items-center justify-center gap-2 px-6 py-2">
-                <LocaleToggle />
+              </div>
+              <div className="border-b border-gray-700">
+                <div className="flex min-h-[44px] items-center justify-center px-6 py-2">
+                  <ThemeToggle />
+                </div>
               </div>
             </div>
-            <div className="border-b border-gray-700">
-              <div className="flex min-h-[44px] items-center justify-center px-6 py-2">
-                <ThemeToggle />
-              </div>
-            </div>
-          </div>
+          ) : null}
         </div>
       </div>
     </header>

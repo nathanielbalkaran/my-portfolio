@@ -163,9 +163,9 @@ export default function InfoPage() {
   );
 
   return (
-    <div className="min-h-screen font-sans text-foreground antialiased">
+    <div className="min-h-screen w-full min-w-0 max-w-full overflow-x-clip font-sans text-foreground antialiased">
       <FlyIn delay={0}>
-        <div className="relative z-10 w-full max-w-5xl pb-14">
+        <div className="relative z-10 mx-auto w-full min-w-0 max-w-5xl pb-14">
           {experienceHover ? (
             <div
               className="pointer-events-none fixed left-0 top-0 z-40 -translate-x-1/2 border border-foreground/15 bg-background/95 px-3 py-2 backdrop-blur"
@@ -182,7 +182,7 @@ export default function InfoPage() {
 
           <header className="text-left">
             <ScrollReveal>
-              <h1 className="font-sans text-4xl font-bold tracking-tighter uppercase leading-tight text-foreground sm:text-7xl md:text-8xl sm:leading-none">
+              <h1 className="max-w-full break-words font-sans text-4xl font-bold uppercase leading-tight tracking-tighter text-foreground sm:text-7xl sm:leading-none md:text-8xl">
                 <TypewriterTitle
                   namespace="info"
                   titleKey="title"
