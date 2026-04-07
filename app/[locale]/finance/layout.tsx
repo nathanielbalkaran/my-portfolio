@@ -7,7 +7,7 @@ export default function FinanceLayout({
 }) {
   return (
     <div className="min-h-screen w-full min-w-0 max-w-full overflow-x-clip text-foreground">
-      <SiteHeader activeLink="market research" />
+      <SiteHeader activeLink="projects" />
       <div className="page-wrapper">{children}</div>
     </div>
   );

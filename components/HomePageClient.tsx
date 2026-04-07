@@ -9,9 +9,8 @@ import { Link } from "@/i18n/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import {
   ScrollReveal,
-  staggerItemVariants,
-  staggerListVariants,
 } from "@/components/ScrollReveal";
+import { ExperienceEntries } from "@/components/ExperienceEntries";
 
 const snappy = {
   type: "tween" as const,
@@ -21,46 +20,11 @@ const snappy = {
 
 const TYPEWRITER_DURATION_MS = 400;
 
-const EXPERIENCE = [
-  {
-    company: "Polymarket",
-    roleKey: "polymarketRole",
-    yearKey: "polymarketYear",
-    logoSrc: "/logos/polymarket.png",
-  },
-  {
-    company: "180 Degrees Consulting",
-    roleKey: "180dcRole",
-    yearKey: "180dcYear",
-    logoSrc: "/logos/180dc.png",
-  },
-  {
-    company: "Blue Canoe Brands",
-    roleKey: "blueCanoeRole",
-    yearKey: "blueCanoeYear",
-    logoSrc: "/logos/blue-canoe-brands.png",
-  },
-  {
-    company: "Project WhyFi",
-    roleKey: "whyfiRole",
-    yearKey: "whyfiYear",
-    logoSrc: "/logos/project-whyfi.png",
-  },
-  {
-    company: "City of Markham",
-    roleKey: "markhamRole",
-    yearKey: "markhamYear",
-    logoSrc: "/logos/city-of-markham.png",
-  },
-];
-
 export function HomePageClient() {
   const [nameObfuscated, setNameObfuscated] = useState(false);
   const [typewriterIndex, setTypewriterIndex] = useState(0);
   const rafRef = useRef<number | null>(null);
   const t = useTranslations("home");
-  const tExp = useTranslations("homeExperience");
-
   const fullName = t("name");
   const obfuscated = t("nameObfuscated");
   const len = Math.min(fullName.length, obfuscated.length);
@@ -150,50 +114,7 @@ export function HomePageClient() {
                 {t("experience")}
               </h2>
             </ScrollReveal>
-            <motion.ul
-              className="space-y-0.5"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={staggerListVariants(0.1)}
-            >
-              {EXPERIENCE.map((item) => (
-                <motion.li
-                  key={`${item.company}-${item.yearKey}`}
-                  variants={staggerItemVariants}
-                >
-                  <a
-                    href="https://www.linkedin.com/in/nathanielbalkaran"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group/exp flex min-h-[44px] flex-wrap items-center gap-x-2 gap-y-0 rounded-none py-2 pr-2 -mr-2 transition-colors duration-200 hover:bg-foreground/10"
-                    aria-label={`${item.company} – ${tExp(item.roleKey)} (${tExp(item.yearKey)}) on LinkedIn`}
-                  >
-                    <span className="relative h-6 w-6 shrink-0 overflow-hidden">
-                      <Image
-                        src={item.logoSrc}
-                        alt=""
-                        fill
-                        className="object-contain"
-                        sizes="24px"
-                        priority
-                      />
-                    </span>
-                    <span className="font-sans font-bold text-foreground group-hover/exp:text-foreground">
-                      {item.company}
-                    </span>
-                    <span className="text-gray-500">·</span>
-                    <span className="font-sans text-foreground/80 group-hover/exp:text-foreground/90">
-                      {tExp(item.roleKey)}
-                    </span>
-                    <span className="text-gray-500">·</span>
-                    <span className="font-mono text-sm text-gray-500 group-hover/exp:text-gray-400">
-                      {tExp(item.yearKey)}
-                    </span>
-                  </a>
-                </motion.li>
-              ))}
-            </motion.ul>
+            <ExperienceEntries variant="home" />
           </div>
           <div className="min-w-0 border-t border-border py-8 pl-0 pr-0 md:col-span-1 md:pl-12 md:pr-0">
             <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500 mb-6">
@@ -254,18 +175,6 @@ export function HomePageClient() {
                 className="group flex min-h-[44px] min-w-0 max-w-full flex-wrap items-center gap-3 break-words font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-green hover:py-3 hover:pl-6 hover:text-white sm:text-5xl md:text-7xl"
               >
                 {t("navMarketResearch")}
-                <ArrowRight
-                  className="h-8 w-8 shrink-0 opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0.5 md:h-9 md:w-9"
-                  aria-hidden
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/initiatives"
-                className="group flex min-h-[44px] min-w-0 max-w-full flex-wrap items-center gap-3 break-words font-sans text-4xl font-bold tracking-tighter text-foreground transition-all duration-200 ease-snappy hover:translate-x-1 hover:bg-terminal-orange hover:py-3 hover:pl-6 hover:text-white sm:text-5xl md:text-7xl"
-              >
-                {t("navInitiatives")}
                 <ArrowRight
                   className="h-8 w-8 shrink-0 opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0.5 md:h-9 md:w-9"
                   aria-hidden

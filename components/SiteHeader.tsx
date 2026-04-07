@@ -9,15 +9,13 @@ import { LocaleToggle } from "@/components/LocaleToggle";
 
 export type ActiveLink =
   | "home"
-  | "market research"
-  | "initiatives"
+  | "projects"
   | "info"
   | null;
 
 const NAV_LINKS = [
   { href: "/", activeSlug: "home" as const },
-  { href: "/finance", activeSlug: "market research" as const },
-  { href: "/initiatives", activeSlug: "initiatives" as const },
+  { href: "/finance", activeSlug: "projects" as const },
   { href: "/info", activeSlug: "info" as const },
 ] as const;
 
@@ -52,8 +50,7 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
 
   const linkLabel = (activeSlug: (typeof NAV_LINKS)[number]["activeSlug"]) => {
     if (activeSlug === "home") return t("siteName");
-    if (activeSlug === "market research") return t("marketResearch");
-    if (activeSlug === "initiatives") return t("initiatives");
+    if (activeSlug === "projects") return t("marketResearch");
     return t("info");
   };
 
@@ -75,11 +72,7 @@ export function SiteHeader({ activeLink }: SiteHeaderProps) {
             ({ href, activeSlug }) => {
               const isActive = activeLink === activeSlug;
               const labelKey =
-                activeSlug === "market research"
-                  ? "marketResearch"
-                  : activeSlug === "initiatives"
-                    ? "initiatives"
-                    : "info";
+                activeSlug === "projects" ? "marketResearch" : "info";
               return (
                 <div
                   key={href}

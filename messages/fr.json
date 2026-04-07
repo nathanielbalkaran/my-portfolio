@@ -3,8 +3,7 @@
     "siteName": "nathaniel balkaran",
     "menu": "Menu",
     "home": "ACCUEIL",
-    "marketResearch": "ÉTUDES DE MARCHÉ",
-    "initiatives": "INITIATIVES",
+    "marketResearch": "PROJETS",
     "info": "INFO"
   },
   "home": {
@@ -19,17 +18,13 @@
     "educationYear": "2025-2029",
     "educationAward1": "Bourse Embark Student (5000 $)",
     "educationAward2": "Bourse d'excellence Western (3500 $)",
-    "navMarketResearch": "Études de marché",
+    "navMarketResearch": "Projets",
     "navMarketResearchObfuscated": "#@*!%^&* #!%^&*!%^&",
-    "navInitiatives": "Initiatives",
-    "navInitiativesObfuscated": "#@*!%^&*!%^",
     "navInfo": "Info",
     "navInfoObfuscated": "#*!@",
     "mainNavLabel": "Navigation principale du site"
   },
   "homeExperience": {
-    "polymarketRole": "Créateur UGC",
-    "polymarketYear": "2025 – Présent",
     "180dcRole": "Analyste en conseil",
     "180dcYear": "2023 – Présent",
     "blueCanoeRole": "Fondateur",
@@ -40,7 +35,7 @@
     "markhamYear": "2023 – 2025"
   },
   "finance": {
-    "title": "ÉTUDES DE MARCHÉ",
+    "title": "PROJETS",
     "titleObfuscated": "#@*!%^&* #!%^&*!%^&",
     "subtitle": "Index de rapports d'analyse actions et modèles de valorisation.",
     "equityResearch": "Documents",
@@ -58,18 +53,6 @@
     "iccChamberEssayTitle": "L’architecte silencieux de l’ère d’institutionnalisation : la Chambre de commerce internationale comme sauveur technocratique du commerce mondial",
     "iccChamberEssayContext": "Dissertation pour History 1809G (histoire internationale, années 1880–1990) sur le rôle de la Chambre de commerce internationale dans l’institutionnalisation du commerce mondial — pas une analyse d’actions cotées."
   },
-  "initiatives": {
-    "title": "INITIATIVES",
-    "titleObfuscated": "#@*!%^&*!%^",
-    "subtitle": "Campagnes et projets",
-    "categoryNonProfit": "OSBL D'ÉDUCATION FINANCIÈRE",
-    "categoryVideo": "ESSAI VIDÉO",
-    "categorySocialMedia": "RÉSEAUX SOCIAUX",
-    "categoryPublication": "PUBLICATION",
-    "categoryMusicVideo": "CLIP",
-    "categoryFinancialMathMusicVideo": "CLIP MATHS FINANCIÈRES",
-    "categoryCampaign": "CAMPAGNE SCOLAIRE"
-  },
   "info": {
     "title": "INFO",
     "titleObfuscated": "#*!@",
@@ -85,8 +68,7 @@
   },
   "footer": {
     "home": "ACCUEIL",
-    "marketResearch": "ÉTUDES DE MARCHÉ",
-    "initiatives": "INITIATIVES",
+    "marketResearch": "PROJETS",
     "info": "INFO",
     "email": "nbalkar2@uwo.ca",
     "name": "nathaniel balkaran",

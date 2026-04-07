@@ -3,8 +3,7 @@
     "siteName": "nathaniel balkaran",
     "menu": "Menu",
     "home": "HOME",
-    "marketResearch": "MARKET RESEARCH",
-    "initiatives": "INITIATIVES",
+    "marketResearch": "PROJECTS",
     "info": "INFO"
   },
   "home": {
@@ -19,17 +18,13 @@
     "educationYear": "2025-2029",
     "educationAward1": "Embark Student Award ($5000)",
     "educationAward2": "Western Scholarship of Distinction ($3500)",
-    "navMarketResearch": "Market Research",
+    "navMarketResearch": "Projects",
     "navMarketResearchObfuscated": "#@*!%^&* #!%^&*",
-    "navInitiatives": "Initiatives",
-    "navInitiativesObfuscated": "#@*!%^&*!%^",
     "navInfo": "Info",
     "navInfoObfuscated": "#*!@",
     "mainNavLabel": "Primary site navigation"
   },
   "homeExperience": {
-    "polymarketRole": "UGC Creator",
-    "polymarketYear": "2025 – Present",
     "180dcRole": "Consulting Analyst",
     "180dcYear": "2023 – Present",
     "blueCanoeRole": "Founder",
@@ -40,7 +35,7 @@
     "markhamYear": "2023 – 2025"
   },
   "finance": {
-    "title": "MARKET RESEARCH",
+    "title": "PROJECTS",
     "titleObfuscated": "#@*!%^&* #!%^&*",
     "subtitle": "An index of equity research and valuation models.",
     "equityResearch": "Documents",
@@ -58,18 +53,6 @@
     "iccChamberEssayTitle": "The Silent Architect of the Age of Institutionalization: The International Chamber of Commerce as the Technocratic Saviour of Global Trade",
     "iccChamberEssayContext": "Course essay for History 1809G (International History, 1880s–1990s) on the International Chamber of Commerce’s role in institutionalizing global trade—not equity research on a listed issuer."
   },
-  "initiatives": {
-    "title": "INITIATIVES",
-    "titleObfuscated": "#@*!%^&*!%^",
-    "subtitle": "Campaigns and ventures",
-    "categoryNonProfit": "FINANCIAL LITERACY NON-PROFIT",
-    "categoryVideo": "VIDEO ESSAY",
-    "categorySocialMedia": "SOCIAL MEDIA",
-    "categoryPublication": "PUBLICATION",
-    "categoryMusicVideo": "MUSIC VIDEO",
-    "categoryFinancialMathMusicVideo": "FINANCIAL MATH MUSIC VIDEO",
-    "categoryCampaign": "STUDENT COUNCIL CAMPAIGN"
-  },
   "info": {
     "title": "INFO",
     "titleObfuscated": "#*!@",
@@ -85,8 +68,7 @@
   },
   "footer": {
     "home": "HOME",
-    "marketResearch": "MARKET RESEARCH",
-    "initiatives": "INITIATIVES",
+    "marketResearch": "PROJECTS",
     "info": "INFO",
     "email": "nbalkar2@uwo.ca",
     "name": "nathaniel balkaran",

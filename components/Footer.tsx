@@ -12,7 +12,6 @@ export function Footer() {
   const pages = [
     { href: "/", labelKey: "home" },
     { href: "/finance", labelKey: "marketResearch" },
-    { href: "/initiatives", labelKey: "initiatives" },
     { href: "/info", labelKey: "info" },
   ];
 

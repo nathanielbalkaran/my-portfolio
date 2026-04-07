@@ -1,59 +1,17 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { FlyIn } from "@/components/FlyIn";
 import { TypewriterTitle } from "@/components/TypewriterTitle";
-import {
-  ScrollReveal,
-  ScrollBorderStrike,
-  staggerListVariants,
-  staggerItemVariants,
-} from "@/components/ScrollReveal";
+import { ExperienceEntries } from "@/components/ExperienceEntries";
+import { ScrollReveal, ScrollBorderStrike } from "@/components/ScrollReveal";
+import { EXPERIENCE_LINKEDIN_HREF } from "@/data/experience";
 
 const stagger = 0.05;
 
-const experience = [
-  {
-    company: "Polymarket",
-    roleKey: "polymarketRole",
-    dateKey: "polymarketYear",
-    logoBg: "bg-blue-600",
-    logoSrc: "/logos/polymarket.png",
-  },
-  {
-    company: "180 Degrees Consulting",
-    roleKey: "180dcRole",
-    dateKey: "180dcYear",
-    logoBg: "bg-black",
-    logoSrc: "/logos/180dc.png",
-  },
-  {
-    company: "Blue Canoe Brands",
-    roleKey: "blueCanoeRole",
-    dateKey: "blueCanoeYear",
-    logoBg: "bg-blue-500",
-    logoSrc: "/logos/blue-canoe-brands.png",
-  },
-  {
-    company: "Project WhyFi",
-    roleKey: "whyfiRole",
-    dateKey: "whyfiYear",
-    logoBg: "bg-blue-500",
-    logoSrc: "/logos/project-whyfi.png",
-  },
-  {
-    company: "City of Markham",
-    roleKey: "markhamRole",
-    dateKey: "markhamYear",
-    logoBg: "bg-blue-500",
-    logoSrc: "/logos/city-of-markham.png",
-  },
-];
-
-const linkedInHref = "https://www.linkedin.com/in/nathanielbalkaran";
+const linkedInHref = EXPERIENCE_LINKEDIN_HREF;
 const bioLinks = {
   western: "https://www.uwo.ca",
   ivey: "https://www.ivey.uwo.ca/hba/aeo/",
@@ -69,12 +27,7 @@ const linkClass =
   "text-[#F97316] underline underline-offset-2 decoration-[#F97316]/70 transition-colors ease-[cubic-bezier(0.16,1,0.3,1)] hover:bg-[#F97316] hover:text-black hover:decoration-transparent";
 
 export default function InfoPage() {
-  const [experienceHover, setExperienceHover] = useState<{
-    x: number;
-    y: number;
-  } | null>(null);
   const t = useTranslations("info");
-  const tExp = useTranslations("homeExperience");
 
   const bioRichComponents = useMemo(
     () => ({
@@ -166,20 +119,6 @@ export default function InfoPage() {
     <div className="min-h-screen w-full min-w-0 max-w-full overflow-x-clip font-sans text-foreground antialiased">
       <FlyIn delay={0}>
         <div className="relative z-10 mx-auto w-full min-w-0 max-w-5xl pb-14">
-          {experienceHover ? (
-            <div
-              className="pointer-events-none fixed left-0 top-0 z-40 -translate-x-1/2 border border-foreground/15 bg-background/95 px-3 py-2 backdrop-blur"
-              style={{
-                transform: `translate(${experienceHover.x}px, ${experienceHover.y - 20}px) translate(-50%, -100%)`,
-              }}
-              aria-hidden
-            >
-              <div className="text-[11px] font-medium text-foreground/80">
-                {t("viewLinkedIn")}
-              </div>
-            </div>
-          ) : null}
-
           <header className="text-left">
             <ScrollReveal>
               <h1 className="max-w-full break-words font-sans text-4xl font-bold uppercase leading-tight tracking-tighter text-foreground sm:text-7xl sm:leading-none md:text-8xl">
@@ -225,72 +164,10 @@ export default function InfoPage() {
                     {t("experience")}
                   </h2>
                 </ScrollReveal>
-                <motion.ul
-                  className="space-y-1"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.3 }}
-                  variants={staggerListVariants(0.1)}
-                >
-                  {experience.map((item) => (
-                    <motion.li
-                      key={item.company}
-                      variants={staggerItemVariants}
-                    >
-                      <a
-                        href={linkedInHref}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex w-full items-center rounded-none px-4 py-3 font-sans text-sm text-foreground/90 transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:bg-gray-100 hover:text-black dark:hover:bg-[#1E2D4A] dark:hover:text-white"
-                        onMouseEnter={(e) =>
-                          setExperienceHover({ x: e.clientX, y: e.clientY })
-                        }
-                        onMouseMove={(e) =>
-                          setExperienceHover({ x: e.clientX, y: e.clientY })
-                        }
-                        onMouseLeave={() => setExperienceHover(null)}
-                      >
-                        {/* Left: Logo + Company */}
-                        <div className="flex min-w-0 flex-1 items-center gap-3">
-                          <div
-                            className={`relative h-7 w-7 shrink-0 overflow-hidden ${item.logoBg}`}
-                          >
-                            <Image
-                              src={item.logoSrc}
-                              alt=""
-                              fill
-                              className="object-cover"
-                              sizes="28px"
-                            />
-                          </div>
-                          <span className="font-sans text-sm font-bold text-foreground dark:text-white">
-                            {item.company}
-                          </span>
-                        </div>
-
-                        {/* Center: Role */}
-                        <div className="mx-3 hidden items-center text-gray-500 md:flex">
-                          <span className="mx-2 text-foreground/40" aria-hidden>
-                            •
-                          </span>
-                          <span className="font-mono text-xs text-gray-500">
-                            {tExp(item.roleKey)}
-                          </span>
-                        </div>
-
-                        {/* Right: Date */}
-                        <div className="ml-3 flex shrink-0 items-center">
-                          <span className="mx-2 text-foreground/40" aria-hidden>
-                            •
-                          </span>
-                          <span className="font-mono text-xs text-gray-400">
-                            {tExp(item.dateKey)}
-                          </span>
-                        </div>
-                      </a>
-                    </motion.li>
-                  ))}
-                </motion.ul>
+                <ExperienceEntries
+                  variant="info"
+                  linkedInHint={t("viewLinkedIn")}
+                />
               </FlyIn>
             </div>
 
