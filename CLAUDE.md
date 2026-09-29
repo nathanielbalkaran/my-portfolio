@@ -1,4 +1,4 @@
-Project Scope: This is a Next.js portfolio website showcasing two distinct areas: Marketing Projects and Capital Markets (Stock Pitches).
-Tech Stack: Next.js (App Router), TypeScript, Tailwind CSS, and MDX for blog content.
-Design System: Minimalist, highly professional, dark mode by default.
-Rules: Do not use database connections. All stock pitches and investment theses will be stored locally as Markdown (.mdx) files.
+Project Scope: Personal website for Nathaniel Balkaran, built to support custom pages, experiments, and tools over time.
+Tech Stack: Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion.
+Design System: Minimalist, highly professional, light mode.
+Rules: Do not use database connections. No CMS until explicitly requested.

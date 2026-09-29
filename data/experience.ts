@@ -1,38 +1,37 @@
 export type ExperienceItem = {
   company: string;
-  roleKey: string;
-  yearKey: string;
+  role: string;
+  year: string;
   logoSrc: string;
-  /** Background behind logo (info layout only). */
   logoBg: string;
 };
 
 export const EXPERIENCE_ITEMS: ExperienceItem[] = [
   {
     company: "180 Degrees Consulting",
-    roleKey: "180dcRole",
-    yearKey: "180dcYear",
+    role: "Consulting Analyst",
+    year: "2023 – Present",
     logoSrc: "/logos/180dc.png",
     logoBg: "bg-black",
   },
   {
     company: "Blue Canoe Brands",
-    roleKey: "blueCanoeRole",
-    yearKey: "blueCanoeYear",
+    role: "Founder",
+    year: "2023 – Present",
     logoSrc: "/logos/blue-canoe-brands.png",
     logoBg: "bg-blue-500",
   },
   {
     company: "Project WhyFi",
-    roleKey: "whyfiRole",
-    yearKey: "whyfiYear",
+    role: "President",
+    year: "2023 – Present",
     logoSrc: "/logos/project-whyfi.png",
     logoBg: "bg-blue-500",
   },
   {
     company: "City of Markham",
-    roleKey: "markhamRole",
-    yearKey: "markhamYear",
+    role: "Aquatics Supervisor",
+    year: "2023 – 2025",
     logoSrc: "/logos/city-of-markham.png",
     logoBg: "bg-blue-500",
   },

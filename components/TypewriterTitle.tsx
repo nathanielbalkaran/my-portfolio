@@ -1,31 +1,20 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useTranslations } from "next-intl";
 
 const TYPEWRITER_DURATION_MS = 400;
 
 type Props = {
-  namespace: string;
-  titleKey: string;
-  titleObfuscatedKey: string;
+  text: string;
+  obfuscatedText: string;
   className?: string;
 };
 
-export function TypewriterTitle({
-  namespace,
-  titleKey,
-  titleObfuscatedKey,
-  className,
-}: Props) {
+export function TypewriterTitle({ text, obfuscatedText, className }: Props) {
   const [hovered, setHovered] = useState(false);
   const [typewriterIndex, setTypewriterIndex] = useState(0);
   const rafRef = useRef<number | null>(null);
-  const t = useTranslations(namespace);
-
-  const fullText = t(titleKey);
-  const obfuscated = t(titleObfuscatedKey);
-  const len = Math.min(fullText.length, obfuscated.length);
+  const len = Math.min(text.length, obfuscatedText.length);
 
   useEffect(() => {
     if (!hovered) {
@@ -48,10 +37,10 @@ export function TypewriterTitle({
 
   const displayText =
     !hovered || typewriterIndex === 0
-      ? fullText
+      ? text
       : Array.from({ length: len }, (_, i) =>
-          i < typewriterIndex ? obfuscated[i] : fullText[i],
-        ).join("") + fullText.slice(len);
+          i < typewriterIndex ? obfuscatedText[i] : text[i],
+        ).join("") + text.slice(len);
 
   return (
     <span

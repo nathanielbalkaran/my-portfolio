@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-/* Tailwind v4: class-based dark mode (.dark on ancestor) */
-@custom-variant dark (&:where(.dark, .dark *));
-
-/* ——— 1. Global geometry & overrides (Brutalist) ——— */
+/* ——— Global geometry & overrides (Brutalist) ——— */
 @layer base {
   html {
     overflow-x: clip;
@@ -15,7 +12,6 @@
     box-shadow: none !important;
   }
 
-  /* Snappy, mechanical transitions — global cubic-bezier */
   * {
     transition-duration: 200ms;
     transition-timing-function: var(--ease-snappy);
@@ -32,54 +28,29 @@
   }
 }
 
-/* ——— 2 & 3. Color palette & theming (class-based light/dark) ——— */
 :root {
-  /* Snappy easing: cubic-bezier(0.16, 1, 0.3, 1) — use class ease-snappy or var(--ease-snappy) */
   --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Font stacks (next/font overrides on body) */
   --font-sans-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
   --font-mono-family: "IBM Plex Mono", Menlo, monospace;
-  /* Legacy aliases (Bauhaus: headers = sans) */
   --font-body-sans: var(--font-sans-family);
   --font-heading-serif: var(--font-sans-family);
 
-  /* Light mode — The Prospectus */
   --background: #f5f5f3;
   --foreground: #050a14;
   --border: #d1d5db;
-  /* Accents */
   --terminal-green: #10b981;
   --terminal-orange: #f97316;
-  /* Legacy/compat */
   --finance-navy: #050a14;
   --card-bg: #ffffff;
 }
 
-.dark {
-  /* Dark mode — Terminal default (darker navy) */
-  --background: #061220;
-  --foreground: #f5f5f3;
-  --border: #1a2840;
-  --card-bg: #0d1929;
-  --finance-navy: #f5f5f3;
-}
-
-html.dark,
-html.dark body {
-  background-color: #061220;
-}
-
-/* Theme variables for Tailwind utilities */
 @theme inline {
-  /* Snappy easing: ultra-fast start, magnetic deceleration — use via ease-snappy */
   --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Typography: Space Grotesk (sans), IBM Plex Mono (mono) */
   --font-sans: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
   --font-mono: var(--font-mono-family), Menlo, monospace;
 
-  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-border: var(--border);
@@ -89,7 +60,6 @@ html.dark body {
   --color-card-bg: var(--card-bg);
 }
 
-/* ——— 2. Body: font-sans, sharp print-like ——— */
 body {
   background: var(--background);
   color: var(--foreground);
@@ -100,7 +70,6 @@ body {
   max-width: 100%;
 }
 
-/* Headings use same sans (Bauhaus consistency) */
 h1,
 h2,
 h3,
@@ -110,19 +79,17 @@ h6 {
   font-family: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
 }
 
-/* ——— Custom utility: ease-snappy (use with duration-200 etc.) ——— */
 @layer utilities {
   .ease-snappy {
     transition-timing-function: var(--ease-snappy);
   }
 }
 
-/* ——— 5. Brutalist page wrapper ——— */
 .page-wrapper {
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  max-width: 80rem; /* max-w-7xl */
+  max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
@@ -140,7 +107,6 @@ h6 {
   }
 }
 
-/* ——— Shared card styling (brutalist: no radius/shadow; borders only) ——— */
 .card {
   padding: 0.625rem 0.75rem;
   border: 1px solid var(--border);
@@ -180,10 +146,6 @@ h6 {
   color: rgb(156 163 175);
 }
 
-.dark .card-subtitle {
-  color: rgb(148 163 184);
-}
-
 .card-item-title {
   font-family: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
   font-size: 1.125rem;
@@ -196,40 +158,4 @@ h6 {
   font-size: 0.875rem;
   color: var(--foreground);
   opacity: 0.6;
-}
-
-/* ——— 4. Dark mode starscape: subtle twinkling (1px, sparse, very slow) ——— */
-@keyframes star-twinkle {
-  0%,
-  100% {
-    opacity: 0.08;
-  }
-  50% {
-    opacity: 0.22;
-  }
-}
-
-.star-dot {
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  animation: star-twinkle 8s ease-in-out infinite;
-}
-
-.dark .stars-background {
-  opacity: 1;
-}
-
-.dark .star-dot {
-  opacity: 0.15;
-  animation: star-twinkle 8s ease-in-out infinite;
-}
-
-/* Market ticker — Bloomberg strip (brutalist): bg-black/20, border-gray-700 */
-.market-ticker {
-  border-color: rgb(55 65 81);
-}
-
-.dark .market-ticker-fade {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent);
 }

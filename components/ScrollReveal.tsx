@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
 const REVEAL_EASE = [0.16, 1, 0.3, 1] as const;
@@ -86,38 +85,5 @@ export function ScrollBorderStrike({ className }: ScrollBorderStrikeProps) {
         ease: REVEAL_EASE,
       }}
     />
-  );
-}
-
-type ParallaxImageProps = Omit<
-  React.ComponentProps<typeof Image>,
-  "fill" | "width" | "height"
-> & {
-  className?: string;
-};
-
-export function ParallaxImage({
-  className,
-  alt,
-  ...props
-}: ParallaxImageProps) {
-  return (
-    <motion.div
-      initial={{ scale: 1.06 }}
-      whileInView={{ scale: 1 }}
-      viewport={{ once: true, amount: 0.7 }}
-      transition={{
-        duration: 0.6,
-        ease: REVEAL_EASE,
-      }}
-      className={className}
-    >
-      <Image
-        alt={alt}
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-        {...props}
-      />
-    </motion.div>
   );
 }
