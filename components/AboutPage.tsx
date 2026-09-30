@@ -2,10 +2,8 @@
 
 import Image from "next/image";
 import { FlyIn } from "@/components/FlyIn";
-import { TypewriterTitle } from "@/components/TypewriterTitle";
 import { Experience } from "@/components/Experience";
 import { AboutBio } from "@/components/AboutBio";
-import { Header } from "@/components/Header";
 import { ScrollReveal, ScrollBorderStrike } from "@/components/ScrollReveal";
 import { siteContent } from "@/data/site-content";
 
@@ -15,17 +13,13 @@ const about = siteContent.about;
 export function AboutPage() {
   return (
     <div className="min-h-screen w-full min-w-0 max-w-full overflow-x-clip font-sans text-foreground antialiased">
-      <Header activeLink="about" />
       <div className="page-wrapper">
         <FlyIn delay={0}>
           <div className="relative z-10 mx-auto w-full min-w-0 max-w-5xl pb-14">
             <header className="text-left">
               <ScrollReveal>
                 <h1 className="max-w-full break-words font-sans text-4xl font-bold uppercase leading-tight tracking-tighter text-foreground sm:text-7xl sm:leading-none md:text-8xl">
-                  <TypewriterTitle
-                    text={about.title}
-                    obfuscatedText={about.titleObfuscated}
-                  />
+                  {about.title}
                 </h1>
               </ScrollReveal>
               <ScrollReveal delay={stagger}>

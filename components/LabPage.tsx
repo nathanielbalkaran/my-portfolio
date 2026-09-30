@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import { ScrollReveal, ScrollBorderStrike } from "@/components/ScrollReveal";
 import { TypewriterTitle } from "@/components/TypewriterTitle";
 import { siteContent } from "@/data/site-content";
@@ -10,7 +9,6 @@ const lab = siteContent.lab;
 export function LabPage() {
   return (
     <div className="min-h-screen w-full min-w-0 max-w-full overflow-x-clip font-sans text-foreground antialiased">
-      <Header activeLink="lab" />
       <div className="page-wrapper">
         <div className="w-full min-w-0 max-w-5xl pb-14">
           <header className="text-left">

@@ -1,32 +1,11 @@
 export const siteContent = {
   common: {
-    siteName: "nathaniel balkaran",
-    menu: "Menu",
-    home: "HOME",
-    about: "INFO",
-    lab: "LAB",
-  },
-  home: {
-    name: "NATHANIEL BALKARAN",
-    nameObfuscated: "#%!#*#&@ (#)!%)^#*!",
-    tagline: "First-year business student at Western University",
-    learnMore: "Learn more",
-    experience: "EXPERIENCE",
-    education: "EDUCATION",
-    educationSchool: "Western University",
-    educationProgram: "BMOS + Ivey AEO",
-    educationYear: "2025-2029",
-    educationAward1: "Embark Student Award ($5000)",
-    educationAward2: "Western Scholarship of Distinction ($3500)",
-    navAbout: "Info",
-    navAboutObfuscated: "#*!@",
-    navLab: "Lab",
-    navLabObfuscated: "#@!%*",
-    mainNavLabel: "Primary site navigation",
+    siteName: "Nathaniel Balkaran",
+    collection: "Collection",
+    lab: "Lab",
   },
   about: {
-    title: "INFO",
-    titleObfuscated: "#*!@",
+    title: "ABOUT",
     subtitle: "Personal dossier and professional experience.",
     experience: "EXPERIENCE",
     viewLinkedIn: "View my full experience on LinkedIn",
@@ -38,21 +17,33 @@ export const siteContent = {
     subtitle: "Placeholder for future experiments, tools, and games.",
   },
   footer: {
-    home: "HOME",
-    about: "INFO",
-    lab: "LAB",
     email: "nbalkar2@uwo.ca",
-    name: "nathaniel balkaran",
-    copyright: "© 2026 nathaniel balkaran",
-    linkedin: "LINKEDIN",
-    emailLabel: "EMAIL",
-    strava: "STRAVA",
-    builtWith: "Built with Next.js and Tailwind.",
-    deployed: "Deployed on Vercel.",
-    help: "Help from Cursor and Gemini.",
-    version: "v2.0",
+    linkedin: "LinkedIn",
+    strava: "Strava",
   },
 } as const;
+
+/** Homepage professional content: [role, organisation, date] per entry. */
+export const professionalSections = [
+  {
+    label: "EXPERIENCE",
+    entries: [
+      ["Fall Analyst", "Next Runner Capital", "Sep 2026 — Present"],
+      ["Summer Associate", "Salus Brands, LLC", "Apr 2026 — Aug 2026"],
+    ],
+  },
+  {
+    label: "EDUCATION",
+    entries: [["Western University", "Accounting", "2025 — 2029"]],
+  },
+  {
+    label: "LEADERSHIP",
+    entries: [
+      ["Director, Events", "Western Real Estate Club", "Sep 2026 — Present"],
+      ["Project Lead", "180 Degrees Consulting", "Oct 2025 — Present"],
+    ],
+  },
+] as const;
 
 export const externalLinks = {
   linkedIn: "https://www.linkedin.com/in/nathanielbalkaran",
