@@ -194,13 +194,29 @@ body {
   list-style: none;
 }
 
-.home-row {
-  display: grid;
-  gap: 0;
-}
-
 .home-row + .home-row {
   margin-top: var(--space-2);
+}
+
+/* Whole row is the button; padding/negative margin enlarge the hit area
+   without changing the visible layout. */
+.home-row-btn {
+  display: grid;
+  gap: 0;
+  width: 100%;
+  margin: -0.25rem 0;
+  padding: 0.25rem 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.home-row-btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
 }
 
 .home-role {
@@ -212,23 +228,80 @@ body {
   color: var(--muted);
 }
 
+/* Active state: orange highlighter behind the organisation name only */
+.home-org {
+  padding: 0.1em 0.2em;
+  margin-inline: -0.2em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.home-row-btn:hover .home-org,
+.home-row-btn:focus-visible .home-org,
+.home-row.is-open .home-org {
+  background: var(--orange);
+}
+
+/* Disclosure panel: height (0fr -> 1fr) + opacity */
+.home-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    grid-template-rows 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s linear 300ms;
+}
+
+.home-row.is-open .home-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s, 0s, 0s;
+}
+
+.home-panel-clip {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.home-desc {
+  margin: 0;
+  padding: 0.5rem 0 0.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
 /* Tablet and up: role / organisation / date on one line */
 @media (min-width: 45rem) {
-  .home-row {
-    grid-template-columns: minmax(0, 3fr) minmax(0, 5fr) minmax(0, 4fr);
-    column-gap: var(--space-3);
-  }
-
   .home-row + .home-row {
     margin-top: var(--space-1);
   }
 
-  .home-row > * {
+  .home-row-btn {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 5fr) minmax(0, 4fr);
+    column-gap: var(--space-3);
+  }
+
+  .home-row-btn > * {
     white-space: nowrap;
   }
 
   .home-date {
     text-align: right;
+  }
+
+  /* Description aligns with the organisation column */
+  .home-desc {
+    margin-left: calc((100% - 2 * var(--space-3)) * 3 / 12 + var(--space-3));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-panel {
+    transition: none;
   }
 }
 

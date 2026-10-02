@@ -23,24 +23,51 @@ export const siteContent = {
   },
 } as const;
 
-/** Homepage professional content: [role, organisation, date] per entry. */
+/** Homepage professional content: [role, organisation, date, expanded description] per entry. */
 export const professionalSections = [
   {
     label: "EXPERIENCE",
     entries: [
-      ["Fall Analyst", "Next Runner Capital", "Sep 2026 — Present"],
-      ["Summer Associate", "Salus Brands, LLC", "Apr 2026 — Aug 2026"],
+      [
+        "Fall Analyst",
+        "Next Runner Capital",
+        "Sep 2026 — Present",
+        "Evaluating lower-middle-market acquisition opportunities through financial modeling, benchmarking, and commercial diligence.",
+      ],
+      [
+        "Summer Associate",
+        "Salus Brands, LLC",
+        "Apr 2026 — Aug 2026",
+        "Supported licensing, sourcing, and retail execution across North America and China.",
+      ],
     ],
   },
   {
     label: "EDUCATION",
-    entries: [["Western University", "Accounting", "2025 — 2029"]],
+    entries: [
+      [
+        "Accounting",
+        "Western University",
+        "2025 — 2029",
+        "Studying accounting with Ivey AEO.",
+      ],
+    ],
   },
   {
     label: "LEADERSHIP",
     entries: [
-      ["Director, Events", "Western Real Estate Club", "Sep 2026 — Present"],
-      ["Project Lead", "180 Degrees Consulting", "Oct 2025 — Present"],
+      [
+        "Director, Events",
+        "Western Real Estate Club",
+        "Sep 2026 — Present",
+        "Planning and running educational and networking events covering real estate recruiting, valuation, and industry career paths.",
+      ],
+      [
+        "Project Lead",
+        "180 Degrees Consulting",
+        "Oct 2025 — Present",
+        "Leading five-person consulting teams on revenue diversification and growth strategy engagements.",
+      ],
     ],
   },
 ] as const;
