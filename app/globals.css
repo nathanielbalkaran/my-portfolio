@@ -6,7 +6,8 @@
   --ink: #111111;
   --muted: #6f6e69;
   --orange: #f97316; /* interactive */
-  --selection: #ff9a1a; /* highlighter, text selection only */
+  --selection: #ff9a1a; /* homepage highlighter, text selection only */
+  --selection-lab: #7dff42; /* lab page highlighter, text selection only */
 
   --page-max: 1440px;
   --page-pad: clamp(20px, 3vw, 48px);
@@ -56,33 +57,26 @@ body {
   color: var(--ink);
 }
 
-/* ——— Interaction: orange = interactive ——— */
+/* ——— Interaction: orange highlighter = clickable text ——— */
 .link {
-  display: inline-block;
-  padding-block: 0.375rem;
-  margin-block: -0.375rem;
-  color: inherit;
+  display: inline;
+  color: var(--ink);
   text-decoration: none;
-  transition: color 120ms ease-out;
+  padding: 0.1em 0.2em;
+  margin-inline: -0.2em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
-.link:hover {
-  color: var(--orange);
+.link:hover,
+.link:focus-visible {
+  color: var(--ink);
+  background: var(--orange);
 }
 
 .link:focus-visible {
-  color: var(--orange);
-  outline: 2px solid var(--orange);
-  outline-offset: 3px;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .link {
-    transition: none;
-  }
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
 }
 
 /* ——— Site frame ——— */
@@ -165,6 +159,11 @@ body {
   .site-footer-links {
     text-align: right;
   }
+}
+
+.lab ::selection {
+  background: var(--selection-lab);
+  color: var(--ink);
 }
 
 /* ——— Homepage ——— */
@@ -320,4 +319,96 @@ body {
   .page-wrapper {
     padding: 6rem 3rem;
   }
+}
+
+.lab-entries {
+  margin-top: var(--space-2);
+}
+
+/* ——— Lab: Orange ——— */
+.orange-canvas {
+  position: relative;
+  height: calc(100dvh - 3.25rem);
+  min-height: 16rem;
+  overflow: hidden;
+  background: var(--paper);
+  touch-action: pan-y;
+}
+
+.orange-piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Visual layer: deformed by transform only; the parent keeps the true hit box. */
+.orange-fill {
+  position: absolute;
+  inset: 0;
+  background: var(--orange);
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+.orange-takeover {
+  position: absolute;
+  inset: 0;
+  z-index: 2000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--orange);
+  cursor: default;
+  animation: orange-takeover-in 240ms ease-out;
+}
+
+.orange-takeover:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -2px;
+}
+
+@keyframes orange-takeover-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orange-takeover {
+    animation: none;
+  }
+}
+
+html.orange-dragging,
+html.orange-dragging body {
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grabbing;
+}
+
+html.orange-dragging .orange-piece {
+  cursor: grabbing;
+}
+
+.orange-reset {
+  position: absolute;
+  z-index: 1000;
+  left: max(var(--page-pad), calc((100% - var(--page-max)) / 2 + var(--page-pad)));
+  bottom: max(var(--space-2), env(safe-area-inset-bottom));
+  margin-block: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: var(--ink);
+  cursor: pointer;
 }

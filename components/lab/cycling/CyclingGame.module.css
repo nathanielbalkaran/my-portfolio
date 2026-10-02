@@ -1,0 +1,139 @@
+.experiment {
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding: var(--space-4) var(--page-pad) 0;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-3);
+  margin: var(--space-3) 0 var(--space-2);
+}
+
+.heading h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.heading span,
+.caption {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.world {
+  display: block;
+  width: min(100%, 768px);
+  height: auto;
+  aspect-ratio: 3 / 2;
+  background: #91aa72;
+  image-rendering: pixelated;
+  cursor: crosshair;
+  touch-action: manipulation;
+}
+
+.world:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+}
+
+.notes {
+  display: flex;
+  max-width: 768px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-2);
+  margin-top: var(--space-2);
+  font-size: 0.75rem;
+  font-family: var(--font-mono-family);
+}
+
+.caption {
+  margin-top: var(--space-3);
+}
+
+.display {
+  max-width: 768px;
+  margin-top: var(--space-2);
+  font-family: var(--font-mono-family);
+  font-size: 0.75rem;
+}
+
+.displayHead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-1);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem;
+}
+
+.option,
+.primary,
+.back {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-1);
+  text-align: left;
+}
+
+.option[aria-pressed="true"] {
+  border-color: var(--ink);
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.primary {
+  border-color: var(--ink);
+}
+
+.primary:disabled {
+  border-color: var(--border);
+  color: var(--muted);
+  cursor: default;
+}
+
+.option:hover,
+.back:hover,
+.primary:not(:disabled):hover {
+  border-color: var(--ink);
+}
+
+.option:focus-visible,
+.primary:focus-visible,
+.back:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.line {
+  margin: 0 0 0.25rem;
+}
+
+.option:disabled {
+  border-color: var(--border);
+  color: var(--muted);
+  cursor: default;
+}
+
+.serve:not(:disabled) {
+  border-color: var(--ink);
+}
