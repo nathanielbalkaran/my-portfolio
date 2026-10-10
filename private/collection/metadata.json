@@ -1,0 +1,6099 @@
+{
+  "summary": {
+    "images": 44,
+    "gpsImages": 0,
+    "dateTimeOriginalImages": 3,
+    "verifiedPhotographCaptureDates": 0,
+    "locationSource": "User confirmation, separate from EXIF",
+    "duplicatePairs": [
+      [
+        "IMG_0977(1).jpeg",
+        "IMG_0977.jpeg"
+      ],
+      [
+        "IMG_0992(1).jpeg",
+        "IMG_0992.jpeg"
+      ]
+    ]
+  },
+  "photographs": [
+    {
+      "id": "NB—001",
+      "filename": "2026-03-27_01.26.12.jpeg",
+      "kind": "game-screenshot",
+      "image": {
+        "src": "/collection/nb-001-2400.webp",
+        "thumbnail": "/collection/nb-001-480.webp",
+        "srcSet": "/collection/nb-001-480.webp 480w, /collection/nb-001-960.webp 960w, /collection/nb-001-2400.webp 2400w",
+        "width": 2400,
+        "height": 1920
+      },
+      "location": null,
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/2026-03-27_01.26.12.jpeg",
+        "sha256": "ba2941668278f427c44786a5320609bd91a3b682366adbc7ea129ac5646d7a0f",
+        "width": 2700,
+        "height": 2160
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "2026-03-27_01.26.12.jpeg",
+        "dimensions": [
+          2700,
+          2160
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 3840,
+          "ExifImageHeight": 2160,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "Individual image confirmed by the user: Minecraft.",
+        "notes": ""
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-001-480.webp",
+          "width": 480,
+          "height": 384,
+          "bytes": 22098
+        },
+        {
+          "src": "/collection/nb-001-960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 70606
+        },
+        {
+          "src": "/collection/nb-001-2400.webp",
+          "width": 2400,
+          "height": 1920,
+          "bytes": 286438
+        }
+      ]
+    },
+    {
+      "id": "NB—002",
+      "filename": "IMG_0083.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-002-1536.webp",
+        "thumbnail": "/collection/nb-002-480.webp",
+        "srcSet": "/collection/nb-002-480.webp 480w, /collection/nb-002-960.webp 960w, /collection/nb-002-1536.webp 1536w",
+        "width": 1536,
+        "height": 1152
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0083.jpeg",
+        "sha256": "4f39daf0a04b36dad6bd7a56fb9c40cc33ab794f4d57fa81406e7131309221c8",
+        "width": 1536,
+        "height": 1152
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0083.jpeg",
+        "dimensions": [
+          1536,
+          1152
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1536,
+          "ExifImageHeight": 1152,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely a viewpoint along the Panorama Ridge route."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-002-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 36214
+        },
+        {
+          "src": "/collection/nb-002-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 133218
+        },
+        {
+          "src": "/collection/nb-002-1536.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 311222
+        }
+      ]
+    },
+    {
+      "id": "NB—003",
+      "filename": "IMG_0087.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-003-1536.webp",
+        "thumbnail": "/collection/nb-003-480.webp",
+        "srcSet": "/collection/nb-003-480.webp 480w, /collection/nb-003-960.webp 960w, /collection/nb-003-1536.webp 1536w",
+        "width": 1536,
+        "height": 1152
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0087.jpeg",
+        "sha256": "051216daa247903dbf9b5f44550e3231f39b75490cb5d3a5384c6afbf49efa75",
+        "width": 1536,
+        "height": 1152
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0087.jpeg",
+        "dimensions": [
+          1536,
+          1152
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1536,
+          "ExifImageHeight": 1152,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Exact trail section unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-003-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 30930
+        },
+        {
+          "src": "/collection/nb-003-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 119266
+        },
+        {
+          "src": "/collection/nb-003-1536.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 296646
+        }
+      ]
+    },
+    {
+      "id": "NB—004",
+      "filename": "IMG_0089.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-004-1152.webp",
+        "thumbnail": "/collection/nb-004-480.webp",
+        "srcSet": "/collection/nb-004-480.webp 480w, /collection/nb-004-960.webp 960w, /collection/nb-004-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0089.jpeg",
+        "sha256": "d19f895f93e1d5e77b240978cd55086bc9af3202cb8ce697525bf5c85b1e25f8",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0089.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Black Tusk area; exact camera position unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-004-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 67590
+        },
+        {
+          "src": "/collection/nb-004-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 250756
+        },
+        {
+          "src": "/collection/nb-004-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 359850
+        }
+      ]
+    },
+    {
+      "id": "NB—005",
+      "filename": "IMG_0091.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-005-1536.webp",
+        "thumbnail": "/collection/nb-005-480.webp",
+        "srcSet": "/collection/nb-005-480.webp 480w, /collection/nb-005-960.webp 960w, /collection/nb-005-1536.webp 1536w",
+        "width": 1536,
+        "height": 1152
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0091.jpeg",
+        "sha256": "195280dacf6a62942556a672d0fcd1cf1e225ea85085f8e19e9ad5f5710f3fcc",
+        "width": 1536,
+        "height": 1152
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0091.jpeg",
+        "dimensions": [
+          1536,
+          1152
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1536,
+          "ExifImageHeight": 1152,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Black Tusk area; exact camera position unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-005-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 48416
+        },
+        {
+          "src": "/collection/nb-005-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 182818
+        },
+        {
+          "src": "/collection/nb-005-1536.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 428548
+        }
+      ]
+    },
+    {
+      "id": "NB—006",
+      "filename": "IMG_0155.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-006-1536.webp",
+        "thumbnail": "/collection/nb-006-480.webp",
+        "srcSet": "/collection/nb-006-480.webp 480w, /collection/nb-006-960.webp 960w, /collection/nb-006-1536.webp 1536w",
+        "width": 1536,
+        "height": 1152
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0155.jpeg",
+        "sha256": "d29994dade0f69017db94ae9f0cbcb547b9f579af9de2ee989204be4f38e8de9",
+        "width": 1536,
+        "height": 1152
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0155.jpeg",
+        "dimensions": [
+          1536,
+          1152
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1536,
+          "ExifImageHeight": 1152,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Panorama Ridge looking toward Black Tusk and the small alpine lakes."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-006-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 31408
+        },
+        {
+          "src": "/collection/nb-006-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 114396
+        },
+        {
+          "src": "/collection/nb-006-1536.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 289106
+        }
+      ]
+    },
+    {
+      "id": "NB—007",
+      "filename": "IMG_0218.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-007-1651.webp",
+        "thumbnail": "/collection/nb-007-480.webp",
+        "srcSet": "/collection/nb-007-480.webp 480w, /collection/nb-007-960.webp 960w, /collection/nb-007-1651.webp 1651w",
+        "width": 1651,
+        "height": 1179
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0218.jpeg",
+        "sha256": "0edc9fd427719f92c0824779ab57779652153eeeb7fd2b300b49b8df9e95a22d",
+        "width": 1651,
+        "height": 1179
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "extracted_unverified_photograph_date",
+          "value": "2026:08:10 17:13:25",
+          "caveat": "Image identifies itself as Screenshot; this date is not verified as the capture date of the depicted photograph."
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0218.jpeg",
+        "dimensions": [
+          1651,
+          1179
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 146,
+          "ImageDescription": "Screenshot",
+          "Orientation": 1,
+          "DateTime": "2026:08:10 17:13:25",
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "DateTimeOriginal": "2026:08:10 17:13:25",
+          "ColorSpace": 65535,
+          "ExifImageWidth": 1651,
+          "UserComment": {
+            "bytes_hex": "415343494900000053637265656e73686f74",
+            "text": "ASCII\u0000\u0000\u0000Screenshot"
+          },
+          "ExifImageHeight": 1179,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": {
+          "(1, 90)": {
+            "bytes_hex": "1b2547",
+            "text": "\u001b%G"
+          },
+          "(2, 0)": {
+            "bytes_hex": "0002",
+            "text": "\u0000\u0002"
+          },
+          "(2, 120)": {
+            "bytes_hex": "53637265656e73686f74",
+            "text": "Screenshot"
+          },
+          "(2, 60)": {
+            "bytes_hex": "313731333235",
+            "text": "171325"
+          },
+          "(2, 55)": {
+            "bytes_hex": "3230323630383130",
+            "text": "20260810"
+          }
+        },
+        "photoshop": {
+          "1028": {
+            "bytes_hex": "1c015a00031b25471c0200000200021c0278000a53637265656e73686f741c023c00063137313332351c023700083230323630383130",
+            "text": "\u001c\u0001Z\u0000\u0003\u001b%G\u001c\u0002\u0000\u0000\u0002\u0000\u0002\u001c\u0002x\u0000\nScreenshot\u001c\u0002<\u0000\u0006171325\u001c\u00027\u0000\b20260810"
+          },
+          "1061": {
+            "bytes_hex": "48ab24b1f596ed5190061cee1b6de52f",
+            "text": "H�$����Q�\u0006\u001c�\u001bm�/"
+          }
+        },
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Garibaldi Lake shoreline; lake identification is less distinctive than Black Tusk."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-007-480.webp",
+          "width": 480,
+          "height": 343,
+          "bytes": 64702
+        },
+        {
+          "src": "/collection/nb-007-960.webp",
+          "width": 960,
+          "height": 686,
+          "bytes": 220050
+        },
+        {
+          "src": "/collection/nb-007-1651.webp",
+          "width": 1651,
+          "height": 1179,
+          "bytes": 466394
+        }
+      ]
+    },
+    {
+      "id": "NB—008",
+      "filename": "IMG_0219.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-008-1651.webp",
+        "thumbnail": "/collection/nb-008-480.webp",
+        "srcSet": "/collection/nb-008-480.webp 480w, /collection/nb-008-960.webp 960w, /collection/nb-008-1651.webp 1651w",
+        "width": 1651,
+        "height": 1179
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0219.jpeg",
+        "sha256": "3a5684297d633777fc515b6c8bab4985ad12b0bd83617cc53ff152a1d43d94dd",
+        "width": 1651,
+        "height": 1179
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "extracted_unverified_photograph_date",
+          "value": "2026:08:10 17:16:23",
+          "caveat": "Image identifies itself as Screenshot; this date is not verified as the capture date of the depicted photograph."
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0219.jpeg",
+        "dimensions": [
+          1651,
+          1179
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 146,
+          "ImageDescription": "Screenshot",
+          "Orientation": 1,
+          "DateTime": "2026:08:10 17:16:23",
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "DateTimeOriginal": "2026:08:10 17:16:23",
+          "ColorSpace": 65535,
+          "ExifImageWidth": 1651,
+          "UserComment": {
+            "bytes_hex": "415343494900000053637265656e73686f74",
+            "text": "ASCII\u0000\u0000\u0000Screenshot"
+          },
+          "ExifImageHeight": 1179,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": {
+          "(1, 90)": {
+            "bytes_hex": "1b2547",
+            "text": "\u001b%G"
+          },
+          "(2, 0)": {
+            "bytes_hex": "0002",
+            "text": "\u0000\u0002"
+          },
+          "(2, 120)": {
+            "bytes_hex": "53637265656e73686f74",
+            "text": "Screenshot"
+          },
+          "(2, 60)": {
+            "bytes_hex": "313731363233",
+            "text": "171623"
+          },
+          "(2, 55)": {
+            "bytes_hex": "3230323630383130",
+            "text": "20260810"
+          }
+        },
+        "photoshop": {
+          "1028": {
+            "bytes_hex": "1c015a00031b25471c0200000200021c0278000a53637265656e73686f741c023c00063137313632331c023700083230323630383130",
+            "text": "\u001c\u0001Z\u0000\u0003\u001b%G\u001c\u0002\u0000\u0000\u0002\u0000\u0002\u001c\u0002x\u0000\nScreenshot\u001c\u0002<\u0000\u0006171623\u001c\u00027\u0000\b20260810"
+          },
+          "1061": {
+            "bytes_hex": "1d41b3cc83ff4ae48ca187397cd8b99a",
+            "text": "\u001dA�̃�J䌡�9|ع�"
+          }
+        },
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Garibaldi Lake shoreline."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-008-480.webp",
+          "width": 480,
+          "height": 343,
+          "bytes": 59332
+        },
+        {
+          "src": "/collection/nb-008-960.webp",
+          "width": 960,
+          "height": 686,
+          "bytes": 231916
+        },
+        {
+          "src": "/collection/nb-008-1651.webp",
+          "width": 1651,
+          "height": 1179,
+          "bytes": 649694
+        }
+      ]
+    },
+    {
+      "id": "NB—009",
+      "filename": "IMG_0221.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-009-1614.webp",
+        "thumbnail": "/collection/nb-009-480.webp",
+        "srcSet": "/collection/nb-009-480.webp 480w, /collection/nb-009-960.webp 960w, /collection/nb-009-1614.webp 1614w",
+        "width": 1614,
+        "height": 1153
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0221.jpeg",
+        "sha256": "7851671a2ebe8e601c3bae30062d76feeba06314de4f42fdc87369ed276951fe",
+        "width": 1614,
+        "height": 1153
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "extracted_unverified_photograph_date",
+          "value": "2026:08:10 17:21:31",
+          "caveat": "Image identifies itself as Screenshot; this date is not verified as the capture date of the depicted photograph."
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0221.jpeg",
+        "dimensions": [
+          1614,
+          1153
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 146,
+          "ImageDescription": "Screenshot",
+          "Orientation": 1,
+          "DateTime": "2026:08:10 17:21:31",
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "DateTimeOriginal": "2026:08:10 17:21:31",
+          "ColorSpace": 65535,
+          "ExifImageWidth": 1614,
+          "UserComment": {
+            "bytes_hex": "415343494900000053637265656e73686f74",
+            "text": "ASCII\u0000\u0000\u0000Screenshot"
+          },
+          "ExifImageHeight": 1153,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": {
+          "(1, 90)": {
+            "bytes_hex": "1b2547",
+            "text": "\u001b%G"
+          },
+          "(2, 0)": {
+            "bytes_hex": "0002",
+            "text": "\u0000\u0002"
+          },
+          "(2, 120)": {
+            "bytes_hex": "53637265656e73686f74",
+            "text": "Screenshot"
+          },
+          "(2, 60)": {
+            "bytes_hex": "313732313331",
+            "text": "172131"
+          },
+          "(2, 55)": {
+            "bytes_hex": "3230323630383130",
+            "text": "20260810"
+          }
+        },
+        "photoshop": {
+          "1028": {
+            "bytes_hex": "1c015a00031b25471c0200000200021c0278000a53637265656e73686f741c023c00063137323133311c023700083230323630383130",
+            "text": "\u001c\u0001Z\u0000\u0003\u001b%G\u001c\u0002\u0000\u0000\u0002\u0000\u0002\u001c\u0002x\u0000\nScreenshot\u001c\u0002<\u0000\u0006172131\u001c\u00027\u0000\b20260810"
+          },
+          "1061": {
+            "bytes_hex": "28bca22a62fa36891fa21f384422b33b",
+            "text": "(��*b�6�\u001f�\u001f8D\"�;"
+          }
+        },
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Panorama Ridge."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-009-480.webp",
+          "width": 480,
+          "height": 343,
+          "bytes": 37306
+        },
+        {
+          "src": "/collection/nb-009-960.webp",
+          "width": 960,
+          "height": 686,
+          "bytes": 122986
+        },
+        {
+          "src": "/collection/nb-009-1614.webp",
+          "width": 1614,
+          "height": 1153,
+          "bytes": 311642
+        }
+      ]
+    },
+    {
+      "id": "NB—010",
+      "filename": "IMG_0669.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-010-864.webp",
+        "thumbnail": "/collection/nb-010-480.webp",
+        "srcSet": "/collection/nb-010-480.webp 480w, /collection/nb-010-864.webp 864w",
+        "width": 864,
+        "height": 1536
+      },
+      "location": {
+        "place": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0669.jpeg",
+        "sha256": "789f3e51c25d8a7d0d9bc26d4185ad73de67cbd228f067cd4ab00bc67c04fb54",
+        "width": 864,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0669.jpeg",
+        "dimensions": [
+          864,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 90,
+          "Orientation": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifImageWidth": 864,
+          "ExifImageHeight": 1536
+        },
+        "gps": {},
+        "iptc": {},
+        "photoshop": {
+          "1028": {
+            "bytes_hex": "",
+            "text": ""
+          },
+          "1061": {
+            "bytes_hex": "d41d8cd98f00b204e9800998ecf8427e",
+            "text": "�\u001d�ُ\u0000�\u0004�\t���B~"
+          }
+        },
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely the Latin Quarter / Montagne Sainte-Geneviève area. Exact street not confirmed."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-010-480.webp",
+          "width": 480,
+          "height": 853,
+          "bytes": 105648
+        },
+        {
+          "src": "/collection/nb-010-864.webp",
+          "width": 864,
+          "height": 1536,
+          "bytes": 278262
+        }
+      ]
+    },
+    {
+      "id": "NB—011",
+      "filename": "IMG_0715.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-011-1152.webp",
+        "thumbnail": "/collection/nb-011-480.webp",
+        "srcSet": "/collection/nb-011-480.webp 480w, /collection/nb-011-960.webp 960w, /collection/nb-011-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0715.jpeg",
+        "sha256": "4297195f972107e45ddb9b665defaca261335ceb62c8598b2ec6f22642ec7d89",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0715.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Seine viewpoint; exact bank or bridge unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-011-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 35168
+        },
+        {
+          "src": "/collection/nb-011-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 119438
+        },
+        {
+          "src": "/collection/nb-011-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 164800
+        }
+      ]
+    },
+    {
+      "id": "NB—012",
+      "filename": "IMG_0731.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-012-1152.webp",
+        "thumbnail": "/collection/nb-012-480.webp",
+        "srcSet": "/collection/nb-012-480.webp 480w, /collection/nb-012-960.webp 960w, /collection/nb-012-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Paris",
+        "region": "Île-de-France",
+        "country": "France",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0731.jpeg",
+        "sha256": "554ec5242430b7525eb22f29fd15fc3b24557d1f4e4fc571fd3217bebf7f26c6",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0731.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely the Latin Quarter. Exact street and building not confirmed."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-012-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 56464
+        },
+        {
+          "src": "/collection/nb-012-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 199594
+        },
+        {
+          "src": "/collection/nb-012-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 283616
+        }
+      ]
+    },
+    {
+      "id": "NB—013",
+      "filename": "IMG_0750.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-013-1152.webp",
+        "thumbnail": "/collection/nb-013-480.webp",
+        "srcSet": "/collection/nb-013-480.webp 480w, /collection/nb-013-960.webp 960w, /collection/nb-013-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0750.jpeg",
+        "sha256": "ff79b22f9172986591d96c42979817a4c99eda3249e186c2d10f413de68776d9",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0750.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Wengen above the Lauterbrunnen valley."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-013-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 52820
+        },
+        {
+          "src": "/collection/nb-013-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 196084
+        },
+        {
+          "src": "/collection/nb-013-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 282056
+        }
+      ]
+    },
+    {
+      "id": "NB—014",
+      "filename": "IMG_0759.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-014-1152.webp",
+        "thumbnail": "/collection/nb-014-480.webp",
+        "srcSet": "/collection/nb-014-480.webp 480w, /collection/nb-014-960.webp 960w, /collection/nb-014-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0759.jpeg",
+        "sha256": "a4274e499f50c23952f2616936ce8e24b06a8aca63afe9fa6340e4585644b8cf",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0759.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Village and restaurant unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-014-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 40968
+        },
+        {
+          "src": "/collection/nb-014-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 123834
+        },
+        {
+          "src": "/collection/nb-014-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 167170
+        }
+      ]
+    },
+    {
+      "id": "NB—015",
+      "filename": "IMG_0807.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-015-1152.webp",
+        "thumbnail": "/collection/nb-015-480.webp",
+        "srcSet": "/collection/nb-015-480.webp 480w, /collection/nb-015-960.webp 960w, /collection/nb-015-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0807.jpeg",
+        "sha256": "b670ba67a3301ae188ca6e274c30eed0e72bd67c66778f7c664b1f85e439b443",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0807.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Eigergletscher / Eiger glacier area; exact viewpoint needs confirmation."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-015-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 95582
+        },
+        {
+          "src": "/collection/nb-015-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 366694
+        },
+        {
+          "src": "/collection/nb-015-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 531044
+        }
+      ]
+    },
+    {
+      "id": "NB—016",
+      "filename": "IMG_0977(1).jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-016-1152.webp",
+        "thumbnail": "/collection/nb-016-480.webp",
+        "srcSet": "/collection/nb-016-480.webp 480w, /collection/nb-016-960.webp 960w, /collection/nb-016-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0977(1).jpeg",
+        "sha256": "5de7413ee53b6d6a65432308b6a4a85dcebdfa7a76a20783af25a88064633e32",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0977(1).jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely above Wengen or on the eastern side of the Lauterbrunnen valley."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-016-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 65868
+        },
+        {
+          "src": "/collection/nb-016-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 227270
+        },
+        {
+          "src": "/collection/nb-016-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 317986
+        }
+      ]
+    },
+    {
+      "id": "NB—017",
+      "filename": "IMG_0977.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-017-1152.webp",
+        "thumbnail": "/collection/nb-017-480.webp",
+        "srcSet": "/collection/nb-017-480.webp 480w, /collection/nb-017-960.webp 960w, /collection/nb-017-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0977.jpeg",
+        "sha256": "5de7413ee53b6d6a65432308b6a4a85dcebdfa7a76a20783af25a88064633e32",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0977.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Same tentative viewpoint as IMG_0977(1).jpeg."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-017-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 65868
+        },
+        {
+          "src": "/collection/nb-017-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 227270
+        },
+        {
+          "src": "/collection/nb-017-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 317986
+        }
+      ]
+    },
+    {
+      "id": "NB—018",
+      "filename": "IMG_0992(1).jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-018-1536.webp",
+        "thumbnail": "/collection/nb-018-480.webp",
+        "srcSet": "/collection/nb-018-480.webp 480w, /collection/nb-018-960.webp 960w, /collection/nb-018-1536.webp 1536w",
+        "width": 1536,
+        "height": 1152
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0992(1).jpeg",
+        "sha256": "483b65d117fd1fb886a33417486c2882bdac878e78105b28c1c804c37898127b",
+        "width": 1536,
+        "height": 1152
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0992(1).jpeg",
+        "dimensions": [
+          1536,
+          1152
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1536,
+          "ExifImageHeight": 1152,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Possible Schilthorn area; this specific mountain is not established."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-018-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 36478
+        },
+        {
+          "src": "/collection/nb-018-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 128250
+        },
+        {
+          "src": "/collection/nb-018-1536.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 292158
+        }
+      ]
+    },
+    {
+      "id": "NB—019",
+      "filename": "IMG_0992.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-019-1536.webp",
+        "thumbnail": "/collection/nb-019-480.webp",
+        "srcSet": "/collection/nb-019-480.webp 480w, /collection/nb-019-960.webp 960w, /collection/nb-019-1536.webp 1536w",
+        "width": 1536,
+        "height": 1152
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_0992.jpeg",
+        "sha256": "483b65d117fd1fb886a33417486c2882bdac878e78105b28c1c804c37898127b",
+        "width": 1536,
+        "height": 1152
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_0992.jpeg",
+        "dimensions": [
+          1536,
+          1152
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1536,
+          "ExifImageHeight": 1152,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Same tentative viewpoint as IMG_0992(1).jpeg."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-019-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 36478
+        },
+        {
+          "src": "/collection/nb-019-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 128250
+        },
+        {
+          "src": "/collection/nb-019-1536.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 292158
+        }
+      ]
+    },
+    {
+      "id": "NB—020",
+      "filename": "IMG_1056.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-020-1152.webp",
+        "thumbnail": "/collection/nb-020-480.webp",
+        "srcSet": "/collection/nb-020-480.webp 480w, /collection/nb-020-960.webp 960w, /collection/nb-020-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_1056.jpeg",
+        "sha256": "f2ab88dca732e5f72bdcbebb145bad7c0b1eb1c63199c57d1c8a240b614a8d02",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_1056.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Kleine Scheidegg / Eigergletscher area. Exact track unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-020-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 68218
+        },
+        {
+          "src": "/collection/nb-020-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 278084
+        },
+        {
+          "src": "/collection/nb-020-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 406400
+        }
+      ]
+    },
+    {
+      "id": "NB—021",
+      "filename": "IMG_1122.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-021-1152.webp",
+        "thumbnail": "/collection/nb-021-480.webp",
+        "srcSet": "/collection/nb-021-480.webp 480w, /collection/nb-021-960.webp 960w, /collection/nb-021-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Lake Zurich area",
+        "region": "Canton of Zurich",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_1122.jpeg",
+        "sha256": "893b62627d24218bc7907e74116d6a413cdab20eb10d824737eed4e490be97b3",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_1122.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Lake Zurich area confirmed by the user; exact shore or shooting point not supplied."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-021-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 37786
+        },
+        {
+          "src": "/collection/nb-021-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 123488
+        },
+        {
+          "src": "/collection/nb-021-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 172024
+        }
+      ]
+    },
+    {
+      "id": "NB—022",
+      "filename": "IMG_1132.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-022-1152.webp",
+        "thumbnail": "/collection/nb-022-480.webp",
+        "srcSet": "/collection/nb-022-480.webp 480w, /collection/nb-022-960.webp 960w, /collection/nb-022-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Zurich",
+        "region": "Canton of Zurich",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_1132.jpeg",
+        "sha256": "7a4cdb5a33e24ea9864386e224bdb335c26657f30b0d25705616f19b39a20adb",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_1132.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Lake Zurich / Utoquai shoreline. Exact shooting point unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-022-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 47214
+        },
+        {
+          "src": "/collection/nb-022-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 159612
+        },
+        {
+          "src": "/collection/nb-022-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 216552
+        }
+      ]
+    },
+    {
+      "id": "NB—023",
+      "filename": "IMG_1650.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-023-1152.webp",
+        "thumbnail": "/collection/nb-023-480.webp",
+        "srcSet": "/collection/nb-023-480.webp 480w, /collection/nb-023-960.webp 960w, /collection/nb-023-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Toronto",
+        "region": "Ontario",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_1650.jpeg",
+        "sha256": "b089806705403d5ae2c57a86b7ccb7b9a2d6c50f7f98adde26fdf4c22de6dd61",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_1650.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Downtown waterfront / Bathurst Quay area. No private building or unit identified."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-023-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 57100
+        },
+        {
+          "src": "/collection/nb-023-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 185920
+        },
+        {
+          "src": "/collection/nb-023-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 254154
+        }
+      ]
+    },
+    {
+      "id": "NB—024",
+      "filename": "IMG_6241.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-024-1152.webp",
+        "thumbnail": "/collection/nb-024-480.webp",
+        "srcSet": "/collection/nb-024-480.webp 480w, /collection/nb-024-960.webp 960w, /collection/nb-024-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "North Vancouver",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_6241.jpeg",
+        "sha256": "47c6207d66408f9768112a6279f9fd9497b2541bc24f535800ac40f8f8d16d29",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_6241.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely a Capilano River / Cliffwalk view; exact position unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-024-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 78394
+        },
+        {
+          "src": "/collection/nb-024-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 295966
+        },
+        {
+          "src": "/collection/nb-024-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 415296
+        }
+      ]
+    },
+    {
+      "id": "NB—025",
+      "filename": "IMG_6429.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-025-1152.webp",
+        "thumbnail": "/collection/nb-025-480.webp",
+        "srcSet": "/collection/nb-025-480.webp 480w, /collection/nb-025-960.webp 960w, /collection/nb-025-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "North Vancouver area",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_6429.jpeg",
+        "sha256": "0bac518e648130a9b3660bcb8a888e8f3af31701cc85c40cfb9874b215ac8052",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_6429.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "North Vancouver area confirmed by the user. Lynn Canyon remains the specific-park suggestion from visual review."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-025-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 128932
+        },
+        {
+          "src": "/collection/nb-025-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 501616
+        },
+        {
+          "src": "/collection/nb-025-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 724602
+        }
+      ]
+    },
+    {
+      "id": "NB—026",
+      "filename": "IMG_7981.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-026-1152.webp",
+        "thumbnail": "/collection/nb-026-480.webp",
+        "srcSet": "/collection/nb-026-480.webp 480w, /collection/nb-026-960.webp 960w, /collection/nb-026-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "London",
+        "region": "Ontario",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_7981.jpeg",
+        "sha256": "a3f9fe5c0da08b5c8a65909483bcb8d99bf1e0f241e4b8cc54b6882ea662a048",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_7981.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "University College / UC Hill."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-026-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 40540
+        },
+        {
+          "src": "/collection/nb-026-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 138578
+        },
+        {
+          "src": "/collection/nb-026-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 194862
+        }
+      ]
+    },
+    {
+      "id": "NB—027",
+      "filename": "IMG_8021.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-027-1152.webp",
+        "thumbnail": "/collection/nb-027-480.webp",
+        "srcSet": "/collection/nb-027-480.webp 480w, /collection/nb-027-960.webp 960w, /collection/nb-027-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "London",
+        "region": "Ontario",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8021.jpeg",
+        "sha256": "11fe32c10d78c942d833f05ec2dce8e7abcb0f8a621acd33b11e7470b778045f",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8021.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Richard Ivey Building, Western University."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-027-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 24312
+        },
+        {
+          "src": "/collection/nb-027-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 70238
+        },
+        {
+          "src": "/collection/nb-027-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 97400
+        }
+      ]
+    },
+    {
+      "id": "NB—028",
+      "filename": "IMG_8407.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-028-1152.webp",
+        "thumbnail": "/collection/nb-028-480.webp",
+        "srcSet": "/collection/nb-028-480.webp 480w, /collection/nb-028-960.webp 960w, /collection/nb-028-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Hong Kong",
+        "region": "Hong Kong SAR",
+        "country": "China",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8407.jpeg",
+        "sha256": "2355c59f7c4c45053c8835faaa4e5ad9eb37efeae68a829791e97eb841225875",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8407.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "View toward Hong Kong Island from the Kowloon side; exact viewpoint unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-028-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 34002
+        },
+        {
+          "src": "/collection/nb-028-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 104530
+        },
+        {
+          "src": "/collection/nb-028-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 146084
+        }
+      ]
+    },
+    {
+      "id": "NB—029",
+      "filename": "IMG_8417.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-029-1152.webp",
+        "thumbnail": "/collection/nb-029-480.webp",
+        "srcSet": "/collection/nb-029-480.webp 480w, /collection/nb-029-960.webp 960w, /collection/nb-029-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Hong Kong",
+        "region": "Hong Kong SAR",
+        "country": "China",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8417.jpeg",
+        "sha256": "c0af866b835803211342c1a84ec76727717228e941d9c8381233063e623976fb",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8417.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Hong Kong confirmed by the user. Austin / West Kowloon remains the narrower-area suggestion from visual review."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-029-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 65456
+        },
+        {
+          "src": "/collection/nb-029-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 197644
+        },
+        {
+          "src": "/collection/nb-029-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 265912
+        }
+      ]
+    },
+    {
+      "id": "NB—030",
+      "filename": "IMG_8418.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-030-1152.webp",
+        "thumbnail": "/collection/nb-030-480.webp",
+        "srcSet": "/collection/nb-030-480.webp 480w, /collection/nb-030-960.webp 960w, /collection/nb-030-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Hong Kong",
+        "region": "Hong Kong SAR",
+        "country": "China",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8418.jpeg",
+        "sha256": "e16350e0e1cfe5aa6133758e6ae33a1cd78b97b68e14ab3ca899abe0c167f3c7",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8418.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Hong Kong West Kowloon Station rooftop / Green Plaza area."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-030-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 68736
+        },
+        {
+          "src": "/collection/nb-030-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 262176
+        },
+        {
+          "src": "/collection/nb-030-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 380200
+        }
+      ]
+    },
+    {
+      "id": "NB—031",
+      "filename": "IMG_8454.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-031-1152.webp",
+        "thumbnail": "/collection/nb-031-480.webp",
+        "srcSet": "/collection/nb-031-480.webp 480w, /collection/nb-031-960.webp 960w, /collection/nb-031-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Guangzhou",
+        "region": "Guangdong",
+        "country": "China",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8454.jpeg",
+        "sha256": "dfa2615154d4ecf32ec2b8c9935bf283372d9f352319c0f005bde1bb4505001c",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8454.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "Individual image confirmed by the user: the photograph previously suggested as Shenzhen is Guangzhou.",
+        "notes": "Specific street or market not supplied."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-031-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 97722
+        },
+        {
+          "src": "/collection/nb-031-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 303130
+        },
+        {
+          "src": "/collection/nb-031-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 411096
+        }
+      ]
+    },
+    {
+      "id": "NB—032",
+      "filename": "IMG_8509.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-032-1536.webp",
+        "thumbnail": "/collection/nb-032-480.webp",
+        "srcSet": "/collection/nb-032-480.webp 480w, /collection/nb-032-960.webp 960w, /collection/nb-032-1536.webp 1536w",
+        "width": 1536,
+        "height": 1152
+      },
+      "location": {
+        "place": "Hong Kong",
+        "region": "Hong Kong SAR",
+        "country": "China",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8509.jpeg",
+        "sha256": "f403e2aa00f03bb4d55a95a454fd1da68a396b0bd60134d322dce7d8a40a9d63",
+        "width": 1536,
+        "height": 1152
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8509.jpeg",
+        "dimensions": [
+          1536,
+          1152
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1536,
+          "ExifImageHeight": 1152,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Night view across Victoria Harbour; exact waterfront point unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-032-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 22694
+        },
+        {
+          "src": "/collection/nb-032-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 84742
+        },
+        {
+          "src": "/collection/nb-032-1536.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 202678
+        }
+      ]
+    },
+    {
+      "id": "NB—033",
+      "filename": "IMG_8521.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-033-1152.webp",
+        "thumbnail": "/collection/nb-033-480.webp",
+        "srcSet": "/collection/nb-033-480.webp 480w, /collection/nb-033-960.webp 960w, /collection/nb-033-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Hong Kong",
+        "region": "Hong Kong SAR",
+        "country": "China",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8521.jpeg",
+        "sha256": "223af14a8364832db1de20da72f83e0d1ce8da9a0dde162a0c82e6f491f73712",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8521.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Possibly Jardine’s Bazaar / Causeway Bay; exact street is tentative."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-033-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 84612
+        },
+        {
+          "src": "/collection/nb-033-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 247418
+        },
+        {
+          "src": "/collection/nb-033-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 334524
+        }
+      ]
+    },
+    {
+      "id": "NB—034",
+      "filename": "IMG_8532.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-034-1152.webp",
+        "thumbnail": "/collection/nb-034-480.webp",
+        "srcSet": "/collection/nb-034-480.webp 480w, /collection/nb-034-960.webp 960w, /collection/nb-034-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Hong Kong",
+        "region": "Hong Kong SAR",
+        "country": "China",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8532.jpeg",
+        "sha256": "1284e8e3b624e499c46a93aee1bb0102a7341c3bb031cec5de936ed3936ba52b",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8532.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Pottinger Street, Central."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-034-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 101844
+        },
+        {
+          "src": "/collection/nb-034-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 345212
+        },
+        {
+          "src": "/collection/nb-034-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 488596
+        }
+      ]
+    },
+    {
+      "id": "NB—035",
+      "filename": "IMG_8596.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-035-1152.webp",
+        "thumbnail": "/collection/nb-035-480.webp",
+        "srcSet": "/collection/nb-035-480.webp 480w, /collection/nb-035-960.webp 960w, /collection/nb-035-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Hong Kong",
+        "region": "Hong Kong SAR",
+        "country": "China",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8596.jpeg",
+        "sha256": "a4b3afbdae694b127183c6428b3899ad1a1a4b269c27bf6b768b6049a1669c0c",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8596.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Temple Street / Jordan Road entrance."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-035-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 97870
+        },
+        {
+          "src": "/collection/nb-035-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 347370
+        },
+        {
+          "src": "/collection/nb-035-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 474416
+        }
+      ]
+    },
+    {
+      "id": "NB—036",
+      "filename": "IMG_8851.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-036-1152.webp",
+        "thumbnail": "/collection/nb-036-480.webp",
+        "srcSet": "/collection/nb-036-480.webp 480w, /collection/nb-036-960.webp 960w, /collection/nb-036-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Las Vegas",
+        "region": "Nevada",
+        "country": "United States",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8851.jpeg",
+        "sha256": "7b8b62f9f90ab144aaca00027d4a08dffff51608f38a80961650a36722984ad4",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8851.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Caesars Palace exterior fountain area."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-036-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 60326
+        },
+        {
+          "src": "/collection/nb-036-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 193638
+        },
+        {
+          "src": "/collection/nb-036-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 258478
+        }
+      ]
+    },
+    {
+      "id": "NB—037",
+      "filename": "IMG_8864.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-037-1024.webp",
+        "thumbnail": "/collection/nb-037-480.webp",
+        "srcSet": "/collection/nb-037-480.webp 480w, /collection/nb-037-960.webp 960w, /collection/nb-037-1024.webp 1024w",
+        "width": 1024,
+        "height": 1536
+      },
+      "location": {
+        "place": "Las Vegas",
+        "region": "Nevada",
+        "country": "United States",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_8864.jpeg",
+        "sha256": "4031e962c96d585dcc92d770c90a664289f57e840605577198b37894ac25024c",
+        "width": 1024,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_8864.jpeg",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1024,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Bellagio fountain lake."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-037-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 70326
+        },
+        {
+          "src": "/collection/nb-037-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 225208
+        },
+        {
+          "src": "/collection/nb-037-1024.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 256288
+        }
+      ]
+    },
+    {
+      "id": "NB—038",
+      "filename": "IMG_9002.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-038-1152.webp",
+        "thumbnail": "/collection/nb-038-480.webp",
+        "srcSet": "/collection/nb-038-480.webp 480w, /collection/nb-038-960.webp 960w, /collection/nb-038-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Markham",
+        "region": "Ontario",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_9002.jpeg",
+        "sha256": "3d22cbfdce056e7258d5b4d35d37c391b6e9fabb15f5a02083c26a13d3d83867",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_9002.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Specific park or trail not supplied."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-038-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 41960
+        },
+        {
+          "src": "/collection/nb-038-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 164716
+        },
+        {
+          "src": "/collection/nb-038-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 236626
+        }
+      ]
+    },
+    {
+      "id": "NB—039",
+      "filename": "IMG_9622.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-039-1116.webp",
+        "thumbnail": "/collection/nb-039-480.webp",
+        "srcSet": "/collection/nb-039-480.webp 480w, /collection/nb-039-960.webp 960w, /collection/nb-039-1116.webp 1116w",
+        "width": 1116,
+        "height": 1536
+      },
+      "location": {
+        "place": "Jungfrau region",
+        "region": "Bernese Oberland / Canton of Bern",
+        "country": "Switzerland",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_9622.jpeg",
+        "sha256": "e2e5dad647501f37b1f66f000863128a9b1640ec961d75cf4e918d3fd484de73",
+        "width": 1116,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_9622.jpeg",
+        "dimensions": [
+          1116,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1116,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely on the Wengen side, looking toward Mürren / Gimmelwald; exact viewpoint unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-039-480.webp",
+          "width": 480,
+          "height": 661,
+          "bytes": 109544
+        },
+        {
+          "src": "/collection/nb-039-960.webp",
+          "width": 960,
+          "height": 1321,
+          "bytes": 408620
+        },
+        {
+          "src": "/collection/nb-039-1116.webp",
+          "width": 1116,
+          "height": 1536,
+          "bytes": 549762
+        }
+      ]
+    },
+    {
+      "id": "NB—040",
+      "filename": "IMG_9637(1).jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-040-1152.webp",
+        "thumbnail": "/collection/nb-040-480.webp",
+        "srcSet": "/collection/nb-040-480.webp 480w, /collection/nb-040-960.webp 960w, /collection/nb-040-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Muskoka",
+        "region": "Ontario",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_9637(1).jpeg",
+        "sha256": "f96d91c7881bfc1c6b89d566ab9d485ea80ecae43dfa5a7e3fd937ba6c4bb452",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_9637(1).jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Specific property or community not supplied; no private address inferred."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-040-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 65848
+        },
+        {
+          "src": "/collection/nb-040-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 198250
+        },
+        {
+          "src": "/collection/nb-040-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 265058
+        }
+      ]
+    },
+    {
+      "id": "NB—041",
+      "filename": "IMG_9641.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-041-1152.webp",
+        "thumbnail": "/collection/nb-041-480.webp",
+        "srcSet": "/collection/nb-041-480.webp 480w, /collection/nb-041-960.webp 960w, /collection/nb-041-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Muskoka",
+        "region": "Ontario",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_9641.jpeg",
+        "sha256": "ea55dd2c685ca075d746370220523c3c1bdaeba5f4f3f39684366d75aac70c2e",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_9641.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Specific pond, property or community not supplied."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-041-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 41330
+        },
+        {
+          "src": "/collection/nb-041-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 132538
+        },
+        {
+          "src": "/collection/nb-041-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 177338
+        }
+      ]
+    },
+    {
+      "id": "NB—042",
+      "filename": "IMG_9843.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-042-1152.webp",
+        "thumbnail": "/collection/nb-042-480.webp",
+        "srcSet": "/collection/nb-042-480.webp 480w, /collection/nb-042-960.webp 960w, /collection/nb-042-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Vancouver",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_9843.jpeg",
+        "sha256": "c1d9e354564bdde4faad6f4bb55771ff0d49e4339ff020fa2d74c3e042b8d7f9",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_9843.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Royal Vancouver Yacht Club / Coal Harbour covered moorage. Specific marina inferred."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-042-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 42208
+        },
+        {
+          "src": "/collection/nb-042-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 153832
+        },
+        {
+          "src": "/collection/nb-042-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 223098
+        }
+      ]
+    },
+    {
+      "id": "NB—043",
+      "filename": "IMG_9849.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-043-1536.webp",
+        "thumbnail": "/collection/nb-043-480.webp",
+        "srcSet": "/collection/nb-043-480.webp 480w, /collection/nb-043-960.webp 960w, /collection/nb-043-1536.webp 1536w",
+        "width": 1536,
+        "height": 1152
+      },
+      "location": {
+        "place": "Richmond",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_9849.jpeg",
+        "sha256": "2c66aba900b1d8caf574ea0e2045ad4a9e8a558cb9fc690e48a403ec651df161",
+        "width": 1536,
+        "height": 1152
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_9849.jpeg",
+        "dimensions": [
+          1536,
+          1152
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1536,
+          "ExifImageHeight": 1152,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Likely Steveston fishing harbour; Steveston itself was not confirmed."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-043-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 26854
+        },
+        {
+          "src": "/collection/nb-043-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 82660
+        },
+        {
+          "src": "/collection/nb-043-1536.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 171178
+        }
+      ]
+    },
+    {
+      "id": "NB—044",
+      "filename": "IMG_9972.jpeg",
+      "kind": "photograph",
+      "image": {
+        "src": "/collection/nb-044-1152.webp",
+        "thumbnail": "/collection/nb-044-480.webp",
+        "srcSet": "/collection/nb-044-480.webp 480w, /collection/nb-044-960.webp 960w, /collection/nb-044-1152.webp 1152w",
+        "width": 1152,
+        "height": 1536
+      },
+      "location": {
+        "place": "Garibaldi Provincial Park",
+        "region": "British Columbia",
+        "country": "Canada",
+        "source": "user-confirmed"
+      },
+      "capture": {
+        "date": null,
+        "time": null
+      },
+      "technical": {
+        "camera": null,
+        "focalLength": null,
+        "aperture": null,
+        "exposure": null,
+        "iso": null,
+        "altitude": null
+      },
+      "original": {
+        "path": "originals/IMG_9972.jpeg",
+        "sha256": "c34414566b123cce983d5fba5811210c2284cd5fca95b2381664778816cbb613",
+        "width": 1152,
+        "height": 1536
+      },
+      "extracted": {
+        "captureDateTime": {
+          "status": "missing",
+          "value": null
+        },
+        "gpsCoordinates": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraManufacturer": {
+          "status": "missing",
+          "value": null
+        },
+        "cameraModel": {
+          "status": "missing",
+          "value": null
+        },
+        "focalLength": {
+          "status": "missing",
+          "value": null
+        },
+        "aperture": {
+          "status": "missing",
+          "value": null
+        },
+        "iso": {
+          "status": "missing",
+          "value": null
+        },
+        "exposureTime": {
+          "status": "missing",
+          "value": null
+        },
+        "altitude": {
+          "status": "missing",
+          "value": null
+        }
+      },
+      "embeddedMetadata": {
+        "filename": "IMG_9972.jpeg",
+        "dimensions": [
+          1152,
+          1536
+        ],
+        "ifd0": {
+          "ResolutionUnit": 2,
+          "ExifOffset": 102,
+          "Orientation": 1,
+          "YCbCrPositioning": 1,
+          "XResolution": 72,
+          "YResolution": 72
+        },
+        "exif": {
+          "ExifVersion": {
+            "bytes_hex": "30323231",
+            "text": "0221"
+          },
+          "ComponentsConfiguration": {
+            "bytes_hex": "01020300",
+            "text": "\u0001\u0002\u0003\u0000"
+          },
+          "FlashPixVersion": {
+            "bytes_hex": "30313030",
+            "text": "0100"
+          },
+          "ColorSpace": 1,
+          "ExifImageWidth": 1152,
+          "ExifImageHeight": 1536,
+          "SceneCaptureType": 0
+        },
+        "gps": {},
+        "iptc": null,
+        "photoshop": null,
+        "xmp": null
+      },
+      "locationEvidence": {
+        "source": "User confirmation after visual review",
+        "confirmation": "The user reviewed the location list and confirmed the remaining geographic labels as correct. Specific trail, street and camera-position caveats remain as noted.",
+        "notes": "Possible Taylor Meadows / Panorama Ridge approach; exact trail unresolved."
+      },
+      "variants": [
+        {
+          "src": "/collection/nb-044-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 65286
+        },
+        {
+          "src": "/collection/nb-044-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 264706
+        },
+        {
+          "src": "/collection/nb-044-1152.webp",
+          "width": 1152,
+          "height": 1536,
+          "bytes": 388188
+        }
+      ]
+    }
+  ]
+}

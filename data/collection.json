@@ -1,0 +1,1317 @@
+[
+  {
+    "id": "NB—001",
+    "filename": "2026-03-27_01.26.12.jpeg",
+    "kind": "game-screenshot",
+    "image": {
+      "src": "/collection/nb-001-2400.webp",
+      "thumbnail": "/collection/nb-001-480.webp",
+      "srcSet": "/collection/nb-001-480.webp 480w, /collection/nb-001-960.webp 960w, /collection/nb-001-2400.webp 2400w",
+      "width": 2400,
+      "height": 1920
+    },
+    "location": null,
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—002",
+    "filename": "IMG_0083.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-002-1536.webp",
+      "thumbnail": "/collection/nb-002-480.webp",
+      "srcSet": "/collection/nb-002-480.webp 480w, /collection/nb-002-960.webp 960w, /collection/nb-002-1536.webp 1536w",
+      "width": 1536,
+      "height": 1152
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—003",
+    "filename": "IMG_0087.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-003-1536.webp",
+      "thumbnail": "/collection/nb-003-480.webp",
+      "srcSet": "/collection/nb-003-480.webp 480w, /collection/nb-003-960.webp 960w, /collection/nb-003-1536.webp 1536w",
+      "width": 1536,
+      "height": 1152
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—004",
+    "filename": "IMG_0089.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-004-1152.webp",
+      "thumbnail": "/collection/nb-004-480.webp",
+      "srcSet": "/collection/nb-004-480.webp 480w, /collection/nb-004-960.webp 960w, /collection/nb-004-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—005",
+    "filename": "IMG_0091.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-005-1536.webp",
+      "thumbnail": "/collection/nb-005-480.webp",
+      "srcSet": "/collection/nb-005-480.webp 480w, /collection/nb-005-960.webp 960w, /collection/nb-005-1536.webp 1536w",
+      "width": 1536,
+      "height": 1152
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—006",
+    "filename": "IMG_0155.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-006-1536.webp",
+      "thumbnail": "/collection/nb-006-480.webp",
+      "srcSet": "/collection/nb-006-480.webp 480w, /collection/nb-006-960.webp 960w, /collection/nb-006-1536.webp 1536w",
+      "width": 1536,
+      "height": 1152
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—007",
+    "filename": "IMG_0218.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-007-1651.webp",
+      "thumbnail": "/collection/nb-007-480.webp",
+      "srcSet": "/collection/nb-007-480.webp 480w, /collection/nb-007-960.webp 960w, /collection/nb-007-1651.webp 1651w",
+      "width": 1651,
+      "height": 1179
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—008",
+    "filename": "IMG_0219.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-008-1651.webp",
+      "thumbnail": "/collection/nb-008-480.webp",
+      "srcSet": "/collection/nb-008-480.webp 480w, /collection/nb-008-960.webp 960w, /collection/nb-008-1651.webp 1651w",
+      "width": 1651,
+      "height": 1179
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—009",
+    "filename": "IMG_0221.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-009-1614.webp",
+      "thumbnail": "/collection/nb-009-480.webp",
+      "srcSet": "/collection/nb-009-480.webp 480w, /collection/nb-009-960.webp 960w, /collection/nb-009-1614.webp 1614w",
+      "width": 1614,
+      "height": 1153
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—010",
+    "filename": "IMG_0669.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-010-864.webp",
+      "thumbnail": "/collection/nb-010-480.webp",
+      "srcSet": "/collection/nb-010-480.webp 480w, /collection/nb-010-864.webp 864w",
+      "width": 864,
+      "height": 1536
+    },
+    "location": {
+      "place": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—011",
+    "filename": "IMG_0715.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-011-1152.webp",
+      "thumbnail": "/collection/nb-011-480.webp",
+      "srcSet": "/collection/nb-011-480.webp 480w, /collection/nb-011-960.webp 960w, /collection/nb-011-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—012",
+    "filename": "IMG_0731.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-012-1152.webp",
+      "thumbnail": "/collection/nb-012-480.webp",
+      "srcSet": "/collection/nb-012-480.webp 480w, /collection/nb-012-960.webp 960w, /collection/nb-012-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—013",
+    "filename": "IMG_0750.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-013-1152.webp",
+      "thumbnail": "/collection/nb-013-480.webp",
+      "srcSet": "/collection/nb-013-480.webp 480w, /collection/nb-013-960.webp 960w, /collection/nb-013-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—014",
+    "filename": "IMG_0759.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-014-1152.webp",
+      "thumbnail": "/collection/nb-014-480.webp",
+      "srcSet": "/collection/nb-014-480.webp 480w, /collection/nb-014-960.webp 960w, /collection/nb-014-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—015",
+    "filename": "IMG_0807.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-015-1152.webp",
+      "thumbnail": "/collection/nb-015-480.webp",
+      "srcSet": "/collection/nb-015-480.webp 480w, /collection/nb-015-960.webp 960w, /collection/nb-015-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—016",
+    "filename": "IMG_0977(1).jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-016-1152.webp",
+      "thumbnail": "/collection/nb-016-480.webp",
+      "srcSet": "/collection/nb-016-480.webp 480w, /collection/nb-016-960.webp 960w, /collection/nb-016-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—017",
+    "filename": "IMG_0977.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-017-1152.webp",
+      "thumbnail": "/collection/nb-017-480.webp",
+      "srcSet": "/collection/nb-017-480.webp 480w, /collection/nb-017-960.webp 960w, /collection/nb-017-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—018",
+    "filename": "IMG_0992(1).jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-018-1536.webp",
+      "thumbnail": "/collection/nb-018-480.webp",
+      "srcSet": "/collection/nb-018-480.webp 480w, /collection/nb-018-960.webp 960w, /collection/nb-018-1536.webp 1536w",
+      "width": 1536,
+      "height": 1152
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—019",
+    "filename": "IMG_0992.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-019-1536.webp",
+      "thumbnail": "/collection/nb-019-480.webp",
+      "srcSet": "/collection/nb-019-480.webp 480w, /collection/nb-019-960.webp 960w, /collection/nb-019-1536.webp 1536w",
+      "width": 1536,
+      "height": 1152
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—020",
+    "filename": "IMG_1056.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-020-1152.webp",
+      "thumbnail": "/collection/nb-020-480.webp",
+      "srcSet": "/collection/nb-020-480.webp 480w, /collection/nb-020-960.webp 960w, /collection/nb-020-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—021",
+    "filename": "IMG_1122.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-021-1152.webp",
+      "thumbnail": "/collection/nb-021-480.webp",
+      "srcSet": "/collection/nb-021-480.webp 480w, /collection/nb-021-960.webp 960w, /collection/nb-021-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Lake Zurich area",
+      "region": "Canton of Zurich",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—022",
+    "filename": "IMG_1132.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-022-1152.webp",
+      "thumbnail": "/collection/nb-022-480.webp",
+      "srcSet": "/collection/nb-022-480.webp 480w, /collection/nb-022-960.webp 960w, /collection/nb-022-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Zurich",
+      "region": "Canton of Zurich",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—023",
+    "filename": "IMG_1650.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-023-1152.webp",
+      "thumbnail": "/collection/nb-023-480.webp",
+      "srcSet": "/collection/nb-023-480.webp 480w, /collection/nb-023-960.webp 960w, /collection/nb-023-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—024",
+    "filename": "IMG_6241.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-024-1152.webp",
+      "thumbnail": "/collection/nb-024-480.webp",
+      "srcSet": "/collection/nb-024-480.webp 480w, /collection/nb-024-960.webp 960w, /collection/nb-024-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "North Vancouver",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—025",
+    "filename": "IMG_6429.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-025-1152.webp",
+      "thumbnail": "/collection/nb-025-480.webp",
+      "srcSet": "/collection/nb-025-480.webp 480w, /collection/nb-025-960.webp 960w, /collection/nb-025-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "North Vancouver area",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—026",
+    "filename": "IMG_7981.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-026-1152.webp",
+      "thumbnail": "/collection/nb-026-480.webp",
+      "srcSet": "/collection/nb-026-480.webp 480w, /collection/nb-026-960.webp 960w, /collection/nb-026-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "London",
+      "region": "Ontario",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—027",
+    "filename": "IMG_8021.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-027-1152.webp",
+      "thumbnail": "/collection/nb-027-480.webp",
+      "srcSet": "/collection/nb-027-480.webp 480w, /collection/nb-027-960.webp 960w, /collection/nb-027-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "London",
+      "region": "Ontario",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—028",
+    "filename": "IMG_8407.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-028-1152.webp",
+      "thumbnail": "/collection/nb-028-480.webp",
+      "srcSet": "/collection/nb-028-480.webp 480w, /collection/nb-028-960.webp 960w, /collection/nb-028-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Hong Kong",
+      "region": "Hong Kong SAR",
+      "country": "China",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—029",
+    "filename": "IMG_8417.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-029-1152.webp",
+      "thumbnail": "/collection/nb-029-480.webp",
+      "srcSet": "/collection/nb-029-480.webp 480w, /collection/nb-029-960.webp 960w, /collection/nb-029-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Hong Kong",
+      "region": "Hong Kong SAR",
+      "country": "China",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—030",
+    "filename": "IMG_8418.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-030-1152.webp",
+      "thumbnail": "/collection/nb-030-480.webp",
+      "srcSet": "/collection/nb-030-480.webp 480w, /collection/nb-030-960.webp 960w, /collection/nb-030-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Hong Kong",
+      "region": "Hong Kong SAR",
+      "country": "China",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—031",
+    "filename": "IMG_8454.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-031-1152.webp",
+      "thumbnail": "/collection/nb-031-480.webp",
+      "srcSet": "/collection/nb-031-480.webp 480w, /collection/nb-031-960.webp 960w, /collection/nb-031-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Guangzhou",
+      "region": "Guangdong",
+      "country": "China",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—032",
+    "filename": "IMG_8509.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-032-1536.webp",
+      "thumbnail": "/collection/nb-032-480.webp",
+      "srcSet": "/collection/nb-032-480.webp 480w, /collection/nb-032-960.webp 960w, /collection/nb-032-1536.webp 1536w",
+      "width": 1536,
+      "height": 1152
+    },
+    "location": {
+      "place": "Hong Kong",
+      "region": "Hong Kong SAR",
+      "country": "China",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—033",
+    "filename": "IMG_8521.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-033-1152.webp",
+      "thumbnail": "/collection/nb-033-480.webp",
+      "srcSet": "/collection/nb-033-480.webp 480w, /collection/nb-033-960.webp 960w, /collection/nb-033-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Hong Kong",
+      "region": "Hong Kong SAR",
+      "country": "China",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—034",
+    "filename": "IMG_8532.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-034-1152.webp",
+      "thumbnail": "/collection/nb-034-480.webp",
+      "srcSet": "/collection/nb-034-480.webp 480w, /collection/nb-034-960.webp 960w, /collection/nb-034-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Hong Kong",
+      "region": "Hong Kong SAR",
+      "country": "China",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—035",
+    "filename": "IMG_8596.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-035-1152.webp",
+      "thumbnail": "/collection/nb-035-480.webp",
+      "srcSet": "/collection/nb-035-480.webp 480w, /collection/nb-035-960.webp 960w, /collection/nb-035-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Hong Kong",
+      "region": "Hong Kong SAR",
+      "country": "China",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—036",
+    "filename": "IMG_8851.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-036-1152.webp",
+      "thumbnail": "/collection/nb-036-480.webp",
+      "srcSet": "/collection/nb-036-480.webp 480w, /collection/nb-036-960.webp 960w, /collection/nb-036-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Las Vegas",
+      "region": "Nevada",
+      "country": "United States",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—037",
+    "filename": "IMG_8864.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-037-1024.webp",
+      "thumbnail": "/collection/nb-037-480.webp",
+      "srcSet": "/collection/nb-037-480.webp 480w, /collection/nb-037-960.webp 960w, /collection/nb-037-1024.webp 1024w",
+      "width": 1024,
+      "height": 1536
+    },
+    "location": {
+      "place": "Las Vegas",
+      "region": "Nevada",
+      "country": "United States",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—038",
+    "filename": "IMG_9002.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-038-1152.webp",
+      "thumbnail": "/collection/nb-038-480.webp",
+      "srcSet": "/collection/nb-038-480.webp 480w, /collection/nb-038-960.webp 960w, /collection/nb-038-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Markham",
+      "region": "Ontario",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—039",
+    "filename": "IMG_9622.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-039-1116.webp",
+      "thumbnail": "/collection/nb-039-480.webp",
+      "srcSet": "/collection/nb-039-480.webp 480w, /collection/nb-039-960.webp 960w, /collection/nb-039-1116.webp 1116w",
+      "width": 1116,
+      "height": 1536
+    },
+    "location": {
+      "place": "Jungfrau region",
+      "region": "Bernese Oberland / Canton of Bern",
+      "country": "Switzerland",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—040",
+    "filename": "IMG_9637(1).jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-040-1152.webp",
+      "thumbnail": "/collection/nb-040-480.webp",
+      "srcSet": "/collection/nb-040-480.webp 480w, /collection/nb-040-960.webp 960w, /collection/nb-040-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Muskoka",
+      "region": "Ontario",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—041",
+    "filename": "IMG_9641.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-041-1152.webp",
+      "thumbnail": "/collection/nb-041-480.webp",
+      "srcSet": "/collection/nb-041-480.webp 480w, /collection/nb-041-960.webp 960w, /collection/nb-041-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Muskoka",
+      "region": "Ontario",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—042",
+    "filename": "IMG_9843.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-042-1152.webp",
+      "thumbnail": "/collection/nb-042-480.webp",
+      "srcSet": "/collection/nb-042-480.webp 480w, /collection/nb-042-960.webp 960w, /collection/nb-042-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Vancouver",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—043",
+    "filename": "IMG_9849.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-043-1536.webp",
+      "thumbnail": "/collection/nb-043-480.webp",
+      "srcSet": "/collection/nb-043-480.webp 480w, /collection/nb-043-960.webp 960w, /collection/nb-043-1536.webp 1536w",
+      "width": 1536,
+      "height": 1152
+    },
+    "location": {
+      "place": "Richmond",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  },
+  {
+    "id": "NB—044",
+    "filename": "IMG_9972.jpeg",
+    "kind": "photograph",
+    "image": {
+      "src": "/collection/nb-044-1152.webp",
+      "thumbnail": "/collection/nb-044-480.webp",
+      "srcSet": "/collection/nb-044-480.webp 480w, /collection/nb-044-960.webp 960w, /collection/nb-044-1152.webp 1152w",
+      "width": 1152,
+      "height": 1536
+    },
+    "location": {
+      "place": "Garibaldi Provincial Park",
+      "region": "British Columbia",
+      "country": "Canada",
+      "source": "user-confirmed"
+    },
+    "capture": {
+      "date": null,
+      "time": null
+    },
+    "technical": {
+      "camera": null,
+      "focalLength": null,
+      "aperture": null,
+      "exposure": null,
+      "iso": null,
+      "altitude": null
+    }
+  }
+]
